@@ -1,0 +1,1224 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "age_of_industrialisation"
+	group: "7CFCEAC35D52A876"
+	hide_quest_until_deps_complete: true
+	icon: "industrialforegoing:meat_feeder"
+	id: "07A29FC12C11E388"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["2F58CA96D4FC51DD"]
+			description: ["Welcome to the new age. I have more items to have exported and sold, get to it! Here's an instructional guide that I've taken some of your wage to provide."]
+			icon: {
+				Count: 1
+				id: "patchouli:guide_book"
+				tag: {
+					"patchouli:book": "industrialforegoing:industrial_foregoing"
+				}
+			}
+			id: "11EED1E239CD4193"
+			rewards: [{
+				id: "1C0DACC72B2EA480"
+				item: {
+					Count: 1
+					id: "patchouli:guide_book"
+					tag: {
+						"patchouli:book": "industrialforegoing:industrial_foregoing"
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "25059194299EC227"
+				item: "banksystem:money"
+				type: "item"
+			}]
+			title: "The Manual"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["784960FB5BDC9B1C"]
+			description: ["Hopefully, PneumaticCraft is providing you with plastic, otherwise this is the alternative. Latex can still be useful by itself so you should atleast get some. It doesn't require power, but if you don't want it to take a year I recommend you do power it. Place wood next to it to exctract latex, all trees are rubber trees!"]
+			id: "611CC6F21F3C054F"
+			rewards: [{
+				id: "1B11B7F4CFF61D7B"
+				item: "industrialforegoing:latex_bucket"
+				type: "item"
+			}]
+			tasks: [{
+				id: "3441D0411BD38E68"
+				item: "industrialforegoing:fluid_extractor"
+				type: "item"
+			}]
+			title: "Rubber Production"
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["611CC6F21F3C054F"]
+			description: ["So you didn't set up any plastic production in the previous chapter? Well, you can still do it here with the Latex Processing Unit."]
+			id: "09A5D483F93969B7"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "6898B5CE15414098"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "020EA36F86167F63"
+				item: "industrialforegoing:latex_processing_unit"
+				type: "item"
+			}]
+			title: "For The Lazy"
+			x: -1.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["611CC6F21F3C054F"]
+			description: ["The Dissolution Chamber is Industrial Foregoing's unique way of crafting, to move onto more advanced machines you'll need this to continue."]
+			id: "5B5B7AC36E099DF8"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "341936B96D441444"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "594E2AFBF5E360F3"
+				item: "industrialforegoing:dissolution_chamber"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["11EED1E239CD4193"]
+			description: ["The Pity Machine Frame (and any other future machine frames) are used as the base of most machines. I'd recommend crafting a couple at a time, or even automating them as they're used frequently for machines."]
+			id: "784960FB5BDC9B1C"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "549B027C32C4815D"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "6E5C448669E65CAA"
+				item: "industrialforegoing:machine_frame_pity"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["784960FB5BDC9B1C"]
+			description: ["You may have the garden cloche, but if you want more slots to plant, this duo of machines can harvest and plant most crops."]
+			id: "1D58BC3A8D83D0D7"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "639DB0506F97A691"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [
+				{
+					id: "3738A6CF2CF860CA"
+					item: "industrialforegoing:plant_sower"
+					type: "item"
+				}
+				{
+					id: "4AA8DBD661F73522"
+					item: "industrialforegoing:plant_gatherer"
+					type: "item"
+				}
+			]
+			title: "Industrial Farming"
+			x: 1.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["784960FB5BDC9B1C"]
+			description: ["If you want to hold a huge amount of one item these black hole units will be right up your alley, There are even bigger versions of these available in the future."]
+			id: "741759EEE08FED61"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "63FF359624B873B7"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [
+				{
+					id: "590F3B48C364164F"
+					item: "industrialforegoing:pity_black_hole_unit"
+					type: "item"
+				}
+				{
+					id: "1792FD1AFA00F2C8"
+					item: "industrialforegoing:pity_black_hole_tank"
+					type: "item"
+				}
+			]
+			title: "Pity Resource Storage"
+			x: -1.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["784960FB5BDC9B1C"]
+			description: ["Everyone Poops! Why not use that poop to fertilize your crops?"]
+			id: "0DD406C3CE11CFE8"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "25A2BA8EC9D57E23"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [
+				{
+					id: "78607AEE163400EA"
+					item: "industrialforegoing:sewer"
+					type: "item"
+				}
+				{
+					id: "241237FC4EDA0F9E"
+					item: "industrialforegoing:sewage_composter"
+					type: "item"
+				}
+			]
+			title: "Shitty Job"
+			x: 1.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["784960FB5BDC9B1C"]
+			description: ["You might've noticed by now that some of your machines are producing sludge. You can reuse that sludge produce to make some, honestly, not that good items. It's something though!"]
+			id: "7D3E48555EE43400"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "15FB8F1546B81BE4"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "323D4D65AF1119F2"
+				item: "industrialforegoing:sludge_refiner"
+				type: "item"
+			}]
+			title: "Reduce, Reuse, Recycle"
+			x: -1.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["611CC6F21F3C054F"]
+			description: ["I'm sure now that you've been running several machines, you're noticing pollution is getting out of hand. You may want to start making or even automating solar panels."]
+			id: "6F5554F8A58E4FAA"
+			rewards: [{
+				count: 4
+				id: "5A3B3775E61D2F7F"
+				item: "solarflux:sp_1"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7A89A982AC372D4B"
+				item: "solarflux:sp_1"
+				type: "item"
+			}]
+			title: "Your First Solar Panel"
+			x: 1.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["5B5B7AC36E099DF8"]
+			description: ["Congrats on the new machine type! Now you can make even better machines to help with automation."]
+			id: "71BE0F79DD6E3C24"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "757BA76F9847CB90"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "5DC86C7FF083B089"
+				item: "industrialforegoing:machine_frame_simple"
+				type: "item"
+			}]
+			title: "Simple Machines"
+			x: 0.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["71BE0F79DD6E3C24"]
+			description: ["For if you want to speed up the growth of your crops, or atleast auto apply fertilizer and/or bonemeal to an area."]
+			id: "07B3910C1987047E"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "1DF739DE6FB0EE6E"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "0157BCD124999E61"
+				item: "industrialforegoing:plant_fertilizer"
+				type: "item"
+			}]
+			title: "Growth Up"
+			x: 1.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["71BE0F79DD6E3C24"]
+			description: ["Just one of the million ways to automatically fish, now in the Industrial Foregoing flavor."]
+			id: "3024CF03AAA7DFA6"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "40BBC6DA07B18201"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "44BE09B5950BE834"
+				item: "industrialforegoing:marine_fisher"
+				type: "item"
+			}]
+			title: "Auto Fishing"
+			x: 1.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["3024CF03AAA7DFA6"]
+			description: ["For the LL lovers, you can autofish this way too."]
+			id: "066E8FBA25045F16"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "1FF8A3D8F6767454"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "5299396A47BC5754"
+				item: "littlelogistics:fishing_barge"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["71BE0F79DD6E3C24"]
+			description: ["Simple machine that detects mobs for you, might be useful for you somehow."]
+			id: "4AC47FF5A80F6D31"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "52459EA35DE59BE3"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "4028D31AC70398AA"
+				item: "industrialforegoing:mob_detector"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["71BE0F79DD6E3C24"]
+			description: ["For those who want to power your base off the color pink... That's all."]
+			id: "40C33CE9BAF91449"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "3E445016C8083C4B"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "677A7FE3062F3B42"
+				item: "industrialforegoing:mycelial_pink"
+				type: "item"
+			}]
+			title: "Pink Power"
+			x: -1.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["71BE0F79DD6E3C24"]
+			description: ["Climbing up the machine ladder sure is exhausting... But progress is progress!"]
+			id: "04C5D2F5738647B6"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5C03280D87A91509"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "35D5D7D869782DCA"
+				item: "industrialforegoing:machine_frame_advanced"
+				type: "item"
+			}]
+			title: "Advanced Machines"
+			x: 0.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["6F5554F8A58E4FAA"]
+			description: ["For those who want to obtain more sun power."]
+			id: "703317E94B6A09B9"
+			rewards: [{
+				count: 3
+				id: "09C35D909F835027"
+				item: "solarflux:sp_2"
+				type: "item"
+			}]
+			tasks: [{
+				id: "0E60254837064E2A"
+				item: "solarflux:sp_2"
+				type: "item"
+			}]
+			title: "Your Second Solar Panel"
+			x: 2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["04C5D2F5738647B6"]
+			description: [
+				"Mob Slaughtering is a must! Not only do you get sweet meat (infinite food) you also get pink slime."
+				""
+				"Mob Crushing is your standard mob killing machine."
+			]
+			id: "326B7D5ACBAC2C5A"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "013A6952A6C53A7F"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [
+				{
+					id: "6B8C8FE22F098394"
+					item: "industrialforegoing:mob_crusher"
+					type: "item"
+				}
+				{
+					id: "0137DC4A8491FC29"
+					item: "industrialforegoing:mob_slaughter_factory"
+					type: "item"
+				}
+			]
+			title: "Mob Killing"
+			x: -1.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["04C5D2F5738647B6"]
+			description: ["If you love cobblestone generators this is a must. This will smelt, crush, craft cobble related items for you."]
+			id: "345C4EF6A3B6AB71"
+			rewards: [
+				{
+					id: "38295341B12CDBF9"
+					item: "minecraft:water_bucket"
+					type: "item"
+				}
+				{
+					id: "29257A06357B69EF"
+					item: "minecraft:lava_bucket"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "6386FC1B07114C6E"
+				item: "industrialforegoing:material_stonework_factory"
+				type: "item"
+			}]
+			title: "Cobble Master"
+			x: 1.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["04C5D2F5738647B6"]
+			description: ["Freeze and heal entities against their will, probably useful in some item farming situations."]
+			id: "71EDBC325819AE20"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "4E89920AE2F4809F"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "3FEC0C0ED15D7482"
+				item: "industrialforegoing:stasis_chamber"
+				type: "item"
+			}]
+			title: "Under Stasis"
+			x: 1.0d
+			y: -8.5d
+		}
+		{
+			dependencies: ["04C5D2F5738647B6"]
+			description: ["Charging too slow? Infinity chargers are chargers on steroids that can charge infinite items."]
+			id: "66F7265C49D2448C"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "55C9ED21424AC7BC"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "0A24EBE3D5F7F205"
+				item: "industrialforegoing:infinity_charger"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -8.5d
+		}
+		{
+			dependencies: ["04C5D2F5738647B6"]
+			description: ["Want infinite ores? These two machines together will give you all the ores you could dream of. Just make sure your power infrastructure can handle it..."]
+			id: "780BE34DB6E91429"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "71CB8B020D3AA749"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [
+				{
+					id: "748859B679590397"
+					item: "industrialforegoing:ore_laser_base"
+					type: "item"
+				}
+				{
+					id: "081149F526911EF8"
+					item: "industrialforegoing:laser_drill"
+					type: "item"
+				}
+			]
+			title: "All The Ores"
+			x: 0.0d
+			y: -9.0d
+		}
+		{
+			dependencies: ["326B7D5ACBAC2C5A"]
+			description: ["Pink Slime is used for some of the more advanced items in Industrial Foregoing/The Pack. Best setup an automation for this."]
+			id: "0569603425F7DD39"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "78F4321E306838D6"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "20B8B4A9D989BB40"
+				item: "industrialforegoing:pink_slime"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -8.5d
+		}
+		{
+			dependencies: ["326B7D5ACBAC2C5A"]
+			description: ["Hunger is a problem of yesterday, we now have the technology to turn anything into meat. Use this curio to inject the beef into your veins and be forever full."]
+			id: "15046E7B828D7327"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "6E9D15A5B0158952"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "1F1A4F761732D991"
+				item: "industrialforegoing:meat_feeder"
+				type: "item"
+			}]
+			title: "Where's The Beef?"
+			x: -3.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["703317E94B6A09B9"]
+			id: "0975598876975E60"
+			rewards: [{
+				count: 2
+				id: "61C544784A89CC5C"
+				item: "solarflux:sp_3"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7C6E52CE7948D527"
+				item: "solarflux:sp_3"
+				type: "item"
+			}]
+			title: "Your Third Solar Panel"
+			x: 3.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["0975598876975E60"]
+			description: ["Stop! It's the solar police, we've noticed an increased activity in your solar panel building and must limit your advancement in solar technologies (for now)"]
+			id: "2877EA4E2EDC7CB2"
+			rewards: [{
+				id: "4202DBE95250F960"
+				item: "solarflux:sp_4"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1418DEAF758D4D34"
+				item: "solarflux:sp_4"
+				type: "item"
+			}]
+			title: "Your Fourth (And Last For Now) Solar Panel"
+			x: 4.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["5B5B7AC36E099DF8"]
+			description: ["People were probably waiting for this, but I'm finally assigning you the task of AE2. Your first step is finding these troublesome presses that can be found in meteors, that structure compass may come in handy again."]
+			id: "5DCBC08D99C7B8F8"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "6D9DFC0BD28EB28E"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [
+				{
+					id: "0BD09FD61415BFBF"
+					item: "ae2:silicon_press"
+					type: "item"
+				}
+				{
+					id: "5A23480B83A7CF4D"
+					item: "ae2:logic_processor_press"
+					type: "item"
+				}
+				{
+					id: "482A3D22A4A00B63"
+					item: "ae2:engineering_processor_press"
+					type: "item"
+				}
+				{
+					id: "58FDF3EDE12FADC8"
+					item: "ae2:calculation_processor_press"
+					type: "item"
+				}
+			]
+			title: "Chip Fabrication"
+			x: -1.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["5DCBC08D99C7B8F8"]
+			description: ["Now that you have the presses, it's time to actually use them to make some chips. Make the Inscriber and throw the press and some resources in to make some chips."]
+			id: "3E12D6F0EABFAF83"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "36CE997BD29748DA"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "56A15F4E3A0D4C15"
+				item: "ae2:inscriber"
+				type: "item"
+			}]
+			title: "Inscription"
+			x: -3.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["3E12D6F0EABFAF83"]
+			description: ["For those automation heads, there's the extended inscriber that can do multiple jobs."]
+			id: "0A2141B9C8DD74B7"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "0B2C9C7E673139A2"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "7DBE13106443056C"
+				item: "expatternprovider:ex_inscriber"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["3E12D6F0EABFAF83"]
+			description: ["These are the various circuits you can make from the various presses. All will be used for future recipes."]
+			id: "3406037FF4EC8B12"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "3B2EF04EE5C1C37F"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [
+				{
+					count: 4L
+					id: "52472EFA9A4F5B8F"
+					item: { Count: 4, id: "ae2:printed_silicon" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "1CA93C3BE5F5B491"
+					item: { Count: 4, id: "ae2:printed_logic_processor" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "48D07856BFB4CC82"
+					item: { Count: 4, id: "ae2:printed_engineering_processor" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "6F198971A612778E"
+					item: { Count: 4, id: "ae2:printed_calculation_processor" }
+					type: "item"
+				}
+			]
+			title: "Silicon Printing"
+			x: -2.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["3E12D6F0EABFAF83"]
+			description: ["This is your \"home base\" for your ME system. By itself it is quite useless, but soon you'll have all the storage and automation you could ever want!"]
+			id: "735535DC9358C674"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "42E1659249D24DA5"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "3A9BC39AEEF39D9B"
+				item: "ae2:controller"
+				type: "item"
+			}]
+			title: "Controlling"
+			x: -4.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["3E12D6F0EABFAF83"]
+			description: ["I know, your base probably has ten-million different chargers. But this one you'll want for certus quartz charging."]
+			id: "050ED0E87A0DFC24"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "6D0671F841417605"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "475ECC0BD0585DC2"
+				item: "ae2:charger"
+				type: "item"
+			}]
+			x: -3.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["050ED0E87A0DFC24"]
+			description: ["If for some reason you don't want to power the charger, you can just use your hands. Weirdo..."]
+			id: "44F5B921432460B4"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "429D930D0D466457"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "6D1F10E217B4F75D"
+				item: "ae2:crank"
+				type: "item"
+			}]
+			title: "By Hand"
+			x: -2.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["050ED0E87A0DFC24"]
+			description: ["Get yourself a shocking crystal. For some reason an electric crystal doesn't hurt you to hold, tsk tsk devs."]
+			id: "6E52B67F0D9869A8"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "3A070DCA48E9304B"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "0D55561C342FADE7"
+				item: "ae2:charged_certus_quartz_crystal"
+				type: "item"
+			}]
+			title: "In Shock"
+			x: -3.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["6E52B67F0D9869A8"]
+			description: ["AE2 Devs love crystals, waiting for AE2 crystal meth. Fluix crystals are yet another crystal needed for ME System setups"]
+			id: "1F47D9FC71190065"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "4B0439B138D27D2C"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "46122D676396F3E1"
+				item: "ae2:fluix_crystal"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"735535DC9358C674"
+				"1F47D9FC71190065"
+			]
+			description: ["Connect the thingys with the thingys so they work together. Networking, yay!"]
+			id: "6C614FA07036C2D9"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7FD59E7CCE1395C0"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				count: 8L
+				id: "7749A2103AFFB137"
+				item: { Count: 8, id: "ae2:fluix_glass_cable" }
+				type: "item"
+			}]
+			title: "Fluix Cables"
+			x: -5.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["6C614FA07036C2D9"]
+			description: ["Make your base look neat, I'm sure there's some regulation requiring use to hide our cables. If we get sued it comes out of your pocket."]
+			id: "210BCF35226341CF"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "2DE3466E1A7DAE9E"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				count: 4L
+				id: "76FF601E637C79AA"
+				item: { Count: 4, id: "ae2:cable_anchor" }
+				type: "item"
+			}]
+			title: "Hidden Network"
+			x: -5.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["735535DC9358C674"]
+			description: ["Yet another step in your ME System journey. The terminal will actually allow you to craft with the items within your system. Pretty dang useful."]
+			id: "1FC5C1B88617C85B"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5EFC1E83D0DD6E22"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "0973DC014675FE4D"
+				item: "ae2:crafting_terminal"
+				type: "item"
+			}]
+			title: "Terminally Crafting"
+			x: -5.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["735535DC9358C674"]
+			description: ["How are you going to store your items? In the ME Drive of course! Well, in the drives within the ME Drives. But that's later."]
+			id: "043CBEC2544063A8"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "0DAD413920B67E8D"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "5FCA976CA273CFDF"
+				item: "ae2:drive"
+				type: "item"
+			}]
+			title: "Drive Storage"
+			x: -4.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["043CBEC2544063A8"]
+			description: ["The Base Drive you can slot in to hold items."]
+			id: "6BE74AA7F8E91425"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "4385C4CAE720D6F7"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "0F93905357821CE2"
+				item: {
+					Count: 1
+					id: "ae2:item_storage_cell_1k"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "1k Item Storage"
+			x: -5.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["043CBEC2544063A8"]
+			description: ["A different drive, that instead of holding items, can instead hold fluids."]
+			id: "10B6D208AA18506C"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7CCA89368E4860FA"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "275500E6F4E5F3D1"
+				item: {
+					Count: 1
+					id: "ae2:fluid_storage_cell_1k"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "1k Fluid Storage"
+			x: -4.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["043CBEC2544063A8"]
+			description: ["Third \"Ugly Duckling\" drive that can hold chemicals, more useful when messing with mekanism."]
+			id: "674A16E44E4E412D"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "14C8AD0792388062"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "227C327DEFCD2296"
+				item: {
+					Count: 1
+					id: "appmek:chemical_storage_cell_1k"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "1k Gas Storage"
+			x: -3.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["043CBEC2544063A8"]
+			description: ["Double the storage of a normal drive, with taking up less space"]
+			id: "4066A3967966B3C6"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "52526383E0215E91"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "2365743A38D85741"
+				item: "expatternprovider:ex_drive"
+				type: "item"
+			}]
+			title: "Server Rack"
+			x: -5.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["6C614FA07036C2D9"]
+			description: ["It's so boring having to right click your terminal like a brokie, why not go wireless and show them who the real deal is."]
+			id: "4CBB8F91EE20398A"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5E3E8F0DE4887508"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [
+				{
+					id: "6B4D4620A37EB53F"
+					item: "ae2:wireless_access_point"
+					type: "item"
+				}
+				{
+					id: "55DB0B22778B53BD"
+					item: "ae2:wireless_terminal"
+					type: "item"
+				}
+			]
+			title: "Going Wireless"
+			x: -6.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["4CBB8F91EE20398A"]
+			description: ["An even better wireless interface that'll let you craft on the go aswell."]
+			id: "19F2F98512A5FA78"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "58837DB94A5DFF6D"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "22D5EE670900EE10"
+				item: {
+					Count: 1
+					id: "ae2:wireless_crafting_terminal"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "Wireless Crafting"
+			x: -7.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["5B5B7AC36E099DF8"]
+			description: ["The sequal everyone has asked for, a new wrench. This time for transportation of items!"]
+			id: "516B0AC87C24BE93"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "2F411161F48EEA71"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "04CF3317BF449F8D"
+				item: "pipez:wrench"
+				type: "item"
+			}]
+			title: "Every Mod Has A Wrench 4"
+			x: 2.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["516B0AC87C24BE93"]
+			description: ["Cheap item transportation without the use of conveyors"]
+			id: "32F19DBDD341F09F"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "4298B8C54602B46A"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "4C3C2326A4EF4A6D"
+				item: "pipez:item_pipe"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["516B0AC87C24BE93"]
+			description: ["Cheap fluid transportation without the use of other means..."]
+			id: "73ADE33E8EE04131"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "6852063A8E655AB4"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "4C74E7B3FDF4137B"
+				item: "pipez:fluid_pipe"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["516B0AC87C24BE93"]
+			description: ["Most likely your first way to move power via pipe."]
+			id: "3B1ED459CE47C875"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "2B88F5328600F606"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "65DA26C91F85DE9E"
+				item: "pipez:energy_pipe"
+				type: "item"
+			}]
+			x: 5.0d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"73ADE33E8EE04131"
+				"32F19DBDD341F09F"
+				"3B1ED459CE47C875"
+			]
+			description: ["The pipes of your dream all wrapped into one super pipe"]
+			id: "6956E6C476B80A74"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "41C7F4978DAEC876"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "52B009D4C0C75DF9"
+				item: "pipez:universal_pipe"
+				type: "item"
+			}]
+			x: 5.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["516B0AC87C24BE93"]
+			description: [
+				"For scenarios when the default state of pipe just isn't enough, also unlocks the ability to toggle the pipes via redstone."
+				""
+				"Moves:"
+				"8 items/tick"
+				"100 mB/tick"
+				"1024 FE/tick"
+				"400 mB Gas/tick"
+			]
+			id: "2EE6DDB71AC178E2"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "2B49E986D8B794D5"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "64605F1F37A5F13B"
+				item: "pipez:basic_upgrade"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["2EE6DDB71AC178E2"]
+			description: [
+				"For scenarios when the default state of pipe just isn't enough, also unlocks the ability to toggle distribution method."
+				""
+				"Moves:"
+				"16 items/tick"
+				"500 mB/tick"
+				"8192 FE/tick"
+				"2000 mB Gas/tick"
+			]
+			id: "78AD57DC31DA754F"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5180BDAA5837034C"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "09B5E1506688C4A1"
+				item: "pipez:improved_upgrade"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["78AD57DC31DA754F"]
+			description: [
+				"For scenarios when the default state of pipe just isn't enough, also unlocks the ability to toggle whitelist/blacklist."
+				""
+				"Moves:"
+				"32 items/tick"
+				"2000 mB/tick"
+				"32768 FE/tick"
+				"8000 mB Gas/tick"
+			]
+			id: "17BECC55BB670FF9"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "61978406C81655D1"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "66C28065F9E3262B"
+				item: "pipez:advanced_upgrade"
+				type: "item"
+			}]
+			x: 5.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["17BECC55BB670FF9"]
+			description: [
+				"The best of the best."
+				""
+				"Moves:"
+				"64 items/tick"
+				"10000 mB/tick"
+				"131072 FE/tick"
+				"40000 mB Gas/tick"
+			]
+			id: "17144F2E821CE341"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "3D361E5CCF9478C0"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "1D71410F98541CBD"
+				item: "pipez:ultimate_upgrade"
+				type: "item"
+			}]
+			x: 6.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["326B7D5ACBAC2C5A"]
+			description: ["Supreme Machine Frames unlock you only the most powerful machines available."]
+			id: "78CC9D63DA2FDE66"
+			rewards: [{
+				id: "2B583207C4EF9F33"
+				item: {
+					Count: 1
+					id: "minecraft:paper"
+					tag: {
+						display: {
+							Name: "{\"text\":\"1 BanksCo Share\",\"italic\":false}"
+						}
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "2CE70B851C2E89A9"
+				item: "industrialforegoing:machine_frame_supreme"
+				type: "item"
+			}]
+			title: "Supreme Machines"
+			x: -2.5d
+			y: -7.0d
+		}
+	]
+	title: "Age Of Industrialisation"
+}

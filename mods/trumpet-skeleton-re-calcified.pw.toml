@@ -1,0 +1,13 @@
+name = "Trumpet Skeleton - Re-Calcified"
+filename = "TrumpetSkeleton-1.20.1-1.0.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "82f97191b3f2c08c06891701cfc5cd31ae4902a9"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 5511967
+project-id = 610408

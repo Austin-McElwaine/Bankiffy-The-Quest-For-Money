@@ -1,0 +1,13 @@
+name = "Enhanced Block Entities Fork [EBE]"
+filename = "EBE-1.20-1.20.1-0.9.1B.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "581ac917ce1708a708fe5c66eef82e1978972743"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 6958343
+project-id = 1340238

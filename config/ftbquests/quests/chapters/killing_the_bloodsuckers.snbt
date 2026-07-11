@@ -1,0 +1,778 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "killing_the_bloodsuckers"
+	group: "15A08A4162B9FFA4"
+	hide_quest_until_deps_complete: true
+	icon: {
+		Count: 1
+		id: "vampirism:stake"
+		tag: {
+			Damage: 0
+		}
+	}
+	id: "5CC95D710D7A279D"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["A person after my own heart."]
+			hide_until_deps_complete: true
+			id: "66E077B32E36F7A6"
+			invisible: true
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "3D4CF47CD5C326B5"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				advancement: "vampirism:hunter/become_hunter"
+				criterion: ""
+				id: "0A0A2FC470DFA90B"
+				type: "advancement"
+			}]
+			title: "Liberate Those With The Urge"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["66E077B32E36F7A6"]
+			description: ["There are hundreds of us! Find a hunter camp to begin your training, just look for a tent and a couple dudes."]
+			id: "6A7EFC2509680188"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7AFC678D2E1BBA45"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "6E9F80F0A9D1B28B"
+				structure: "vampirism:hunter_camp"
+				title: "Find A Hunter Camp"
+				type: "structure"
+			}]
+			title: "Find Your Allies"
+			x: 0.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["6A7EFC2509680188"]
+			description: ["To begin leveling up, talk to one of the hunters. They'll train you if you bring them some vampire blood, best go to one of those forests and burn it down."]
+			icon: "createdeco:decal_up"
+			id: "378C6AA4851E15D6"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "46B1AD21BF6A8BFA"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "49AFD76B0B20C878"
+				item: "vampirism:vampire_blood_bottle"
+				type: "item"
+			}]
+			title: "First Level"
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["378C6AA4851E15D6"]
+			description: ["Hunters have to get crafty to take on vampires, on your first level up you get the ability to one-hit-kill vamps with stakes when they're below 35% health. Best to start stabbing."]
+			id: "45B505F6ECF78E9E"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "391C66DC9554ED41"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "3E2D8A22808E6B25"
+				item: {
+					Count: 1
+					id: "vampirism:stake"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Skill Unlock"
+			x: -1.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["378C6AA4851E15D6"]
+			description: ["This and next level are pretty generic, just go out killing more vamps (hint: use the stake to get blood from normal vamps)"]
+			icon: "createdeco:decal_up"
+			id: "6CE496701F4350DE"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "180D4F0B5F7E89D6"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				count: 5L
+				id: "222F5E96B1C9DE5A"
+				item: { Count: 5, id: "vampirism:vampire_blood_bottle" }
+				type: "item"
+			}]
+			title: "Level 3"
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["6CE496701F4350DE"]
+			description: ["I promise there's a shakeup after this level, you gotta prove that you actually hate vamps afterall."]
+			icon: "createdeco:decal_up"
+			id: "757900F2913F742D"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "443D5C69F346977E"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				count: 12L
+				id: "396C16EFEA9856F3"
+				item: { Count: 5, id: "vampirism:vampire_blood_bottle" }
+				type: "item"
+			}]
+			title: "Level 4"
+			x: 0.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["757900F2913F742D"]
+			description: ["To level up further you have to do some research first. Craft yourself a Hunter Table and open its GUI. By inspecting some special items you will get some intel/research about vampires which you can use to level up at a Vampire Hunter Trainer in a village or outpost."]
+			id: "1CF3B657E9A93543"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "1CA7F5C452A0CED2"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "38D360BF787A038D"
+				item: "vampirism:hunter_table"
+				type: "item"
+			}]
+			title: "Further Reading Required"
+			x: -1.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["1CF3B657E9A93543"]
+			description: ["Outposts are all over the world, if you do plan to be a master vamp hunter the trainer can be found there, along with some goodies."]
+			id: "73DDF261FE7AFA47"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "28E80BCCC55BAE1E"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "351979EFE6F5A235"
+				structure: "#vampirism:hunter_outpost"
+				title: "Find A Hunter Outpost"
+				type: "structure"
+			}]
+			x: -1.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["1CF3B657E9A93543"]
+			description: ["Your main source of leveling is now from the Vampire Hunter Trainer. Go give him a visit and hand him these items to level up."]
+			icon: "createdeco:decal_up"
+			id: "5F006968F219A8C3"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "76D0DA2DDDCC5EE2"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [
+				{
+					id: "72130CF112F42275"
+					item: "vampirism:hunter_intel_0"
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "16352C5EFBCF889D"
+					item: { Count: 5, id: "minecraft:iron_ingot" }
+					type: "item"
+				}
+			]
+			title: "Level 5"
+			x: -2.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["1CF3B657E9A93543"]
+			description: ["For level 5 and up you now require intel in order to level up. For Level 5 you need some fangs, a book, and a vampire book. Vampire books can be found all around the world in chests."]
+			icon: "vampirism:hunter_intel_0"
+			id: "25EB02EAC7FEB41F"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "0530116895990F68"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [
+				{
+					id: "0452B09743B17730"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "item(vampirism:vampire_book)"
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 10L
+					id: "7877561A93B7A0C4"
+					item: { Count: 10, id: "vampirism:vampire_fang" }
+					type: "item"
+				}
+				{
+					id: "40642303E3794C8E"
+					item: "minecraft:book"
+					type: "item"
+				}
+			]
+			title: "Intel Inside"
+			x: -1.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["5F006968F219A8C3"]
+			description: ["This is the earliest level you can unlock the alchemical cauldron, this is one of the hunter's special crafting blocks to make some anti-vamp items."]
+			id: "071720A9FCE0CD1C"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "02AB9FF54EC07804"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "7052D1D376B4B09B"
+				item: "vampirism:alchemical_cauldron"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["071720A9FCE0CD1C"]
+			description: ["Alchemical Fire is a unique item to hunters that burns forever and does not spread, could be used for some nice base building."]
+			id: "3688E456F9F5AF1B"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "30013E68FD1B24A8"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "408F8E98B3EDAB2D"
+				item: "vampirism:item_alchemical_fire"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["071720A9FCE0CD1C"]
+			description: ["Pure salt is used in the process to make holy water. While I a pure devout holy man hate the idea of wasting holy water on them vamps, it is a sacrifice I'm willing to make."]
+			id: "227D3029AD698788"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "01328B9BEF36E898"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "266B20D75005AFBB"
+				item: "vampirism:pure_salt"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["227D3029AD698788"]
+			description: ["With the power of God (and holding right click) we can turn this salt water into holy water, hallelujah."]
+			id: "73C0F4C83CFA45F4"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "78E544EBF2A633E2"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [
+				{
+					id: "4FE1BBF4E0595B6E"
+					item: "vampirism:pure_salt_water"
+					type: "item"
+				}
+				{
+					id: "5F32C501295AEBC0"
+					item: "vampirism:altar_cleansing"
+					type: "item"
+				}
+			]
+			title: "Blessings From The Lord"
+			x: -2.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["5F006968F219A8C3"]
+			description: ["As you continue leveling you will need more vampire blood and fangs, other than that it's as simple as talking to the trainer and paying his fee."]
+			icon: "createdeco:decal_up"
+			id: "636A79D590B4381D"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "2B1017BF63BF9430"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [
+				{
+					id: "748ADD06862728E8"
+					item: "vampirism:hunter_intel_1"
+					type: "item"
+				}
+				{
+					count: 10L
+					id: "1D081924264E9B00"
+					item: { Count: 5, id: "minecraft:iron_ingot" }
+					type: "item"
+				}
+			]
+			title: "Level 6"
+			x: -3.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["071720A9FCE0CD1C"]
+			description: ["The best offense is a good defense, why not make a garlic diffuser and defend your turf from them vamps."]
+			id: "58A0521AE76F75C0"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "2B9535149C8F9733"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "5ACD05AB9208B1A0"
+				item: "vampirism:garlic_diffuser_normal"
+				type: "item"
+			}]
+			title: "Diffusion"
+			x: -3.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["636A79D590B4381D"]
+			description: ["Hey, you're getting good at this hunting vamps thing."]
+			icon: "createdeco:decal_up"
+			id: "3E2FB7AEBDD24840"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "60A5331386476A02"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [
+				{
+					id: "5051D92943D5E131"
+					item: "vampirism:hunter_intel_2"
+					type: "item"
+				}
+				{
+					count: 15L
+					id: "10D084BEDA2F891B"
+					item: { Count: 5, id: "minecraft:iron_ingot" }
+					type: "item"
+				}
+			]
+			title: "Level 7"
+			x: -3.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["3E2FB7AEBDD24840"]
+			description: ["Won't lie, looks the trainer is ripping you off."]
+			icon: "createdeco:decal_up"
+			id: "2AB1094F82A2AC8A"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "3DAE821E37F21DA4"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [
+				{
+					id: "2850D55AC2BC0DD7"
+					item: "vampirism:hunter_intel_3"
+					type: "item"
+				}
+				{
+					count: 40L
+					id: "589C6E6F99F05F00"
+					item: { Count: 5, id: "minecraft:iron_ingot" }
+					type: "item"
+				}
+			]
+			title: "Level 8"
+			x: -3.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["2AB1094F82A2AC8A"]
+			description: ["Gold now? What a scammer."]
+			icon: "createdeco:decal_up"
+			id: "10495E9F7E514EA2"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "535B718683B2BA24"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [
+				{
+					id: "34468651B0AC7E7E"
+					item: "vampirism:hunter_intel_4"
+					type: "item"
+				}
+				{
+					count: 20L
+					id: "52F915DDC39CD004"
+					item: { Count: 5, id: "minecraft:iron_ingot" }
+					type: "item"
+				}
+				{
+					count: 10L
+					id: "1EF3DBE37F3F3BC6"
+					item: { Count: 10, id: "minecraft:gold_ingot" }
+					type: "item"
+				}
+			]
+			title: "Level 9"
+			x: -4.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["10495E9F7E514EA2"]
+			description: ["10 Gold Increase, not bad."]
+			icon: "createdeco:decal_up"
+			id: "3F9093030E1CD7BA"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7EF67FF6BB8101CC"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [
+				{
+					id: "13E8E90B49F573AE"
+					item: "vampirism:hunter_intel_5"
+					type: "item"
+				}
+				{
+					count: 20L
+					id: "57CA2BA5F8E139CB"
+					item: { Count: 5, id: "minecraft:iron_ingot" }
+					type: "item"
+				}
+				{
+					count: 20L
+					id: "0386DD998277FD0F"
+					item: { Count: 10, id: "minecraft:gold_ingot" }
+					type: "item"
+				}
+			]
+			title: "Level 10"
+			x: -5.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["3F9093030E1CD7BA"]
+			description: ["No one tell him he lowered the price."]
+			icon: "createdeco:decal_up"
+			id: "68A59F632EEB0926"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "47C070BF31E0A837"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [
+				{
+					id: "4FDA0861C686911A"
+					item: "vampirism:hunter_intel_6"
+					type: "item"
+				}
+				{
+					count: 20L
+					id: "21B69A4F84D20E2F"
+					item: { Count: 5, id: "minecraft:iron_ingot" }
+					type: "item"
+				}
+				{
+					count: 10L
+					id: "67F8726AD4391FF1"
+					item: { Count: 10, id: "minecraft:gold_ingot" }
+					type: "item"
+				}
+			]
+			title: "Level 11"
+			x: -5.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["68A59F632EEB0926"]
+			description: ["And more iron again, dude doesn't know what to charge."]
+			icon: "createdeco:decal_up"
+			id: "3FD85A24FBC12983"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "61E1875AA999A3B9"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [
+				{
+					id: "1FDE6AAF0F4A5530"
+					item: "vampirism:hunter_intel_7"
+					type: "item"
+				}
+				{
+					count: 30L
+					id: "1F9CADB15B877D41"
+					item: { Count: 5, id: "minecraft:iron_ingot" }
+					type: "item"
+				}
+				{
+					count: 10L
+					id: "4876A342BE771F37"
+					item: { Count: 10, id: "minecraft:gold_ingot" }
+					type: "item"
+				}
+			]
+			title: "Level 12"
+			x: -5.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["3FD85A24FBC12983"]
+			description: ["Shoot, he figured it out."]
+			icon: "createdeco:decal_up"
+			id: "1B67BB37E8E16C51"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5DC5848E76ADC55E"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [
+				{
+					id: "4B046E26BA436B48"
+					item: "vampirism:hunter_intel_8"
+					type: "item"
+				}
+				{
+					count: 40L
+					id: "7D1C08745F878599"
+					item: { Count: 5, id: "minecraft:iron_ingot" }
+					type: "item"
+				}
+				{
+					count: 20L
+					id: "2DEE695190C463B7"
+					item: { Count: 10, id: "minecraft:gold_ingot" }
+					type: "item"
+				}
+			]
+			title: "Level 13"
+			x: -5.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["1B67BB37E8E16C51"]
+			description: ["Finally, after all this time all the journals are mine!"]
+			icon: "createdeco:decal_up"
+			id: "64AEF0A72A1F29C0"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "553D2F542856E90A"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [
+				{
+					id: "40438BC13DB369C2"
+					item: "vampirism:hunter_intel_9"
+					type: "item"
+				}
+				{
+					count: 40L
+					id: "009C5AD8FF40F0AE"
+					item: { Count: 5, id: "minecraft:iron_ingot" }
+					type: "item"
+				}
+				{
+					count: 40L
+					id: "17B8445C0595CE82"
+					item: { Count: 10, id: "minecraft:gold_ingot" }
+					type: "item"
+				}
+			]
+			title: "Level 14"
+			x: -5.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["64AEF0A72A1F29C0"]
+			description: [
+				"You've finally risen through the ranks and became a lord, as a lord you have access to the hunter employees to help you out."
+				""
+				"Minions have an inventory that can be used to store items but also to equip the minion with weapons and armor. Furthermore, their appearance can be changed, and you can assign them a new name. Obviously, you can give them commands. Either individually by interacting with the minion and selecting the desired task or by using the minion task menu. The menu can be accessed either by a dedicated keybinding (unbound by default) or by pressing space while your action menu is displayed. You can still access the actions by hitting space in the minion task menu (or by using the action 1/2 keybinding directly)."
+				""
+				"Minions will stay in the world even when you disconnect from the server or change the dimension. If a minion is hurt severely, it will teleport to safety and recover. Once recovered you can retrieve it using the minion task menu."
+				""
+				"As a lord you can recruit hunter NPCs by giving them basic hunter minion equipment. However, not all hunters are willing to serve somebody, so you have to look for weaker ones. You can upgrade their equipment and improve their capabilities using hunter minion upgrades."
+			]
+			id: "1552C693098EB34C"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "4E621B4DB8EF33F8"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				advancement: "vampirism:minion/become_lord"
+				criterion: ""
+				id: "46E3EF5B83DB0FED"
+				title: "Become A Hunter Lord"
+				type: "advancement"
+			}]
+			title: "Hunter Lordship"
+			x: -5.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["1552C693098EB34C"]
+			description: ["Interact with one of your minions and tell it to defend an area."]
+			id: "3B7F4D08CB76156F"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "4CFEDAEB0026E059"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				advancement: "vampirism:minion/defend_area"
+				criterion: ""
+				id: "60F36C9C50D4EB1B"
+				title: "Send Your Minions To Guard An Area"
+				type: "advancement"
+			}]
+			title: "Task: Defend"
+			x: -6.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["1552C693098EB34C"]
+			description: ["Interact with one of your minions and tell it to collect resources."]
+			id: "526997A33E6E35DB"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7433705367FA11AD"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				advancement: "vampirism:minion/collect_hunter_items"
+				criterion: ""
+				id: "21D818A346C684A1"
+				title: "Send Your Minions To Gather Resources"
+				type: "advancement"
+			}]
+			title: "Task: Resources"
+			x: -5.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["1552C693098EB34C"]
+			description: ["Interact with one of your minions and tell it to defend you."]
+			id: "1DB9D3519E2A1702"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "270623E26EB812EA"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				advancement: "vampirism:minion/protect_lord"
+				criterion: ""
+				id: "067DB5B516499293"
+				title: "Command Your Minions To Guard You"
+				type: "advancement"
+			}]
+			title: "Task: Protect"
+			x: -4.0d
+			y: -8.0d
+		}
+		{
+			dependencies: [
+				"3B7F4D08CB76156F"
+				"1DB9D3519E2A1702"
+				"526997A33E6E35DB"
+			]
+			dependency_requirement: "one_started"
+			description: ["Work your way up the ladder and become the hunter of all hunters (before me of course)."]
+			id: "55E5C75340F1E053"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "404259DDF2CF06CF"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				advancement: "vampirism:hunter/max_lord"
+				criterion: ""
+				id: "215AC9CD539829EA"
+				title: "Become A Vampire Prince(ss)"
+				type: "advancement"
+			}]
+			title: "Become A Hunter Brigadier"
+			x: -5.0d
+			y: -9.0d
+		}
+		{
+			dependencies: ["66E077B32E36F7A6"]
+			description: ["The name is Vladislav Morevsky, leader of The Brotherhood of Nocturnal Labor. We've been eyeing BanksCo awhile, and we think with your help we can finally take the big man out himself. Do you really want to side with your CEO and the vampire hunters? Maybe you should turn back now, or even join us in taking down the big man himself?"]
+			id: "511684DB6A3A0EC3"
+			optional: true
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "4F8945D54021BFEF"
+				table_id: 7121739201460103405L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "4F3D494617FC056C"
+				item: "vampirism:injection_sanguinare"
+				type: "item"
+			}]
+			title: "Not Too Late"
+			x: -1.0d
+			y: 0.0d
+		}
+	]
+	title: "Killing The Bloodsuckers"
+}

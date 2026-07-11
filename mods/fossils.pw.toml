@@ -1,0 +1,13 @@
+name = "Fossils and Archeology: Revival"
+filename = "fossil-forge-1.20.1-9.3.2.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "dcf1c9b0b9f157815cebf9cad1569a8d4d60a696"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7484415
+project-id = 223908

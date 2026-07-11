@@ -1,0 +1,13 @@
+name = "Ender IO: ReCreated"
+filename = "EnderIOReCreated_1.0.0-forge.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "5bbb1e087a1cbffca1a6367bac2059cf3c9c0e7b"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 4874771
+project-id = 939426

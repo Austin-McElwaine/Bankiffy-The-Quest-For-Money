@@ -1,0 +1,78 @@
+{
+	id: "44E098588F3B6BBD"
+	loot_crate: {
+		color: 16777215
+		drops: {
+			boss: 0
+			monster: 0
+			passive: 0
+		}
+		string_id: "vladislav_loot_bloodmagic"
+	}
+	loot_size: 1
+	order_index: 3
+	rewards: [
+		{ item: "vampirism:blood_infused_enhanced_iron_ingot", random_bonus: 2 }
+		{ item: "bloodmagic:blankslate", random_bonus: 2 }
+		{ item: "bloodmagic:reinforcedslate", random_bonus: 2 }
+		{ item: "bloodmagic:infusedslate", random_bonus: 2 }
+		{ item: "bloodmagic:demonslate", random_bonus: 2 }
+		{ item: "bloodmagic:etherealslate", random_bonus: 2 }
+		{ item: "bloodmagic:blankrune", random_bonus: 4 }
+		{
+			item: {
+				Count: 1
+				id: "bloodmagic:arcaneashes"
+				tag: {
+					Damage: 0
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1
+				id: "bloodmagic:alchemy_flask"
+				tag: {
+					Damage: 0
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1
+				id: "bloodmagic:alchemy_flask_throwable"
+				tag: {
+					Damage: 0
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1
+				id: "bloodmagic:alchemy_flask_lingering"
+				tag: {
+					Damage: 0
+				}
+			}
+		}
+		{ item: "bloodmagic:soulsnare", random_bonus: 1 }
+		{ item: "vampiresdelight:blood_syrup", random_bonus: 3 }
+		{
+			item: {
+				Count: 1
+				id: "vampiresdelight:blood_wine_bottle"
+				tag: {
+					Damage: 0
+				}
+			}
+		}
+		{ item: "vampiresdelight:blood_wine_glass", random_bonus: 3 }
+		{ item: "vampiresdelight:blood_dough", random_bonus: 3 }
+		{ item: "vampiresdelight:blood_bagel", random_bonus: 3 }
+		{ item: "vampiresdelight:blood_pie" }
+		{ item: "vampiresdelight:blood_pie_slice", random_bonus: 3 }
+		{ item: "vampiresdelight:blood_sausage", random_bonus: 3 }
+		{ item: "vampiresdelight:blood_hot_dog", random_bonus: 3 }
+	]
+	title: "Vladislav Loot BloodMagic"
+}

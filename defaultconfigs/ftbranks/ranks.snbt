@@ -1,0 +1,153 @@
+{
+  new_employee: {
+    name: "New_Employee"
+    power: 1
+    condition: "always_active"
+    ftbchunks.max_claimed: 500
+    ftbchunks.max_force_loaded: 25
+    ftbchunks.chunk_load_offline: false
+    ftbranks.name_format: "New-Employee {name}&r"
+  }
+
+  trainee: {
+    name: "Trainee"
+    power: 2
+    condition: {
+      type: "playtime"
+      time: 1
+      time_unit: "days"
+    }
+    ftbchunks.max_claimed: 550
+    ftbchunks.max_force_loaded: 25
+    ftbchunks.chunk_load_offline: false
+    ftbranks.name_format: "Trainee {name}&r"
+  }
+
+  part_time: {
+    name: "Part-Time"
+    power: 3
+    condition: {
+      type: "playtime"
+      time: 3
+      time_unit: "days"
+    }
+    ftbchunks.max_claimed: 600
+    ftbchunks.max_force_loaded: 30
+    ftbchunks.chunk_load_offline: false
+    ftbranks.name_format: "Part-Time {name}&r"
+  }
+
+  full_time: {
+    name: "Full-Time"
+    power: 4
+    condition: {
+      type: "playtime"
+      time: 5
+      time_unit: "days"
+    }
+    ftbchunks.max_claimed: 700
+    ftbchunks.max_force_loaded: 35
+    ftbchunks.chunk_load_offline: true
+    ftbranks.name_format: "Full-Time {name}&r"
+  }
+
+  senior: {
+    name: "Senior"
+    power: 5
+    condition: {
+      type: "playtime"
+      time: 1
+      time_unit: "weeks"
+    }
+    ftbchunks.max_claimed: 800
+    ftbchunks.max_force_loaded: 40
+    ftbchunks.chunk_load_offline: true
+    ftbranks.name_format: "Senior {name}&r"
+  }
+
+  manager: {
+    name: "Manager"
+    power: 6
+    condition: {
+      type: "playtime"
+      time: 2
+      time_unit: "weeks"
+    }
+    ftbchunks.max_claimed: 1000
+    ftbchunks.max_force_loaded: 50
+    ftbchunks.chunk_load_offline: true
+    ftbranks.name_format: "Manager {name}&r"
+  }
+
+  senior_manager: {
+    name: "Senior-Manager"
+    power: 7
+    condition: {
+      type: "playtime"
+      time: 3
+      time_unit: "weeks"
+    }
+    ftbchunks.max_claimed: 1250
+    ftbchunks.max_force_loaded: 70
+    ftbchunks.chunk_load_offline: true
+    ftbranks.name_format: "Senior-Manager {name}&r"
+  }
+
+  assistant_to_the_ceo: {
+    name: "Assistant_To_The_CEO"
+    power: 8
+    condition: {
+      type: "playtime"
+      time: 4
+      time_unit: "weeks"
+    }
+    ftbchunks.max_claimed: 1500
+    ftbchunks.max_force_loaded: 100
+    ftbchunks.chunk_load_offline: true
+    ftbranks.name_format: "Assistant-To-The-CEO {name}&r"
+  }
+
+  coo: {
+    name: "COO"
+    power: 9
+    condition: {
+      type: "playtime"
+      time: 5
+      time_unit: "weeks"
+    }
+    ftbchunks.max_claimed: 2000
+    ftbchunks.max_force_loaded: 200
+    ftbchunks.chunk_load_offline: true
+    ftbranks.name_format: "COO {name}&r"
+  }
+
+  co_ceo: {
+    name: "CO-CEO"
+    power: 10
+    condition: {
+      type: "playtime"
+      time: 6
+      time_unit: "weeks"
+    }
+    ftbchunks.max_claimed: 5000
+    ftbchunks.max_force_loaded: 500
+    ftbchunks.chunk_load_offline: true
+    ftbranks.name_format: "CO-CEO {name}&r"
+  }
+
+  ceo: {
+    name: "CEO"
+    power: 11
+    condition: {
+      type: "playtime"
+      time: 12
+      time_unit: "weeks"
+    }
+    ftbchunks.max_claimed: 10000
+    ftbchunks.max_force_loaded: 5000
+    ftbchunks.chunk_load_offline: true
+    ftbranks.name_format: "CEO {name}&r"
+  }
+}
+
+

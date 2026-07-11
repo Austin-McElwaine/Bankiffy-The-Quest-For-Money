@@ -1,0 +1,13 @@
+name = "BankSystem"
+filename = "banksystem-forge-1.4.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "48ab066575cfb891f9110d0740a130666251c029"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 6200135
+project-id = 1175370

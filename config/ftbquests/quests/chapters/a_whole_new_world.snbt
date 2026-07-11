@@ -1,0 +1,594 @@
+{
+	always_invisible: true
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "a_whole_new_world"
+	group: "7CFCEAC35D52A876"
+	hide_quest_until_deps_complete: true
+	icon: "draconicevolution:chaos_shard"
+	id: "6EA3940B4CD2D353"
+	order_index: 4
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["7D73F0D2DFB886CE"]
+			description: [
+				"You did it! This is it, your final task, if you choose to accept it is draconic evolution."
+				""
+				"(Fun fact, cores can be used to grab mob spawners, the better the core, the more bonuses the spawner gets, they are replacable once you get a newer core)"
+			]
+			id: "32700FD484FE9749"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "778FACEB7148228C"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "4D1AEF4A2D884074"
+				item: "draconicevolution:draconium_core"
+				type: "item"
+			}]
+			title: "Bankiffy: End Game"
+			x: -5.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["32700FD484FE9749"]
+			description: ["The Wyvern Energy Controller is one of the crafted materials used for Draconic Fusion Crafting and a few normal crafting recipes. It's main purpose is to serve as the power object of the item."]
+			id: "3EF2DFB320597ECD"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "053FDC3578D10A89"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "194B7EE0C52CB7AE"
+				item: "draconicevolution:wyvern_energy_core"
+				type: "item"
+			}]
+			title: "Wyvern Building Block 1"
+			x: -4.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["32700FD484FE9749"]
+			description: ["The Wyvern Core is actually used more later on than right now, but do keep in mind that it's your next building block after the draconium core."]
+			id: "7CE0F64336E5B728"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "2CC4314186554183"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "7779B31C560F6B44"
+				item: "draconicevolution:wyvern_core"
+				type: "item"
+			}]
+			title: "Wyvern Building Block 2"
+			x: -4.5d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"3EF2DFB320597ECD"
+				"7CE0F64336E5B728"
+			]
+			description: ["Fusion crafting invloves placing the core 2 blocks away between two sets of injectors, for instance 4 on the left and 4 on the right, with each injector being provided power. Honestly these injectors are the worst ones and you only need 8 to progress to the next tier. In addition to Wyvern Injectors this tier you can also make a draconium chest, if your current storage still isn't cutting it."]
+			id: "26CB6D1E6C634952"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "10ECF1F3EF09A770"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [
+				{
+					id: "057B3B794E17EB3E"
+					item: "draconicevolution:crafting_core"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "029072F13CEA34FC"
+					item: { Count: 8, id: "draconicevolution:basic_crafting_injector" }
+					type: "item"
+				}
+			]
+			title: "Fusion Crafting"
+			x: -3.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["26CB6D1E6C634952"]
+			description: ["Look, the chest is cool and all as it has tons of storage, autosmelting, and built in crafting, but if this is your best idea for storage, maybe look at the previous chapter's ME system or the QIO system this chapter."]
+			id: "41CF4C8AC54D3CCE"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "4DE5124E046624EE"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "7BFE4A2CD48DED4E"
+				item: "draconicevolution:draconium_chest"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["26CB6D1E6C634952"]
+			description: ["Previous tier was very short... Wyvern Injectors do give you some options when it comes to items."]
+			id: "7DE51DD272FE23FC"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7CBDA1113FD0FF48"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				count: 8L
+				id: "2629BF48024D2F53"
+				item: { Count: 8, id: "draconicevolution:wyvern_crafting_injector" }
+				type: "item"
+			}]
+			title: "Wyvern Tier"
+			x: -1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7DE51DD272FE23FC"]
+			description: ["Even Draconic Evolution has a wrench, this is used for configuring energy crystals for powerful energy movement."]
+			id: "40B544D6D7FD7A71"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "678A5AE79C9EE0D9"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "31697D0D35B947ED"
+				item: "draconicevolution:crystal_binder"
+				type: "item"
+			}]
+			title: "Every Mod Has A Wrench 6"
+			x: -1.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["40B544D6D7FD7A71"]
+			description: ["Tired of placing cables everywhere? These magic crystals allow you to transport energy to and from places. One crystal can be turned into 2 IO ports, while this crystal is used more as a \"hub\"."]
+			id: "32F070B37A7278EE"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "288C24D616627D1A"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "192553E444D5498C"
+				item: "draconicevolution:basic_relay_crystal"
+				type: "item"
+			}]
+			title: "Wireless Energy"
+			x: -1.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["32F070B37A7278EE"]
+			description: ["Same crystal without the needed IO ports on machines to work."]
+			id: "076DE0786CE9EB5D"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "6F97F04FB089C500"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "69494EB2FA6B0663"
+				item: "draconicevolution:basic_wireless_crystal"
+				type: "item"
+			}]
+			title: "Even More Wireless"
+			x: -2.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["26CB6D1E6C634952"]
+			description: ["The base of all thing upgrade/power wise for Draconic Evolution items."]
+			id: "1B805ED3997CBCE7"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "47FD7EA17F592B16"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "5934CB12CE21963E"
+				item: "draconicevolution:module_core"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["1B805ED3997CBCE7"]
+			description: ["The most basic form of giving your draconic tools/items power. Upgradable in later tiers."]
+			id: "65A52C56EEE1DF21"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "1F7396266918AA43"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "339A082CA5909DB9"
+				item: "draconicevolution:item_draconium_energy"
+				type: "item"
+			}]
+			title: "I HAVE THE POWER!!!"
+			x: -3.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["7DE51DD272FE23FC"]
+			description: ["Want to never die, like ever? This is pretty much it, not that you were dying that much earlier anyways."]
+			id: "09D13AE604F17C21"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "36939DA9E39D1240"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "67E7CAEB0E3A3EE3"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							energy: {
+								energy: 0
+							}
+							module_host: {
+								modules: [ ]
+								properties: { }
+								provider_id: [I;
+									-1745388850
+									-583319266
+									-1700807224
+									626784008
+								]
+							}
+						}
+					}
+					id: "draconicevolution:wyvern_chestpiece"
+				}
+				type: "item"
+			}]
+			title: "Unkillable"
+			x: -1.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["09D13AE604F17C21"]
+			description: ["Want to do the killing? Again, you probably already kill everything in one shot by now, but why not kill things even betterer."]
+			id: "5B039A44FD0CDF7A"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "29F22CBC0616D51B"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "603DB7E629408CC8"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							energy: {
+								energy: 0
+							}
+							module_host: {
+								modules: [ ]
+								properties: { }
+								provider_id: [I;
+									596089070
+									1963543268
+									-1088580377
+									1285840360
+								]
+							}
+						}
+					}
+					id: "draconicevolution:wyvern_sword"
+				}
+				type: "item"
+			}]
+			title: "Killer"
+			x: -2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["09D13AE604F17C21"]
+			description: ["Now you don't even have to get up close to a mob to one shot them, do it from the comfort of your front lawn."]
+			id: "58520A0223009F8A"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "337DD288BB7AD357"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "0F916A34FBE4FDA9"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							energy: {
+								energy: 0
+							}
+							module_host: {
+								modules: [ ]
+								properties: { }
+								provider_id: [I;
+									155586534
+									-815771898
+									-1618349313
+									1941541128
+								]
+							}
+						}
+					}
+					id: "draconicevolution:wyvern_bow"
+				}
+				type: "item"
+			}]
+			title: "Pew Pew Pew"
+			x: -1.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["7DE51DD272FE23FC"]
+			description: ["The Dragon was shot through the heart and you're to blame. You might as well use it to make some sick gear, otherwise you'd give love a bad name."]
+			id: "47BF5A128D9D7A18"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "6DC1CA9F1BFE93A3"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "5F30C8580136110F"
+				item: "draconicevolution:dragon_heart"
+				type: "item"
+			}]
+			title: "Dragon <3 You"
+			x: -0.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7DE51DD272FE23FC"]
+			description: ["Are these quests even a surprise anymore? Are they even difficult? What are we doing here?"]
+			id: "75424FF39840CD5B"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "44709715F2B1DEEA"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "75D227D52EC44AEF"
+				item: "solarflux:sp_de.wyvern"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["47BF5A128D9D7A18"]
+			description: ["With the power of the dragon's love you can enhance draconium and make it better, hope you have a way to automate getting hearts, or have time to kill."]
+			id: "587F45EC65F38655"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "29BF4E4E6811B0BB"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				count: 4L
+				id: "68B25CDAD8AC2AAB"
+				item: { Count: 4, id: "draconicevolution:awakened_draconium_block" }
+				type: "item"
+			}]
+			title: "Heart Infusion"
+			x: 0.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["587F45EC65F38655"]
+			description: ["The Wyvern Controller, but just at a higher tier, nothing really to write home about."]
+			id: "5C1AE2F66450D4B9"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "22B93014E43B82F6"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "68CD8051FB429F24"
+				item: "draconicevolution:draconic_energy_core"
+				type: "item"
+			}]
+			title: "Draconic Building Block 1"
+			x: 1.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["587F45EC65F38655"]
+			description: ["This is more of the previous thing, just more expensive."]
+			id: "5255B7C18F834FDC"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "4AA84EBFA9165F76"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "5EC17AA3A12E274E"
+				item: "draconicevolution:awakened_core"
+				type: "item"
+			}]
+			title: "Draconic Building Block 2"
+			x: 1.5d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"5C1AE2F66450D4B9"
+				"5255B7C18F834FDC"
+			]
+			description: ["The major deal on this tier is probably the staff of power, otherwise it's pretty basic with the standard tools and power relays."]
+			id: "6008DEAE8EC3A168"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "08D3FB31B198A325"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "0112C27C064E6A00"
+				item: "draconicevolution:awakened_crafting_injector"
+				type: "item"
+			}]
+			title: "Draconic Tier"
+			x: 2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6008DEAE8EC3A168"]
+			description: ["I doubt you need this."]
+			id: "727CA9EAADF00D63"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5E8C4ABFC4CB69D0"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "74B482599914A001"
+				item: "solarflux:sp_de.draconic"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["6008DEAE8EC3A168"]
+			description: ["When you just can't get enough, I'm so proud."]
+			id: "4054E497280D7166"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "1953F8C429788F00"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "5626EB8A4B18A46A"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							energy: {
+								energy: 0
+							}
+							module_host: {
+								modules: [ ]
+								properties: { }
+								provider_id: [I;
+									1390867170
+									1722567745
+									-1685734405
+									1877212632
+								]
+							}
+						}
+					}
+					id: "draconicevolution:draconic_chestpiece"
+				}
+				type: "item"
+			}]
+			title: "Even More Unkillable"
+			x: 2.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["6008DEAE8EC3A168"]
+			description: ["Whoever has this in a fight just wins, need I say more? Also frees the clutter of other tools from your hotbar, not that Inventory space is a concern anymore."]
+			id: "5C847C62814E26C1"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "2B4AD3792305A494"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "6F96C804FEDF6B03"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							energy: {
+								energy: 0
+							}
+							module_host: {
+								modules: [ ]
+								properties: {
+									mining_speed: {
+										hud: 1b
+										value: 1.0d
+									}
+								}
+								provider_id: [I;
+									69991894
+									-448771233
+									-1691808242
+									-38840850
+								]
+							}
+						}
+					}
+					id: "draconicevolution:draconic_staff"
+				}
+				type: "item"
+			}]
+			title: "Staff Of Power"
+			x: 2.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["5C847C62814E26C1"]
+			description: ["Deep within the end there is another dragon, a much much more powerful one, even with all this armor it will put up a fight, beware!"]
+			id: "110E39E735DAAACD"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "44F7E77000CA6180"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				entity: "draconicevolution:draconic_guardian"
+				icon: "draconicevolution:chaos_shard"
+				id: "6B527A13520CF577"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Kill The Chaos Guardian"
+			x: 2.5d
+			y: -2.0d
+		}
+	]
+	title: "A Whole New World"
+}

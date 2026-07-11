@@ -1,0 +1,854 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "vampire_blood_magic"
+	group: "384E14C64169B316"
+	hide_quest_until_deps_complete: true
+	icon: "bloodmagic:altar"
+	id: "6BE549EA835F28A3"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"09966F96BAD9522A"
+				"7275C5DCB60A1698"
+			]
+			dependency_requirement: "one_completed"
+			description: ["With the power of blood one unlocks unlimited potential."]
+			id: "64B236A6927231BB"
+			rewards: [{
+				id: "07F2EF7829DF58D2"
+				item: {
+					Count: 1
+					id: "patchouli:guide_book"
+					tag: {
+						"patchouli:book": "bloodmagic:guide"
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "75B4EF98BF5EC611"
+				title: "Ancient Vampiric Magic"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["64B236A6927231BB"]
+			description: [
+				"The blood altar is where you'll be storing blood for rituals."
+				""
+				"If you just prick your finger with the knife here, you can fill it with some blood."
+			]
+			icon: "bloodmagic:altar"
+			id: "22A2E1459B3D5F3C"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "4771B2F07FAF2E35"
+				table_id: 4963134295489866685L
+				type: "loot"
+			}]
+			tasks: [
+				{
+					id: "7275C5DCB60A1698"
+					item: "bloodmagic:altar"
+					type: "item"
+				}
+				{
+					id: "47B72603AC22B277"
+					item: {
+						Count: 1
+						id: "bloodmagic:sacrificialdagger"
+						tag: {
+							sacrifice: 0b
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Taking Some Blood"
+			x: 0.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["22A2E1459B3D5F3C"]
+			description: ["The blood orb is the first item you'll want to craft after filling the altar with some blood."]
+			id: "3DC7724FC4ACAC5E"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7F4732CB4AD2458D"
+				table_id: 4963134295489866685L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "632D78DEFC79B332"
+				item: "bloodmagic:weakbloodorb"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["22A2E1459B3D5F3C"]
+			description: [
+				"Slates are one of the generic crafting items used within bloodmagic, with various tiers complicating things..."
+				""
+				"You'll also use these to upgrade your altar as you go, hopefully you have quite a bit of space cleared for your altar."
+			]
+			id: "1C43D85B8FD968D5"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "013EF2B812DA762B"
+				table_id: 4963134295489866685L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "25AE3380DF8F2287"
+				item: "bloodmagic:blankslate"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["22A2E1459B3D5F3C"]
+			description: [
+				"Soul Snares are used to get some demon wills against their will. Simply throw the snare at anything and kill it to get a will."
+				""
+				"Note: If you have particles off you will not be able to see if the snare is \"working\", I'd recommend turning them on when using soul snares."
+			]
+			id: "301E24FCA4C37B4A"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "394D2558DF096E1F"
+				table_id: 4963134295489866685L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "2B9DB9A0C2F09BC2"
+				item: "bloodmagic:soulsnare"
+				type: "item"
+			}]
+			title: "Demon Hunter"
+			x: 0.5d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"1C43D85B8FD968D5"
+				"301E24FCA4C37B4A"
+			]
+			description: ["The Hellfire Forge is what you'll be using all your demon wills on. Simply slot in the materials needed for your crafting with the wills needed on the right."]
+			id: "4CDE03A88F591CC4"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "55CA8544F4F51ADD"
+				table_id: 4963134295489866685L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "4AC26D93B3A2FBAF"
+				item: "bloodmagic:soulforge"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["4CDE03A88F591CC4"]
+			description: ["Having all those souls in your inventory is a bit tedious, how about using this gem to store all the souls you get instead?"]
+			id: "2AFEAD4F8CA9B954"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5B5140F49CEE9DB8"
+				table_id: 4963134295489866685L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "2FD6745E4BA93456"
+				item: {
+					Count: 1
+					id: "bloodmagic:soulgempetty"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "Soul Storage"
+			x: 1.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["2AFEAD4F8CA9B954"]
+			description: [
+				"Soul Snares are so lame to use, plus carrying those wills are a pain. With the use of the Sentient Sword and that gem you made earlier, you can kill mobs and harvest wills without the use of snares."
+				""
+				"Make sure to \"activate\" the sword with right click, otherwise it won't do any damage."
+			]
+			id: "4C777826FF7B87D7"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "6F40DF64223115B4"
+				table_id: 4963134295489866685L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "612026C817A279B2"
+				item: {
+					Count: 1
+					id: "bloodmagic:soulsword"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 1.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["1C43D85B8FD968D5"]
+			description: ["To unlock tier 2 of the altar, simply surround the floor with blank runes, the 4 non-corner pieces can be replaced with \"upgrade blocks\" but that's a different conversation."]
+			icon: "bloodmagic:altar"
+			id: "2CDB71A12D53FE4F"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "18828ECF7D632E30"
+				table_id: 4963134295489866685L
+				type: "loot"
+			}]
+			tasks: [{
+				count: 8L
+				id: "63099216016DBE45"
+				item: { Count: 8, id: "bloodmagic:blankrune" }
+				type: "item"
+			}]
+			title: "Blood Altar Tier 2"
+			x: -1.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["1C43D85B8FD968D5"]
+			description: ["The alchemy table can be used to do some alchemy (duh). You can use all your blood and orbs to make sigils and salves."]
+			id: "484025A3C297940D"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5F107FA90D6553E3"
+				table_id: 4963134295489866685L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "04E09A240DBBD223"
+				item: "bloodmagic:alchemytable"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["484025A3C297940D"]
+			description: ["Time to do some pretty cool rituals, right click the ground with the ashes then place your reagent on it plus whatever other items are needed to craft."]
+			id: "1DA345D9D11E9377"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "013EF3DB3E208052"
+				table_id: 4963134295489866685L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "2D1EB24D652430A3"
+				item: {
+					Count: 1
+					id: "bloodmagic:arcaneashes"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -2.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["1DA345D9D11E9377"]
+			description: ["Ever thought armor should be tailor made just for you? Well, living armor will adapt to your surroundings and learn from your behavior, for better or worse."]
+			id: "47F6108D3A9C91F4"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "3B309A599247C5A1"
+				table_id: 4963134295489866685L
+				type: "loot"
+			}]
+			tasks: [
+				{
+					id: "3D42EDE4BB252B89"
+					item: {
+						Count: 1
+						id: "bloodmagic:livinghelmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1CF2E56E421611B1"
+					item: {
+						Count: 1
+						id: "bloodmagic:livingplate"
+						tag: {
+							Damage: 0
+							livingStats: {
+								evolved: 0b
+								maxPoints: 100
+								upgrades: [ ]
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "413EFE947D5F3545"
+					item: {
+						Count: 1
+						id: "bloodmagic:livingleggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "334DF858AD49A70D"
+					item: {
+						Count: 1
+						id: "bloodmagic:livingboots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Living Armor"
+			x: -2.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["2CDB71A12D53FE4F"]
+			description: ["If you want more blood storage, look no further."]
+			id: "14C22CE5B4F85FC6"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "61B829E02D9B184A"
+				table_id: 4963134295489866685L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "6BFC1999EBAE6F49"
+				item: "bloodmagic:apprenticebloodorb"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["47F6108D3A9C91F4"]
+			description: ["Using this sigil, you can stand near your plants and grow them faster. You can place this in your curio charm slot or in your newly made armor."]
+			id: "6620125DC5F7074E"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "4BA23B6C4BC03D7B"
+				table_id: 4963134295489866685L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "5BA0FD5F8624C022"
+				item: {
+					Count: 1
+					id: "bloodmagic:growthsigil"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "Green Thumb"
+			x: -0.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["47F6108D3A9C91F4"]
+			description: ["Using this sigil, you can apply haste on yourself. You can place this in your curio charm slot or in your newly made armor."]
+			id: "5BF89A27A0F43392"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "22839BFE4077DBE5"
+				table_id: 4963134295489866685L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "632BB09A2D88FD52"
+				item: {
+					Count: 1
+					id: "bloodmagic:miningsigil"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "Diggy Diggy Hole"
+			x: -3.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["47F6108D3A9C91F4"]
+			description: ["If you want more sigils, just install this to use 5 more sigils."]
+			id: "36F24896EE336354"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "01A63045497CB1DB"
+				table_id: 4963134295489866685L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "4A2EA6CD9E6FF937"
+				item: {
+					Count: 1
+					id: "bloodmagic:sigilofholding"
+					tag: {
+						currentSigil: 5
+					}
+				}
+				type: "item"
+			}]
+			title: "Sigil In Your Sigil"
+			x: -3.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["47F6108D3A9C91F4"]
+			description: ["Using this sigil, you can become moses and part most bodies of liquid, maybe just don't jump directly into lava hoping this saves you. You can place this in your curio charm slot or in your newly made armor."]
+			id: "1A61FB41707FB50D"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5838F27064BB8288"
+				table_id: 4963134295489866685L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "52582DB804EB6A7F"
+				item: {
+					Count: 1
+					id: "bloodmagic:sigilofsuppression"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "Moses"
+			x: -2.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["1DA345D9D11E9377"]
+			description: ["Using this sigil, you can check how much blood you have on, or in a block. Simply right click!"]
+			id: "18B346F1BE093C71"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "1B85DDA05D2C12B9"
+				table_id: 4963134295489866685L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "0BBA0E7ADA678ACC"
+				item: {
+					Count: 1
+					id: "bloodmagic:divinationsigil"
+					tag: {
+						binding: {
+							id: [I;
+								-1281014692
+								341593303
+								-1410670579
+								-1417952925
+							]
+							name: "bankerboy"
+						}
+					}
+				}
+				type: "item"
+			}]
+			title: "Status Check"
+			x: -1.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["18B346F1BE093C71"]
+			description: ["Simply a more advanced Divination Sigil."]
+			id: "03E553C5F4A0F9FF"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "57164FD6EC60D6A0"
+				table_id: 4963134295489866685L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "3103098C37E8866C"
+				item: {
+					Count: 1
+					id: "bloodmagic:seersigil"
+					tag: {
+						binding: {
+							id: [I;
+								-1281014692
+								341593303
+								-1410670579
+								-1417952925
+							]
+							name: "bankerboy"
+						}
+					}
+				}
+				type: "item"
+			}]
+			title: "Status Check II"
+			x: 0.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["47F6108D3A9C91F4"]
+			description: ["Using this sigil, you can bring items up to 7 blocks away from you to be picked up. You can place this in your curio charm slot or in your newly made armor."]
+			id: "13D48508F6B73FA2"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7B999C04CD8837DF"
+				table_id: 4963134295489866685L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "443D621CD653709D"
+				item: {
+					Count: 1
+					id: "bloodmagic:sigilofmagnetism"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "Magnets, How Do They Work?"
+			x: -1.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["4CDE03A88F591CC4"]
+			description: ["Pricking yourself is fun and all, but sometimes you just don't wanna hurt youself. Stab an enemy by a blood altar and harvest their blood instead."]
+			id: "1C762A662DAF61B3"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "71C00908F8F4495B"
+				table_id: 4963134295489866685L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "390CDCAB5AE3F15B"
+				item: "bloodmagic:daggerofsacrifice"
+				type: "item"
+			}]
+			title: "Blood From Others"
+			x: 1.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["484025A3C297940D"]
+			description: ["Flasks can help make you some powerful potions, maybe test it out?"]
+			id: "2B4098BD6B6991A1"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "636CE6F68E7A87F3"
+				table_id: 4963134295489866685L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "2C7E610342A7ABA6"
+				item: {
+					Count: 1
+					id: "bloodmagic:alchemy_flask"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Alchemy"
+			x: -2.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["1DA345D9D11E9377"]
+			description: ["As a vampire, the light is your enemy. You could always just turn it night and not deal with the daylight. Place 2 lapis in a ritual spot and watch it turn night!"]
+			icon: "forbidden_arcanus:crescent_moon"
+			id: "51AA082D0C1262B4"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5565991FD8C0D8EF"
+				table_id: 4963134295489866685L
+				type: "loot"
+			}]
+			tasks: [
+				{
+					id: "6DF91972475C8738"
+					item: {
+						Count: 1
+						id: "bloodmagic:arcaneashes"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "3F5A105C200862FD"
+					item: { Count: 2, id: "minecraft:lapis_lazuli" }
+					type: "item"
+				}
+			]
+			title: "Let It Be Night"
+			x: -3.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["2CDB71A12D53FE4F"]
+			description: [
+				"Best to check the book then to listen to me on how to build this structure. You'll also need some lights to put on top of the bricks."
+				""
+				"Note: The book has a visualize feature to help build the upgraded altar."
+			]
+			icon: "bloodmagic:altar"
+			id: "0993BFB10F772E15"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7914EF9D04DFE9C8"
+				table_id: 4963134295489866685L
+				type: "loot"
+			}]
+			tasks: [
+				{
+					count: 20L
+					id: "269B5CDE82563375"
+					item: { Count: 20, id: "bloodmagic:blankrune" }
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "7033CEE3A807082C"
+					item: { Count: 8, id: "minecraft:stone_bricks" }
+					type: "item"
+				}
+			]
+			title: "Blood Altar Tier 3"
+			x: -2.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["0993BFB10F772E15"]
+			description: ["If you want more blood storage, look no further."]
+			id: "69C1ED568CA98595"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "6F665B4604E73F5E"
+				table_id: 4963134295489866685L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "7F937C23268D2280"
+				item: "bloodmagic:magicianbloodorb"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["0993BFB10F772E15"]
+			description: [
+				"Best to check the book then to listen to me on how to build this structure. You'll also need some blood bricks to put on top of the bricks."
+				""
+				"Note: The book has a visualize feature to help build the upgraded altar."
+			]
+			icon: "bloodmagic:altar"
+			id: "2C718AC302425FB7"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "02A3FE7E9575280F"
+				table_id: 4963134295489866685L
+				type: "loot"
+			}]
+			tasks: [
+				{
+					count: 28L
+					id: "351E37A86875FCD9"
+					item: { Count: 28, id: "bloodmagic:blankrune" }
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "3CF130F6C6C36ACF"
+					item: { Count: 16, id: "minecraft:stone_bricks" }
+					type: "item"
+				}
+			]
+			title: "Blood Altar Tier 4"
+			x: -3.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["2C718AC302425FB7"]
+			description: ["If you want more blood storage, look no further."]
+			id: "2157852E228AAE02"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "68E1012CB7E9CD5D"
+				table_id: 4963134295489866685L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "48A1C48EEFA20A2F"
+				item: "bloodmagic:masterbloodorb"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["0993BFB10F772E15"]
+			description: ["The ARC is a powerful machine that can be used to process powerful items and even duplicate ore."]
+			id: "40B1D78D98CB4C6B"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5D2400415562F2C6"
+				table_id: 4963134295489866685L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "66C0E049C07DEFCD"
+				item: "bloodmagic:alchemicalreactionchamber"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["2C718AC302425FB7"]
+			description: [
+				"Best to check the book then to listen to me on how to build this structure. You'll also need some ingot blocks to put in the corners."
+				""
+				"Note: The book has a visualize feature to help build the upgraded altar."
+			]
+			icon: "bloodmagic:altar"
+			id: "087C6AA354B6571C"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "259EBD21CE32F39F"
+				table_id: 4963134295489866685L
+				type: "loot"
+			}]
+			tasks: [{
+				count: 52L
+				id: "6B32072684923CD5"
+				item: { Count: 52, id: "bloodmagic:blankrune" }
+				type: "item"
+			}]
+			title: "Blood Altar Tier 5"
+			x: -4.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["2AFEAD4F8CA9B954"]
+			description: [
+				"While holding the ritual diviner, shift right click and you can select a ritual to build. Once you have one selected right click the master ritual stone and it will autobuild the ritual structure (assuming you have the materials)."
+				""
+				"There's also a [Dusk] version that gives you even more options. Remember to RTFM!"
+			]
+			id: "22C4568C955F284C"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5EB9B30D4CEC318A"
+				table_id: 4963134295489866685L
+				type: "loot"
+			}]
+			tasks: [
+				{
+					id: "01E4C025A95BD5FB"
+					item: {
+						Count: 1
+						id: "bloodmagic:ritualdiviner"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "41BFF8879C492201"
+					item: "bloodmagic:masterritualstone"
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["22C4568C955F284C"]
+			description: ["Perform the Edge Of The Hidden Realm ritual and visit the demon realm and find the dungeons."]
+			id: "07689E0A14A6C951"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "6063D21358C6D09A"
+				table_id: 4963134295489866685L
+				type: "loot"
+			}]
+			tasks: [{
+				dimension: "bloodmagic:dungeon"
+				id: "40248CE375068542"
+				type: "dimension"
+			}]
+			title: "Edge Of The Hidden Realm"
+			x: 2.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["07689E0A14A6C951"]
+			description: ["Demonite is the material you're after, it'll allow you to get the best blood orb and other late blood magic goodies."]
+			id: "5A97172C0B9614C8"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "4F0CDF308C32F750"
+				table_id: 4963134295489866685L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "3D47FD601008FD30"
+				item: "bloodmagic:rawdemonite"
+				type: "item"
+			}]
+			title: "Demonite"
+			x: 2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["087C6AA354B6571C"]
+			description: ["If you want more blood storage, look no further."]
+			id: "2BA60B428A98269F"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "39D99C0177C404B4"
+				table_id: 4963134295489866685L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "48D16182FF540445"
+				item: "bloodmagic:archmagebloodorb"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 0.5d
+		}
+	]
+	title: "Blood Magic"
+}

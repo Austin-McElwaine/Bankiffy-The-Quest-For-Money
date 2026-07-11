@@ -1,0 +1,13 @@
+name = "Mo' Bees"
+filename = "mobees-1.20.1-0.1.5.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "934ada91b88a9de8ab76adffcf8799e1c5a37811"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 6820708
+project-id = 1256969

@@ -1,0 +1,2027 @@
+{
+	consume_items: false
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "employment_orientation"
+	group: "7CFCEAC35D52A876"
+	hide_quest_until_deps_complete: true
+	icon: "banksystem:money"
+	id: "6D861EE4AB1D8FE8"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"Welcome to your first day on the job at BanksCo. I am Mr. Banks himself and I am pleased to welcome you to our great and wonderful business. HR will onboard you on the company culture and start assigning you some tasks. Until then I look forward to you making me tons of money!"
+				""
+				"Note for actual modpack mechanics, this is not a hardcore pack, more of a progression pack, one could probably ignore the questbook and be fine. Some mods are packed with others in the questbook, but you still have the freedom of choice to do what mods you want to play with."
+				""
+				"Note: These mods are planned for future content updates, play with the current config at your own risk:"
+				"Fossils and Archeology"
+				"Bloody Hell!"
+				"Forestry"
+				"Ars Nouveau"
+				"Forbidden Arcanus"
+				"Occultism"
+			]
+			id: "1C29C4A50DAF3F4B"
+			rewards: [{
+				id: "7DC6C1ADEFA53B99"
+				item: "minecolonies:supplycampdeployer"
+				type: "item"
+			}]
+			subtitle: "What did I sign up for?"
+			tasks: [{
+				id: "311D6F4DB963F8A2"
+				type: "checkmark"
+			}]
+			title: "First Day"
+			x: -1.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["1C29C4A50DAF3F4B"]
+			description: [
+				"You &omay&r have noticed that some default tools are disabled. But as a totally original idea that hasn't been used in any other modpack before, you will be forced to use tinkers atleast in the early game. The book has been provided for you within your tome for your convenience."
+				""
+				"But first take this, it's dangerous to go alone!"
+			]
+			id: "5C8F6F382658E33D"
+			rewards: [{
+				count: 8
+				id: "69497FDAF0DF4D73"
+				item: {
+					Count: 1
+					id: "pamhc2foodextended:pizzasliceitem"
+					tag: {
+						display: {
+							Name: "{\"text\":\"BanksCo Pizza Slice\",\"italic\":false}"
+						}
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "Your encyclopedia of tools"
+			tasks: [{
+				id: "1D138E56E9344DBD"
+				item: "tconstruct:materials_and_you"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["5C8F6F382658E33D"]
+			description: ["Flax may be the easiest thing to get your hands on in order to get the string needed for a pattern, you could also take your chances fighting spiders."]
+			icon: "tconstruct:pattern"
+			id: "60F670E06464767F"
+			rewards: [{
+				id: "456C9A6E603140F4"
+				item: "tconstruct:pattern"
+				type: "item"
+			}]
+			tasks: [
+				{
+					count: 2L
+					id: "5B50409E120F3A47"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "item_tag(minecraft:planks)"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "0AC4E60BED592F15"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "item_tag(forge:string)"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "3AFC20BB4078D72B"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "item_tag(forge:rods/wooden)"
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Following The Patterns"
+			x: 2.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["5C8F6F382658E33D"]
+			description: [
+				"Sandstone tools could prove useful before you begin working on your tinkers items. Better hope sand is nearby"
+				""
+				"Note: You cannot mine iron with these."
+			]
+			id: "3ABC8CF98A0139F6"
+			rewards: [{
+				count: 3
+				id: "5E7C9AEE5AC23A55"
+				item: "croptopia:ham_sandwich"
+				type: "item"
+			}]
+			subtitle: "A Tool For Tools"
+			tasks: [
+				{
+					id: "10FAB5F49CBFF74E"
+					item: {
+						Count: 1
+						id: "cyclic:sandstone_sword"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "43AEEBFEF2BBD470"
+					item: {
+						Count: 1
+						id: "cyclic:sandstone_axe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5E0D36084C04E45C"
+					item: {
+						Count: 1
+						id: "cyclic:sandstone_pickaxe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "0F4D730CF3C29D3A"
+					item: {
+						Count: 1
+						id: "cyclic:sandstone_hoe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "198DA8A4A28038A8"
+					item: {
+						Count: 1
+						id: "cyclic:sandstone_shovel"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Sandstone tools"
+			x: 0.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["3ABC8CF98A0139F6"]
+			description: ["You &oreally&r like sand huh? You can use these as temporary casts for your tinkers parts, which may be useful if your strapped for the materials for &oreal&r casts"]
+			id: "0B994413969F032C"
+			rewards: [{
+				id: "18644CC2A0A27FBA"
+				item: "tconstruct:ingot_cast"
+				type: "item"
+			}]
+			tasks: [{
+				count: 4L
+				id: "59D06DDEFB3B5D23"
+				item: { Count: 4, id: "tconstruct:blank_sand_cast" }
+				type: "item"
+			}]
+			title: "Coarse and Rough"
+			x: 2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["60F670E06464767F"]
+			description: ["You need the part builder and tinker station to make tools, and in addition I require you to build a crafting station, just cause"]
+			id: "6A2BBE78AF5F73FD"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7E88C0E32A589465"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [
+				{
+					id: "637EF0DC77A8C1BD"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "item(tconstruct:tinker_station)"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "041AFA3A5338A363"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "item(tconstruct:crafting_station)"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "25A388482D46D457"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "item(tconstruct:part_builder)"
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "All The Tables"
+			x: 3.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["6A2BBE78AF5F73FD"]
+			description: ["So, you now probably have stone tools at this point, but there's so many more ores out there. if you want higher tiered tools you'll need to get a smeltery setup. First step to doing that is gathering some grout."]
+			id: "3A1E098D2B7E75F4"
+			rewards: [{
+				id: "799EEAB838C3B9B9"
+				item: "tconstruct:puny_smelting"
+				type: "item"
+			}]
+			subtitle: "I am Grout!"
+			tasks: [{
+				id: "6B1E4B56C7468209"
+				item: "tconstruct:grout"
+				type: "item"
+			}]
+			x: 5.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["3A1E098D2B7E75F4"]
+			description: ["You probably found out you can't just smelt grout normally, you need to place it into a jumbo furnace. To make a jumbo furnace you place furnaces in a 3x3 pattern."]
+			icon: "jumbofurnace:jumbo_furnace"
+			id: "5B051D2E41B972A4"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "6054C5ACCA3F40F8"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			subtitle: "Big boy"
+			tasks: [{
+				count: 27L
+				id: "1CC0DD5248B6A767"
+				item: { Count: 9, id: "minecraft:furnace" }
+				type: "item"
+			}]
+			title: "Jumbo Furnace"
+			x: 6.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["5B051D2E41B972A4"]
+			description: ["This is technically the first alloy you unlock, you don't have the redstone for it just yet unless if you got lucky and found some."]
+			id: "50891729CC38B9AC"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "1DE0D828F9138CA2"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "0EB47637EBCB560A"
+				item: "morered:red_alloy_ingot"
+				type: "item"
+			}]
+			title: "Baby's First Alloy"
+			x: 6.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["5B051D2E41B972A4"]
+			description: ["At this point you can finally melt ores down and make higher tiered tools, yay!"]
+			id: "487FF7861F9D377A"
+			rewards: [{
+				id: "36F68DF0C9FE7265"
+				item: "tconstruct:mighty_smelting"
+				type: "item"
+			}]
+			subtitle: "Little boy"
+			tasks: [
+				{
+					id: "685BF040588709F7"
+					item: "tconstruct:seared_melter"
+					type: "item"
+				}
+				{
+					id: "3F89E51D1384E8DF"
+					item: "tconstruct:seared_faucet"
+					type: "item"
+				}
+				{
+					id: "5134F1B27B0DE396"
+					item: "tconstruct:seared_heater"
+					type: "item"
+				}
+				{
+					id: "5F9B59C26A377445"
+					item: "tconstruct:seared_table"
+					type: "item"
+				}
+				{
+					id: "2D2C6FACE8A7D9C8"
+					item: "tconstruct:seared_basin"
+					type: "item"
+				}
+			]
+			title: "Melting Time"
+			x: 6.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["487FF7861F9D377A"]
+			description: ["This neat item will allow you to create more advanced tools"]
+			id: "4D17EAF94AC3208E"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "181D99B9C054513F"
+				table_id: 8245807045670435212L
+				type: "choice"
+			}]
+			tasks: [{
+				id: "2E262F5B16303B80"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "item(tconstruct:tinkers_anvil)"
+					}
+				}
+				type: "item"
+			}]
+			title: "Tinker's Anvil"
+			x: 8.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["487FF7861F9D377A"]
+			description: ["About time we get the real deal and not that baby melter, imagine using that thing"]
+			id: "7500BFEF4B7B78EF"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "1F202C2CA3D455AA"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [
+				{
+					id: "7DA119209E7D8795"
+					item: "tconstruct:smeltery_controller"
+					type: "item"
+				}
+				{
+					id: "058EDD1BD8C4E124"
+					item: "tconstruct:seared_fuel_tank"
+					type: "item"
+				}
+				{
+					count: 9L
+					id: "0104DB05E60D9D3C"
+					item: { Count: 9, id: "tconstruct:seared_bricks" }
+					type: "item"
+				}
+				{
+					id: "2CEBFAFC96F4C747"
+					item: "tconstruct:seared_drain"
+					type: "item"
+				}
+			]
+			title: "The Smeltery "
+			x: 5.0d
+			y: 1.0d
+		}
+		{
+			description: ["Slimes in the sky, how can we profit from this?"]
+			hide_until_deps_complete: true
+			id: "2E8FA8194F5416BB"
+			invisible: true
+			rewards: [
+				{
+					id: "3D1A810CD6563234"
+					item: {
+						Count: 1
+						id: "tconstruct:tinkers_gadgetry"
+						tag: {
+							mantle: {
+								book: {
+									current_page: "gadgets.piggybackpack"
+								}
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 4
+					id: "1F0C9BC3EFA34473"
+					item: "tinkersdelight:skyslime_sweets"
+					type: "item"
+				}
+			]
+			tasks: [{
+				advancement: "tconstruct:world/sky_island"
+				criterion: ""
+				id: "66F6DF5B0C70EA6E"
+				type: "advancement"
+			}]
+			title: "Skyslime Island"
+			x: 8.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["50891729CC38B9AC"]
+			description: ["Redstone is a powerful tool to some minecrafters. This may be a godsend to some and a nothingburger to others. I will say however that these plus a redstone clock or timer may prove useful when automating your smeltery's  drains."]
+			id: "77A9D231985C1F4C"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7BF2BFF6F918D53E"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			subtitle: "Redstone on walls"
+			tasks: [{
+				id: "4ED7AD75E14E2A17"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "item_tag(morered:red_alloy_wires)"
+					}
+				}
+				title: "Red Alloy Wire"
+				type: "item"
+			}]
+			title: "Basic Automation"
+			x: 6.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["5C8F6F382658E33D"]
+			description: ["Once again, my hate of teleporting has showed up again, but instead of waystones we now have have a fancy fast travel system that also requires you to build infrastructure. Lawn base people in shambles..."]
+			id: "0A23F2FD8D581412"
+			rewards: [{
+				id: "3C262D2B4DCC1DD7"
+				item: "via_romana:charting_map"
+				type: "item"
+			}]
+			tasks: [{
+				id: "537647C51274CB61"
+				title: "No /home!"
+				type: "checkmark"
+			}]
+			title: "No TP!"
+			x: 0.5d
+			y: 1.0d
+		}
+		{
+			description: ["These look familiar"]
+			id: "056386CD13F651A4"
+			invisible: true
+			rewards: [{
+				count: 4
+				id: "46F3D5A19393905B"
+				item: "tinkersdelight:earthslime_cake_slice"
+				type: "item"
+			}]
+			tasks: [{
+				advancement: "tconstruct:world/earth_island"
+				criterion: ""
+				id: "7E09718DFA8E95D2"
+				type: "advancement"
+			}]
+			title: "Earthslime Island"
+			x: 8.0d
+			y: -2.0d
+		}
+		{
+			description: ["Greg must be in shambles by clay being in the sky..."]
+			id: "00958B4AC031CCEF"
+			invisible: true
+			rewards: [{
+				count: 64
+				id: "53B4F388E0601207"
+				item: "minecraft:clay_ball"
+				type: "item"
+			}]
+			tasks: [{
+				advancement: "tconstruct:world/clay_island"
+				criterion: ""
+				id: "5671376B9A768216"
+				type: "advancement"
+			}]
+			title: "Unbalanced!"
+			x: 9.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["7500BFEF4B7B78EF"]
+			description: ["If you wanna carry mobs to and from your base you'll now actually have to use an item to do it, sorry not sorry"]
+			id: "0B97880B6B877181"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "68FBCA9A9DFEA4A0"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "7AED40C104C27BD9"
+				item: "tconstruct:piggy_backpack"
+				type: "item"
+			}]
+			title: "No Carryon either"
+			x: 3.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["487FF7861F9D377A"]
+			description: ["You now have access to craft andesite alloy, which will prove useful in the Create age, stay tuned!"]
+			id: "3E8FADC0C0C47F0B"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "3E1B47700B0050E1"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "34EDC88F69113CC4"
+				item: "create:andesite_alloy"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["77A9D231985C1F4C"]
+			description: ["This nifty gadget will allow you to send out pulses of redstone, neat!"]
+			id: "55B44319036206C6"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "3E5C45C007D44377"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "56877B22BAAB7EC5"
+				item: "projectred_integration:timer_gate"
+				type: "item"
+			}]
+			title: "Automated redstone output"
+			x: 6.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["6A2BBE78AF5F73FD"]
+			description: ["Let's face it, modded minecraft adds lots of different item types, you'll need the extra storage space."]
+			id: "4176F5501EE7AD76"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "4C25012751B17296"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "395AD5782344B15B"
+				item: {
+					Count: 1
+					id: "sophisticatedbackpacks:backpack"
+					tag: {
+						contentsUuid: [I;
+							466778365
+							-707049528
+							-1556583950
+							1529309259
+						]
+						inventorySlots: 27
+						renderInfo: {
+							upgradeItems: [{
+								Count: 1b
+								id: "minecraft:air"
+								tag: {
+									Damage: 0
+								}
+							}]
+						}
+						upgradeSlots: 1
+					}
+				}
+				type: "item"
+			}]
+			title: "Storage On The Go"
+			x: 3.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["487FF7861F9D377A"]
+			description: ["Some gear for your travels, can be customized like other tinker items"]
+			id: "31C4389F8CA51F04"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "13F081AAFB74FAAC"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [
+				{
+					id: "3C49FC0B24C69259"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "item(tconstruct:travelers_helmet)"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "19CA5CAC3E78E63E"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "item(tconstruct:travelers_chestplate)"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "65B8B421C2B10D09"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "item(tconstruct:travelers_leggings)"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1E1CF20F81A54684"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "item(tconstruct:travelers_boots)"
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Travel Gear"
+			x: 8.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["7500BFEF4B7B78EF"]
+			description: ["This is pretty much the end-all be-all of tinkers, the cool thing about it is that you get bonus outputs (steel from iron anybody?)"]
+			id: "1886BE6CE0748E18"
+			rewards: [{
+				id: "2AD403507A7CEF57"
+				item: "tconstruct:blazing_blood_bucket"
+				type: "item"
+			}]
+			tasks: [{
+				id: "4007F4AAF00E7061"
+				item: "tconstruct:foundry_controller"
+				type: "item"
+			}]
+			title: "The Foundry"
+			x: 5.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["7500BFEF4B7B78EF"]
+			description: ["If you somehow manage to smelt an actual blaze, you can extract its blood and use it to cook stuff. (theonlyblaze was not harmed in the making of this)"]
+			id: "73917ABC3B968CC8"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "4C02F2D8DEF6BFE5"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "3BEDB8078F541C7F"
+				item: "tconstruct:blazing_blood_bucket"
+				type: "item"
+			}]
+			title: "Better Than Lava"
+			x: 3.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["31C4389F8CA51F04"]
+			description: ["Armor with actual protection and the same benefits of tinkers' modularity."]
+			id: "4C61585AB371F92D"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "636729AE10D9AFE4"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [
+				{
+					id: "6CA8746AB809B33E"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "item(tconstruct:plate_helmet)"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1F06130588386DD2"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "item(tconstruct:plate_chestplate)"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "2060410E3E590BF3"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "item(tconstruct:plate_leggings)"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5D7DA2A0E58C788C"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "item(tconstruct:plate_boots)"
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Plate Armor"
+			x: 9.5d
+			y: 2.5d
+		}
+		{
+			description: ["I for one, hate those darn bloodsuckers, just know you will be terminated from BanksCo if you choose to continue down this path..."]
+			hide_until_deps_complete: true
+			id: "19C9E453D13B70B4"
+			invisible: true
+			rewards: [{
+				id: "354212233EC1281A"
+				item: "vampirism:vampire_fang"
+				type: "item"
+			}]
+			tasks: [{
+				advancement: "vampirism:main/vampire_forest"
+				criterion: ""
+				id: "51E696CD8CA58506"
+				type: "advancement"
+			}]
+			title: "Home For Vamps"
+			x: 9.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["1C29C4A50DAF3F4B"]
+			description: ["This cool item speed up the growth of crops, in case you need an output of a crop fast"]
+			id: "08058B9CF428CADA"
+			rewards: [{
+				count: 3
+				id: "36C7E01EDAFBD07C"
+				item: "chemlib:water"
+				type: "item"
+			}]
+			tasks: [{
+				id: "4DD60FE368BC4A7A"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "item(mysticalagriculture:watering_can)"
+					}
+				}
+				type: "item"
+			}]
+			title: "Insta-Crops"
+			x: -1.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["08058B9CF428CADA"]
+			dependency_requirement: "one_completed"
+			description: ["Knives will allow you to harvest more drops from plants and animals, this may be nice early game for food harvesting"]
+			id: "644E2A9B9C640858"
+			rewards: [{
+				count: 3
+				id: "0A341BADE4690A16"
+				item: "minecraft:cooked_beef"
+				type: "item"
+			}]
+			tasks: [{
+				id: "6EEA6B1BCB16F899"
+				item: {
+					Count: 1
+					id: "farmersdelight:flint_knife"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Extra Meat"
+			x: -2.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["644E2A9B9C640858"]
+			description: ["A cutting board allows you to cut up various items to make some more saturating meals, scrumptious."]
+			id: "0F6EBB3DFDF8264E"
+			rewards: [{
+				count: 3
+				id: "123B524B35C2E443"
+				item: "delightful:cantaloupe_bread"
+				type: "item"
+			}]
+			tasks: [{
+				id: "764BDD212F0C5403"
+				item: "farmersdelight:cutting_board"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["644E2A9B9C640858"]
+			description: ["Cooking on the go! You can place this on a campfire and cook up your grub"]
+			id: "24B143DF0F9E8930"
+			rewards: [{
+				count: 3
+				id: "5C64050C4BFAB2B2"
+				item: "croptopia:cooked_bacon"
+				type: "item"
+			}]
+			tasks: [{
+				id: "4D382A9E0DCDD34E"
+				item: {
+					Count: 1
+					id: "farmersdelight:skillet"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -5.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["644E2A9B9C640858"]
+			description: ["More food recipes unlocked! Build up that food variety."]
+			id: "3B16CC8761FD8B3F"
+			rewards: [{
+				count: 3
+				id: "149F7258043AABE6"
+				item: "pamhc2foodcore:noodlesoupitem"
+				type: "item"
+			}]
+			tasks: [{
+				id: "69B7F5A2BD88F695"
+				item: "farmersdelight:cooking_pot"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["644E2A9B9C640858"]
+			description: ["A Cooking For Blockheads kitchen setup will provide you with the tools you need to quickly craft complex foods"]
+			id: "3D262ECA39D92899"
+			rewards: [{
+				count: 5
+				id: "6B32223878F578D4"
+				item: "pamhc2foodcore:butteredbakedpotatoitem"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "031C5CD28785B93A"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "item_tag(cookingforblockheads:ovens)"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "52121AED24D9E5B4"
+					item: "cookingforblockheads:fridge"
+					type: "item"
+				}
+				{
+					id: "04C9D2F49C60C371"
+					item: "cookingforblockheads:sink"
+					type: "item"
+				}
+				{
+					id: "197D7A02506F83E4"
+					item: "cookingforblockheads:cooking_table"
+					type: "item"
+				}
+			]
+			title: "Home Kitchen"
+			x: -4.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["3D262ECA39D92899"]
+			description: ["&mAt BanksCo we're all about animal cruelty to turn a profit&r you monster!"]
+			id: "18D6EB3628DFDFF8"
+			rewards: [{
+				count: 3
+				id: "3B35C75A3D2C2E55"
+				item: "minecolonies:milky_bread"
+				type: "item"
+			}]
+			tasks: [{
+				id: "3B49C69B97D1E6EE"
+				item: "cookingforblockheads:cow_jar"
+				type: "item"
+			}]
+			title: "Animal Cruelty"
+			x: -5.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["1C29C4A50DAF3F4B"]
+			description: ["You can buy some saplings, seeds, and fertilizers to further increase the different amount of food you have access to. It could also prove useful if you're hunting a specific tree type."]
+			id: "0C08D54D7B56A194"
+			rewards: [{
+				id: "6B7D614C117528AD"
+				item: "banksystem:money50"
+				type: "item"
+			}]
+			tasks: [{
+				id: "15DBFED8BFE127DA"
+				item: "farmingforblockheads:market"
+				type: "item"
+			}]
+			title: "The First Stock Market"
+			x: -2.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["5C8F6F382658E33D"]
+			description: ["This block/series of blocks will allow you to take any shape of block and apply another block's texture to it, allowing for less blocky builds."]
+			id: "6D4D8AD88B65EE9D"
+			rewards: [
+				{
+					id: "0A89FDA504B8693E"
+					item: "framedblocks:framed_hammer"
+					type: "item"
+				}
+				{
+					id: "1729594B098F25DF"
+					item: "framedblocks:framed_wrench"
+					type: "item"
+				}
+				{
+					id: "536E56DDEF7F54EB"
+					item: "framedblocks:framed_screwdriver"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "17D32EFE053AC6B2"
+				item: "framedblocks:framed_cube"
+				type: "item"
+			}]
+			title: "Building Nicer Bases"
+			x: 2.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["6D4D8AD88B65EE9D"]
+			description: ["Chisels allow you to apply alternative textures to supported blocks, allowing for more detailed builds"]
+			id: "291B50F6BD3A277B"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "08F5B2C211424B3F"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "5DE8437DFA0D6AC4"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "item(rechiseled:chisel)"
+					}
+				}
+				type: "item"
+			}]
+			title: "Building Nicer Bases II"
+			x: 2.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["291B50F6BD3A277B"]
+			description: ["Builders wands allow you to place multiple blocks at a time"]
+			id: "2ED4000014437C28"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "6D4040FEEF56A92C"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "27371D6C1BF37998"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "item(constructionwand:stone_wand)"
+					}
+				}
+				type: "item"
+			}]
+			title: "Building Nicer Bases III"
+			x: 2.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["6D4D8AD88B65EE9D"]
+			description: [
+				"You may have noticed some pesky pollution, and are thinking \"Banks you moron\" I say to that, yes..."
+				""
+				""
+				"Anyhow, to fight against the pollution, other than going green you can build these neato vacuum tubes, and I'll even give you one"
+				""
+				""
+				"All you have to do is build these chimney items, these can be used to redirect all those nasty fumes you've been producing towards the sky"
+				""
+				""
+				"Surely that won't bite us in the long term, right?"
+			]
+			id: "21C75D0627E91003"
+			rewards: [
+				{
+					id: "6F78B7370F137552"
+					item: "adchimneys:stone_pump"
+					type: "item"
+				}
+				{
+					id: "101A34453E4B7C99"
+					item: "adchimneys:stone_vent"
+					type: "item"
+				}
+				{
+					id: "1422F2FC77A90E71"
+					item: "adchimneys:cobblestone_chimney"
+					type: "item"
+				}
+				{
+					id: "23DF287DAF8589FE"
+					item: "adpother:iron_filter_frame"
+					type: "item"
+				}
+				{
+					id: "700500FA3472A8B3"
+					item: {
+						Count: 1
+						id: "adpother:iron_vacuum_tube"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "11F971C7A80FE207"
+				title: "Pollution Solution"
+				type: "checkmark"
+			}]
+			x: 3.5d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"644E2A9B9C640858"
+				"3D262ECA39D92899"
+			]
+			description: ["A Good Cook Keeps Their Kitchen Clean"]
+			id: "46186B6D537AB29C"
+			rewards: [{
+				count: 3
+				id: "53992AD42F9BB4AD"
+				item: "alexsmobs:banana_peel"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7597E1C95F29BB54"
+				item: "trashcans:item_trash_can"
+				type: "item"
+			}]
+			title: "A Tidy Kitchen"
+			x: -4.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["77A9D231985C1F4C"]
+			description: ["Redstone For Those Who Worry About Their Footprint "]
+			id: "44DDD3825C833412"
+			rewards: [
+				{
+					id: "2DE6152AA473FBCB"
+					item: "tinyredstone:tiny_sticky_piston"
+					type: "item"
+				}
+				{
+					id: "10D18CEA3D76EE7F"
+					item: "tinyredstone:tiny_piston"
+					type: "item"
+				}
+				{
+					id: "091616AC665DCA07"
+					item: "tinyredstone:tiny_comparator"
+					type: "item"
+				}
+				{
+					id: "25BB0D6B69EC3FE9"
+					item: "tinyredstone:tiny_redstone_block"
+					type: "item"
+				}
+			]
+			tasks: [{
+				count: 16L
+				id: "33232589920DDB68"
+				item: { Count: 16, id: "tinyredstone:tiny_redstone" }
+				type: "item"
+			}]
+			title: "Baby Automation"
+			x: 8.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["46186B6D537AB29C"]
+			description: ["You Really Are A Messy Person Aren't You"]
+			id: "7254B772AE759CC8"
+			rewards: [
+				{
+					count: 64
+					id: "69FC3DBD56D10FB5"
+					item: "alexsmobs:banana_peel"
+					type: "item"
+				}
+				{
+					id: "62BB48B3E449E150"
+					item: "industrialforegoing:sewage_bucket"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "5B068AE08419F081"
+				item: "trashcans:ultimate_trash_can"
+				type: "item"
+			}]
+			x: -5.5d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"3E8FADC0C0C47F0B"
+				"34EDC88F69113CC4"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"Andesite is a bit more difficult to find given the pack has quark, luckily the nature's compass allows you to search for andesite caves."
+				""
+				"I highly reccomend you build decent create infrastructure to aid you in the future"
+			]
+			id: "38EAD9D1F5CFAF8D"
+			rewards: [{
+				id: "77BBFECC65BE3BE4"
+				item: "ags_modernmarkings:wall_marking_symbol_gears"
+				type: "item"
+			}]
+			shape: "diamond"
+			subtitle: "Have Fun Finding Andesite :)"
+			tasks: [{
+				id: "471DA9C68633207D"
+				item: "create:andesite_casing"
+				type: "item"
+			}]
+			title: "Create Time"
+			x: 6.5d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"38EAD9D1F5CFAF8D"
+				"2ED4000014437C28"
+			]
+			description: ["These Blocks Can Copy The Texture Of Any Kind Of Block You Right Click Them With, There Are More Than Just These Available"]
+			id: "5049B203FFD4B82B"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "4644536B507B094A"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [
+				{
+					id: "2C7F6F1B7E2AA678"
+					item: "copycats:copycat_ladder"
+					type: "item"
+				}
+				{
+					id: "7DE186D9C0E710E2"
+					item: "create_connected:copycat_block"
+					type: "item"
+				}
+				{
+					id: "5BD1CB168FF25660"
+					item: "copycats:copycat_slope"
+					type: "item"
+				}
+			]
+			title: "Building Nicer Bases IV"
+			x: 2.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["38EAD9D1F5CFAF8D"]
+			id: "706A6593E11F81B2"
+			rewards: [{
+				id: "0C8549E18E569AC7"
+				item: "supplementaries:wind_vane"
+				type: "item"
+			}]
+			subtitle: "Harness The Power Of The Air"
+			tasks: [{
+				id: "0DF5C3EA45DC0241"
+				item: "create:white_sail"
+				type: "item"
+			}]
+			title: "Air Bender"
+			x: 8.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["38EAD9D1F5CFAF8D"]
+			id: "6BA121870CAA84FE"
+			rewards: [{
+				id: "02D9E08899324989"
+				item: "minecraft:water_bucket"
+				type: "item"
+			}]
+			subtitle: "Harness The Power Of Water"
+			tasks: [{
+				id: "0899D245F2266E6B"
+				item: "create:water_wheel"
+				type: "item"
+			}]
+			title: "Water Bender"
+			x: 8.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["38EAD9D1F5CFAF8D"]
+			id: "785261F6985DDE6D"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "4627E61DDF81FCFC"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			subtitle: "Split up your gear power"
+			tasks: [{
+				id: "4E6FA1118F165EF3"
+				item: "create:gearbox"
+				type: "item"
+			}]
+			title: "Splitter"
+			x: 4.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["38EAD9D1F5CFAF8D"]
+			description: ["The Create Press is used to flatten or compact items, this will be your go to for sheets"]
+			id: "2DD3AC8B2FCC925C"
+			rewards: [{
+				count: 3
+				id: "0C9916BA57C0905C"
+				item: "pamhc2foodextended:pancakesitem"
+				type: "item"
+			}]
+			subtitle: "Bonk"
+			tasks: [
+				{
+					id: "3BE0D1869B6C2E64"
+					item: "create:mechanical_press"
+					type: "item"
+				}
+				{
+					id: "784B6284ED24985B"
+					item: "create:depot"
+					type: "item"
+				}
+			]
+			title: "Your First Create Machine"
+			x: 5.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["2DD3AC8B2FCC925C"]
+			description: ["This is Create's bread and butter, used for a bunch items"]
+			id: "4450739A471BCB0E"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "4B857DC7DF2FC585"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			subtitle: "You can X so much out of this guy"
+			tasks: [{
+				id: "0D81BF9F2C116D94"
+				item: "create:encased_fan"
+				type: "item"
+			}]
+			title: "Blast/Haunt/Smoke/Wash"
+			x: 5.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["785261F6985DDE6D"]
+			id: "293A79077ACC8EF2"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "014E87B0BACDC591"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			subtitle: "more splits, after all, why not?"
+			tasks: [{
+				id: "5C1795DE57F500B6"
+				item: "create_connected:six_way_gearbox"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["2EF9BF8EAB22D76F"]
+			dependency_requirement: "one_completed"
+			description: ["Store Up Some Of That Kenetic Energy That You're Hopefully Overproducing"]
+			id: "48E4CCE498D1629D"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "4618E797D94D1701"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			subtitle: "Wait, What?"
+			tasks: [{
+				id: "471F049E2F07495B"
+				item: "create_connected:kinetic_battery"
+				type: "item"
+			}]
+			title: "Create: Batteries"
+			x: 11.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["77A9D231985C1F4C"]
+			description: ["Some Fun Redstoning Items For You 2000 IQ Redstoners"]
+			id: "13B072887030A43A"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "37C75E81398DFDE7"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			subtitle: "Logical"
+			tasks: [
+				{
+					id: "5A292B1F162E4C4D"
+					item: "create:pulse_repeater"
+					type: "item"
+				}
+				{
+					id: "3CDB8DD90C0BF051"
+					item: "create:pulse_extender"
+					type: "item"
+				}
+				{
+					id: "0F55BF0F941ADC85"
+					item: "create:pulse_timer"
+					type: "item"
+				}
+				{
+					id: "6AE854E57D7D938B"
+					item: "create:powered_latch"
+					type: "item"
+				}
+				{
+					id: "6070257C3977BC97"
+					item: "create:powered_toggle_latch"
+					type: "item"
+				}
+			]
+			title: "Advanced Redstoning"
+			x: 5.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["38EAD9D1F5CFAF8D"]
+			description: ["Mixers can be used to combine various items together"]
+			id: "0F7B12E40C5A5791"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "0B0B04BFA5EF67EE"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [
+				{
+					id: "76763132CB752370"
+					item: "create:basin"
+					type: "item"
+				}
+				{
+					id: "5301DF7009285984"
+					item: "create:mechanical_mixer"
+					type: "item"
+				}
+			]
+			title: "Mixing It Up"
+			x: 7.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["0F7B12E40C5A5791"]
+			description: ["Making the blue stuff could prove useful in making BanksCo lots of money"]
+			id: "2194ED39799B191C"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "2F9A98ABDB7D6F52"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "00F71E62C4636EC8"
+				item: "createbb:methylamine_bucket"
+				type: "item"
+			}]
+			title: "We Need To Cook Jesse"
+			x: 8.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["2194ED39799B191C"]
+			description: ["Blue adds value"]
+			id: "3B1561DBBF9AEEE4"
+			rewards: [{
+				id: "1BDE4E8AE04EEC3F"
+				item: {
+					Count: 1
+					id: "minecraft:paper"
+					tag: {
+						display: {
+							Name: "{\"text\":\"1 BanksCo Share\",\"italic\":false}"
+						}
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "1807A5304B137CBD"
+				item: "createbb:blue_stuff"
+				type: "item"
+			}]
+			title: "Say My Name"
+			x: 10.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["2E8F1CA7CAF61BFC"]
+			description: ["If Crushing wheels are placed together and are rotating towards eachother they can crush materials down into refined goods."]
+			id: "6FF6B3D715137EA3"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5FCEE91B8E5FC0C8"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				count: 2L
+				id: "36ABC1F23E5AB5F8"
+				item: { Count: 2, id: "create:crushing_wheel" }
+				type: "item"
+			}]
+			title: "Crushing It"
+			x: 9.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["38EAD9D1F5CFAF8D"]
+			description: ["Create, along with every mod has a wrench to configure their own machines. I'll provide a spare just so you have it."]
+			id: "1911C1B1FF8D2D84"
+			rewards: [{
+				id: "18B12D1827BA928F"
+				item: "create:wrench"
+				type: "item"
+			}]
+			subtitle: "You'll Get Used To It"
+			tasks: [{
+				id: "02DCBD6881C3B401"
+				item: "create:wrench"
+				type: "item"
+			}]
+			title: "Every Mod Has A Wrench"
+			x: 5.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["0F7B12E40C5A5791"]
+			description: ["Deployers can act like a player interaction without having to do it yourself, or hire others to do it for you"]
+			id: "23A277ABEAD5078F"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7D17E12212DEEF4E"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "4DBA7A6E96CA9184"
+				item: "create:deployer"
+				type: "item"
+			}]
+			title: "Give Me A Hand"
+			x: 9.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["23A277ABEAD5078F"]
+			description: ["Mechanical Crafters can be used to autocraft, or sometimes just craft items that are too complex for your feeble crafting capabilities."]
+			id: "2E8F1CA7CAF61BFC"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "695B028612CA3846"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				count: 9L
+				id: "06CC063D475D7C26"
+				item: { Count: 9, id: "create:mechanical_crafter" }
+				type: "item"
+			}]
+			title: "Auto Crafting"
+			x: 9.0d
+			y: 8.5d
+		}
+		{
+			dependencies: ["23A277ABEAD5078F"]
+			description: ["Choo! Choo! Time to run some trains!"]
+			id: "2767EA6BEAA10DF5"
+			rewards: [{
+				count: 3
+				id: "28CCE74A8439DD7E"
+				item: "pamhc2foodextended:ceasarsaladitem"
+				type: "item"
+			}]
+			tasks: [{
+				id: "3749614F40F30DC4"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "item_tag(create:tracks)"
+					}
+				}
+				title: "Train Track"
+				type: "item"
+			}]
+			title: "The Trains Will Run On Time"
+			x: 10.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["2767EA6BEAA10DF5"]
+			description: ["I've hired a moron"]
+			id: "3D5950D607590FBF"
+			rewards: [{
+				id: "650D478A47AA5195"
+				item: "railways:white_conductor_cap"
+				type: "item"
+			}]
+			tasks: [{
+				advancement: "railways:strange_tea"
+				criterion: ""
+				id: "29D95E60BDD296A3"
+				type: "advancement"
+			}]
+			title: "Drink Paint"
+			x: 10.5d
+			y: 9.5d
+		}
+		{
+			dependencies: ["2767EA6BEAA10DF5"]
+			description: ["Phantom Tracks are pretty unique as they're invisible to the naked eye"]
+			id: "0BAF5844AE1E30FC"
+			rewards: [{
+				id: "0EB498EB964E634D"
+				item: {
+					Count: 1
+					id: "reliquary:mob_charm"
+					tag: {
+						Damage: 0
+						entity: "minecraft:phantom"
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "11DCE94773BA3D61"
+				item: "railways:track_phantom"
+				type: "item"
+			}]
+			title: "Ghost Train"
+			x: 11.5d
+			y: 8.5d
+		}
+		{
+			dependencies: ["2DD3AC8B2FCC925C"]
+			description: ["This bad boy can fill up so many buckets"]
+			id: "00CA8C3F59B2D040"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "1C02E5860B203139"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "7F1524987AFDABBB"
+				item: "create:spout"
+				type: "item"
+			}]
+			title: "Splrrrt"
+			x: 4.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["00CA8C3F59B2D040"]
+			description: ["Wither Cure For Those Lactose Intolerant"]
+			id: "3A4C9A3C39B86342"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "26B48076451B74F1"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "508257CF089118B7"
+				item: "jaffabricate:orange_juice_bottle"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["3A4C9A3C39B86342"]
+			description: ["Pour some orange juice on an evil slime, that'll show them for existing"]
+			id: "3429A90C8026AFE3"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "2D523ADC9550DD66"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				advancement: "jaffabricate:convert_slime"
+				criterion: ""
+				id: "3E7D727FF90CE9E0"
+				type: "advancement"
+			}]
+			title: "Orange Slime"
+			x: 2.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["0F7B12E40C5A5791"]
+			description: ["Make yourself some nice chocolate, perhaps that's another untapped market?"]
+			id: "4DA77AAB5D127250"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "6CA292058152771E"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			subtitle: "Chocolate River Time?"
+			tasks: [{
+				id: "4E8A129F69C3A67B"
+				item: "create:chocolate_bucket"
+				type: "item"
+			}]
+			title: "Sweet Treat"
+			x: 7.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["2DD3AC8B2FCC925C"]
+			description: ["A Nice Little Base Cake To Fill Your Sweet Tooth"]
+			id: "36776C18A88895E3"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5D2C89688750A82B"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			subtitle: "Cake In The Palm Of Your Hands"
+			tasks: [{
+				id: "22BEA9DE69B29CFB"
+				item: "jaffabricate:jaffa_base"
+				type: "item"
+			}]
+			title: "Mini Cake"
+			x: 6.5d
+			y: 8.0d
+		}
+		{
+			dependencies: [
+				"4DA77AAB5D127250"
+				"36776C18A88895E3"
+			]
+			description: ["Combine The Flavor Of Chocolate With The Flavor Of An Orange Mini Cake To Make One Sweet Treat!"]
+			id: "64BE19240383B66C"
+			rewards: [{
+				id: "03BDACC290D449AA"
+				item: {
+					Count: 1
+					id: "minecraft:paper"
+					tag: {
+						display: {
+							Name: "{\"text\":\"1 BanksCo Share\",\"italic\":false}"
+						}
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "2 In 1"
+			tasks: [{
+				id: "0DFD3278E87919C5"
+				item: "jaffabricate:jaffa_cake"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 9.0d
+		}
+		{
+			dependencies: [
+				"706A6593E11F81B2"
+				"6BA121870CAA84FE"
+			]
+			description: [
+				"Feed this guy some fuel, boil some water, and boom, lots' of rotational power."
+				""
+				"May want to be nice to the blaze you force into this..."
+			]
+			id: "2EF9BF8EAB22D76F"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "6F40E806F1CA09C6"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "23FE4B87D66AD4B4"
+				item: "create:blaze_burner"
+				type: "item"
+			}]
+			title: "Fire Bender"
+			x: 9.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["48E4CCE498D1629D"]
+			description: [
+				"All those generators you made can still be used even if you completely abandon create, you can use the electric motor to take all of your unused kenetic energy and transform it into redstone flux"
+				""
+				"If you prefer create, you can use the alternator to turn redstone flux into kenetic energy"
+			]
+			id: "5725874D6358E02B"
+			rewards: [{
+				id: "15D28F34F7134B5F"
+				item: "createaddition:alternator"
+				type: "item"
+			}]
+			tasks: [{
+				id: "56A640A1EC147466"
+				item: "createaddition:electric_motor"
+				type: "item"
+			}]
+			title: "Redstone Flux Generation"
+			x: 12.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["5725874D6358E02B"]
+			description: ["These batteries are very very cheap, so if you want to store some of that new rf you're generating be my guest"]
+			id: "51BCFEF509C45769"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "61D366967F002072"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "2B8543ADCAD1DC94"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							energy: {
+								energy: 0
+							}
+						}
+					}
+					id: "cyclic:battery_clay"
+					tag: {
+						energytt: 0
+						energyttmax: 16000
+					}
+				}
+				type: "item"
+			}]
+			title: "Early RF Storage"
+			x: 14.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["2194ED39799B191C"]
+			description: ["It's about time we refine our product into something marketable"]
+			id: "061AF175694651BE"
+			rewards: [{
+				id: "10104138EF41AEF6"
+				item: {
+					Count: 1
+					id: "minecraft:paper"
+					tag: {
+						display: {
+							Name: "{\"text\":\"1 BanksCo Share\",\"italic\":false}"
+						}
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "0EA76D822601AA7B"
+				item: "createbb:white_stuff"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["0C08D54D7B56A194"]
+			description: ["For those who like trading with villagers, you can now automate it using create with no worries of stock drying up."]
+			id: "7F87063BF081702D"
+			rewards: [{
+				id: "73DE59971780B8C6"
+				item: "banksystem:money100"
+				type: "item"
+			}]
+			tasks: [{
+				id: "4811755F338254A7"
+				item: "trading_floor:trading_depot"
+				type: "item"
+			}]
+			title: "The Second Stock Market"
+			x: -2.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["0F7B12E40C5A5791"]
+			description: ["If you want automation in the \"pre-pipe age\" belts will do the trick, and look pretty sweet too"]
+			id: "3C7F0D38B18687D2"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "1E9AF6A8BFB777BA"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				count: 8L
+				id: "33E3CE0834492CA0"
+				item: { Count: 8, id: "create:belt_connector" }
+				type: "item"
+			}]
+			title: "Whipping The Belt"
+			x: 10.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["3C7F0D38B18687D2"]
+			description: ["May have lied about the whole pre-pipe age thing, you do still have fluid pipes"]
+			id: "6EFE2744DD850C83"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "3E7622C0ACFE553B"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				count: 8L
+				id: "4ACF3EBB96F685BF"
+				item: { Count: 8, id: "create:fluid_pipe" }
+				type: "item"
+			}]
+			title: "Fluid Transportation"
+			x: 12.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["6FF6B3D715137EA3"]
+			description: [
+				"Resources too hard to come by? Maybe try drilling try drilling into the earth and finding some ore veins."
+				""
+				"It's quite simple, just use the ore vein finder provided to find the ore of your choice (or liquid, but use a fluid well instead), setup the miner, power, then profit."
+				""
+				"The veins are infinite, so no fear on them running dry, but make sure to actually attach a drill!"
+			]
+			id: "64064CBCD082B0BF"
+			rewards: [
+				{
+					id: "5C31FA8A7D9FA203"
+					item: {
+						Count: 1
+						id: "createoreexcavation:vein_finder"
+						tag: {
+							isFiltered: 0b
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1420EF3166A2F291"
+					item: "createoreexcavation:vein_atlas"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "08E2E33840370B05"
+				item: "createoreexcavation:drilling_machine"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 11.5d
+		}
+	]
+	title: "Employment Orientation"
+}

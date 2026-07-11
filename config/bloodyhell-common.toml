@@ -1,0 +1,5 @@
+
+["Gameplay Settings"]
+	#Should players receive the Unknown Guide Book when they first join the world?
+	giveGuideBookOnJoin = false
+

@@ -1,0 +1,13 @@
+name = "Dungeons Enchantments"
+filename = "dungeonsenchantments-1.1.1-1.20.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "341efc7ae767918200fea9297879fb81598166ed"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 5142004
+project-id = 815292

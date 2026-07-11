@@ -1,0 +1,13 @@
+name = "Bankiffy : The Quest for Money"
+author = "Austin McElwaine"
+version = "26.07.10"
+pack-format = "packwiz:1.1.0"
+
+[index]
+file = "index.toml"
+hash-format = "sha256"
+hash = "6d9a71962bcf99efd4a76d276deec1bfb777e58f544e651bbd2836bf8ff54196"
+
+[versions]
+forge = "47.4.20"
+minecraft = "1.20.1"

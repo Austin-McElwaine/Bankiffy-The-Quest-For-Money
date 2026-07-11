@@ -1,0 +1,13 @@
+name = "ToadLib"
+filename = "ToadLib-1.20.1-1.1.4.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "e73edbde119a775c96cf10173d3ab0d2d3df5ec1"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 5736962
+project-id = 1105516
