@@ -8458,9 +8458,8 @@ hash = "860f219704b38c996ddb8eb395bbc3523eece6e3e8d7f23dca7aadd2a76f4fdf"
 metafile = true
 
 [[files]]
-file = "mods/bloody-hell.pw.toml"
-hash = "aa5c0dbae47fa34b69eccbc899c2b9db39e398b16f557bdc3b2586b81299510e"
-metafile = true
+file = "mods/bloodyhell-0.8.5.jar"
+hash = "6235a202d1919d9543aa8b77e48dd4d6438be41ceb420aa94fddd22f02ac7664"
 
 [[files]]
 file = "mods/bookshelf.pw.toml"
