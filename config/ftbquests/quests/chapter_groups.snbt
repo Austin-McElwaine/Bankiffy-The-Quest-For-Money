@@ -1,8 +1,0 @@
-{
-	chapter_groups: [
-		{ id: "7CFCEAC35D52A876", title: "BanksCo Assignments" }
-		{ id: "15A08A4162B9FFA4", title: "BanksCo Activities" }
-		{ id: "384E14C64169B316", title: "The Fired Timeline" }
-		{ id: "04CF23873B820DD6", title: "The End" }
-	]
-}
