@@ -1,0 +1,825 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "bloodsuckers_united"
+	group: "384E14C64169B316"
+	hide_quest_until_deps_complete: true
+	icon: "vampirism:vampire_fang"
+	id: "773A41FEC33E704A"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["You are fired...."]
+			hide_until_deps_complete: true
+			id: "2C871D542E917DD5"
+			invisible: true
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "2B106D5154948FD2"
+				table_id: 7121739201460103405L
+				type: "loot"
+			}]
+			tasks: [{
+				advancement: "vampirism:vampire/become_vampire"
+				criterion: ""
+				id: "45EB02F09223A065"
+				type: "advancement"
+			}]
+			title: "Give In To The Urge"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2C871D542E917DD5"]
+			description: ["I'm just going to assume you becoming a vampire was an accident, use an altar of cleansing to turn back to normal and forget any of this ever happened."]
+			id: "02E845AA84B4C929"
+			optional: true
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "1F5F321424859207"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "5C05C61223BD8AF8"
+				item: "vampirism:altar_cleansing"
+				type: "item"
+			}]
+			title: "Not Too Late"
+			x: 1.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2C871D542E917DD5"]
+			description: [
+				"Hey you, you're finally awake. "
+				""
+				"The name is Vladislav Morevsky, leader of The Brotherhood of Nocturnal Labor. We've been eyeing BanksCo awhile, and we think with your help we can finally take the big man out himself. First we'll have to get you used to your new form. How about going up to some creature and sucking their blood? Normal food is no longer of use to people like us."
+			]
+			id: "7E07A1497FEAD986"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "0DA898BF2EB79C03"
+				table_id: 7121739201460103405L
+				type: "loot"
+			}]
+			tasks: [{
+				advancement: "vampirism:vampire/first_blood"
+				criterion: ""
+				icon: "vampiresdelight:blood_wine_glass"
+				id: "596727F70AD3F3C0"
+				title: "Suck A Mob's Blood"
+				type: "advancement"
+			}]
+			title: "Blood Sucking"
+			x: 0.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["7E07A1497FEAD986"]
+			description: ["If you happen to be full right now and have a bottle on you, fill up a bottle for some blood on the go."]
+			id: "51D46AB24431AB51"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "08DE0EEB9B1C24A8"
+				table_id: 7121739201460103405L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "27CCE300267E83CA"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "item(vampirism:blood_bottle)"
+					}
+				}
+				title: "Blood Bottle"
+				type: "item"
+			}]
+			title: "Blood Storage"
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["51D46AB24431AB51"]
+			description: ["Remember the water cooler we used to have at BanksCo before they took it away for cost cutting reasons? Us vampires have something similar with the blood container. Empty any blood bottles you have to store your blood for a later use."]
+			id: "46CC383D89DAA430"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "22C465870E844DBE"
+				table_id: 7121739201460103405L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "2165933C6E9A173B"
+				item: "vampirism:blood_container"
+				type: "item"
+			}]
+			title: "Midnight Snack"
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["7E07A1497FEAD986"]
+			description: ["Some prefer to not eat from actual creatures. Orchids can be cut up using a knife and using the petals from the result you can make edible food to vampires."]
+			id: "19FAC176419833CE"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "6813410796E41B40"
+				table_id: 7121739201460103405L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "02D020FB5AA89879"
+				item: "vampiresdelight:orchid_petals"
+				type: "item"
+			}]
+			title: "Alternate Eating"
+			x: 1.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["19FAC176419833CE"]
+			id: "60976192FF348957"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5B52D830A6C5E486"
+				table_id: 7121739201460103405L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "0D175477E7FC3526"
+				item: "vampiresdelight:orchid_cream_soup"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["19FAC176419833CE"]
+			id: "6DE71E8EC27E3696"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "393AB620F772E4E8"
+				table_id: 7121739201460103405L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "643058B577B0DE1A"
+				item: "vampiresdelight:orchid_curry"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["19FAC176419833CE"]
+			id: "2EAC54B633C632BE"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5C112E4C6DECAD16"
+				table_id: 7121739201460103405L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "42E29BF32F0874EE"
+				item: "vampiresdelight:orchid_eclair"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["46CC383D89DAA430"]
+			description: ["Right now you're just a baby vampire, with the Altar Of Inspiration you can infuse yourself with blood to become even more powerful. Simply fill it with blood bottles, and once full sneak right click with an empty hand to infuse yourself."]
+			id: "09966F96BAD9522A"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "4F1CB8ABF31E1B3C"
+				table_id: 7121739201460103405L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "39649E0636FD536B"
+				item: "vampirism:altar_inspiration"
+				type: "item"
+			}]
+			title: "First Levels"
+			x: 0.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["09966F96BAD9522A"]
+			description: [
+				"Once you level up a bit you'll notice that you no longer have enough space in the previous altar. You now have to build a even grander altar. This altar needs to be surrounded by pillars (filled with a block) 2 or 3 blocks high topped off with an altar tip in a 9x9 area. Each new level requires a higher \"structure point\" amount."
+				""
+				"Stone pillar = 1pt"
+				"Bone pillar = 1.5pt"
+				"Iron pillar = 2pt"
+				"Gold pillar = 3pt"
+				""
+				"You will also need vampire books, which can be found all around the world in chests."
+			]
+			id: "3C4E214564C1E942"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "285E3EDC1E1311FC"
+				table_id: 7121739201460103405L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "2C190480C7553E3D"
+				item: "vampirism:altar_infusion"
+				type: "item"
+			}]
+			title: "Further Leveling"
+			x: 0.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["3C4E214564C1E942"]
+			description: ["This should be the first time using the Altar of Infusion, after use you may feel a bit light headed and maybe even blinded, but you'll come out more powerful than ever."]
+			icon: "createdeco:decal_up"
+			id: "1F52570A2E252A88"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "3C2F5F2EBE5D432C"
+				table_id: 7121739201460103405L
+				type: "loot"
+			}]
+			tasks: [
+				{
+					count: 4L
+					id: "045CA1A4E4DC8947"
+					item: { Count: 4, id: "vampirism:altar_pillar" }
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "4E15CD4F1F5401A2"
+					item: { Count: 2, id: "minecraft:gold_block" }
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "396B859253F29B4F"
+					item: { Count: 2, id: "minecraft:stone_bricks" }
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "39E36ABB21071FCD"
+					item: { Count: 5, id: "vampirism:human_heart" }
+					type: "item"
+				}
+				{
+					id: "0FB0F354B407E5B1"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "item(vampirism:vampire_book)"
+						}
+					}
+					title: "Vampire Book"
+					type: "item"
+				}
+			]
+			title: "Level 5"
+			x: -1.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["1F52570A2E252A88"]
+			description: ["For level 6 you'll start using pure blood, to obtain pure blood you can either kill vampire barons or do quests for your local village representative."]
+			icon: "createdeco:decal_up"
+			id: "59B7078918AE690C"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7B85D709BA471ABC"
+				table_id: 7121739201460103405L
+				type: "loot"
+			}]
+			tasks: [
+				{
+					count: 5L
+					id: "28C7E74492F42C10"
+					item: { Count: 5, id: "vampirism:human_heart" }
+					type: "item"
+				}
+				{
+					id: "77EC02DC6EE758BB"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "item(vampirism:vampire_book)"
+						}
+					}
+					title: "Vampire Book"
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "6E6A954B990F119D"
+					item: { Count: 3, id: "minecraft:gold_block" }
+					type: "item"
+				}
+				{
+					id: "15662671D3DE8DB1"
+					item: "vampirism:pure_blood_0"
+					type: "item"
+				}
+				{
+					id: "64B5160B224FDCBE"
+					item: "vampirism:altar_pillar"
+					type: "item"
+				}
+			]
+			title: "Level 6"
+			x: -2.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["3C4E214564C1E942"]
+			description: [
+				"As you can see currently, most villages around the world are corrupt with the ideals of capitalism and anti-vampire thinking. If a village doesn't have one of these already, you can build a village totem and right click it to spread our cause. This totem will also allow a representative to spawn and give out quests."
+				""
+				"You could also build your own little community and place this there in order to build a nice little paradise for us. This could be useful as the cloudy sky protects us from the sun."
+			]
+			id: "580CECAEF5CEA1ED"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "04717A1F9D66D21A"
+				table_id: 7121739201460103405L
+				type: "loot"
+			}]
+			tasks: [
+				{
+					id: "71E1627BBBCF624E"
+					item: "vampirism:totem_base"
+					type: "item"
+				}
+				{
+					id: "477A7AFBA0913AEB"
+					item: "vampirism:totem_top_crafted"
+					type: "item"
+				}
+			]
+			title: "A Place To Call Home"
+			x: 1.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["59B7078918AE690C"]
+			description: ["Level 7 is easy, just find more human hearts."]
+			icon: "createdeco:decal_up"
+			id: "67F60EFA7347E233"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "2B700B546C1C3D6D"
+				table_id: 7121739201460103405L
+				type: "loot"
+			}]
+			tasks: [
+				{
+					count: 10L
+					id: "25F2ED1FC8CD9942"
+					item: { Count: 5, id: "vampirism:human_heart" }
+					type: "item"
+				}
+				{
+					id: "3D332274864069AD"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "item(vampirism:vampire_book)"
+						}
+					}
+					title: "Vampire Book"
+					type: "item"
+				}
+				{
+					id: "3A879CA2054046F6"
+					item: "vampirism:pure_blood_0"
+					type: "item"
+				}
+			]
+			title: "Level 7"
+			x: -2.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["67F60EFA7347E233"]
+			description: ["Level 8 has you back to adding more pillars, and also upgrading the purity you need for blood. If it makes you feel better, level 9 is an exact copy of this level."]
+			icon: "createdeco:decal_up"
+			id: "3CA108045AE6CD72"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "02A6B4246B7A8097"
+				table_id: 7121739201460103405L
+				type: "loot"
+			}]
+			tasks: [
+				{
+					count: 10L
+					id: "25BD1E7ECDD92611"
+					item: { Count: 5, id: "vampirism:human_heart" }
+					type: "item"
+				}
+				{
+					id: "26418AEB6B2EE249"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "item(vampirism:vampire_book)"
+						}
+					}
+					title: "Vampire Book"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "509C7DBA6EEF94C6"
+					item: { Count: 4, id: "vampirism:altar_pillar" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "6AEC1B0ED4C1BD66"
+					item: { Count: 4, id: "minecraft:gold_block" }
+					type: "item"
+				}
+				{
+					id: "505EFD9B152B6D75"
+					item: "vampirism:pure_blood_1"
+					type: "item"
+				}
+			]
+			title: "Level 8/9"
+			x: -2.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["3CA108045AE6CD72"]
+			description: [
+				"Level 10 has you back to adding more pillars, and also upgrading the purity you need for blood (again). "
+				""
+				"Level 11 also requires the same items."
+			]
+			icon: "createdeco:decal_up"
+			id: "5856FACC7142586A"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "3C2E861220914972"
+				table_id: 7121739201460103405L
+				type: "loot"
+			}]
+			tasks: [
+				{
+					count: 15L
+					id: "176B97C9A8DAA3FF"
+					item: { Count: 5, id: "vampirism:human_heart" }
+					type: "item"
+				}
+				{
+					id: "644E3E36AC851301"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "item(vampirism:vampire_book)"
+						}
+					}
+					title: "Vampire Book"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "312201491F130DD1"
+					item: { Count: 4, id: "vampirism:altar_pillar" }
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "7297F579779D1197"
+					item: { Count: 4, id: "minecraft:gold_block" }
+					type: "item"
+				}
+				{
+					id: "38072D61B3FA2898"
+					item: "vampirism:pure_blood_2"
+					type: "item"
+				}
+			]
+			title: "Level 10/11"
+			x: -2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["5856FACC7142586A"]
+			description: [
+				"Level 12 has you back to adding more pillars, and also upgrading the purity you need for blood (again). "
+				""
+				"Level 13 is the same, but requires 2 Pure Blood (4) instead of 1"
+			]
+			icon: "createdeco:decal_up"
+			id: "509EBCE146297709"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "639F84BF793BC609"
+				table_id: 7121739201460103405L
+				type: "loot"
+			}]
+			tasks: [
+				{
+					count: 20L
+					id: "413301D82092A3A9"
+					item: { Count: 5, id: "vampirism:human_heart" }
+					type: "item"
+				}
+				{
+					id: "7ECE275B7DFAB857"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "item(vampirism:vampire_book)"
+						}
+					}
+					title: "Vampire Book"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "178C41D54ACB8BDF"
+					item: { Count: 4, id: "vampirism:altar_pillar" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "5AC4097517B85A37"
+					item: { Count: 4, id: "minecraft:gold_block" }
+					type: "item"
+				}
+				{
+					id: "3FF1FCD07D1A08B4"
+					item: "vampirism:pure_blood_3"
+					type: "item"
+				}
+			]
+			title: "Level 12/13"
+			x: -2.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["509EBCE146297709"]
+			description: [
+				"Level 14 is the final level before you become a vampire lord, to become a vampire lord talk to your local village representative."
+				""
+				"Ranks as follows:"
+				"1. Baron(ess)"
+				"2. Viscount(ess)"
+				"3. Count(ess)"
+				"4. Duke/Duchess"
+				"5. Prince(ss)"
+				""
+				"Note: The gender used is determined based on your skin type (steve -> male, alex -> female), but this can be changed using /vampirism title-gender <true/false>"
+				""
+				"To become a lord or to level up as lord you need to complete special tasks for Village Representatives."
+			]
+			icon: "createdeco:decal_up"
+			id: "43ED89933D28222B"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "6A784914B6C5CAA7"
+				table_id: 7121739201460103405L
+				type: "loot"
+			}]
+			tasks: [
+				{
+					count: 25L
+					id: "33B8F0F4C62763A6"
+					item: { Count: 5, id: "vampirism:human_heart" }
+					type: "item"
+				}
+				{
+					id: "6E2C77627E2F8EE5"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "item(vampirism:vampire_book)"
+						}
+					}
+					title: "Vampire Book"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "55DFCC1BB233D1FF"
+					item: { Count: 4, id: "vampirism:altar_pillar" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "3A4B12A812572DF9"
+					item: { Count: 4, id: "minecraft:gold_block" }
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "2658ACB68381DDFD"
+					item: "vampirism:pure_blood_4"
+					type: "item"
+				}
+			]
+			title: "Level 14"
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3C4E214564C1E942"]
+			description: [
+				"You've finally risen through the ranks and became a lord, as a lord you have access to the rest of our collective to help you out."
+				""
+				"Minions have an inventory that can be used to store items but also to equip the minion with weapons and armor. Furthermore, their appearance can be changed, and you can assign them a new name. Obviously, you can give them commands. Either individually by interacting with the minion and selecting the desired task or by using the minion task menu. The menu can be accessed either by a dedicated keybinding (unbound by default) or by pressing space while your action menu is displayed. You can still access the actions by hitting space in the minion task menu (or by using the action 1/2 keybinding directly)."
+				""
+				"Minions will stay in the world even when you disconnect from the server or change the dimension. If a minion is hurt severely, it will teleport to safety and recover. Once recovered you can retrieve it using the minion task menu."
+				""
+				"As a lord you can bind a vampire NPC to you by right-clicking it with a vampire minion binding item. However, many vampires are too strong to be controlled by you, so you have to look for a weak one. You can improve the capabilities of your minion using vampire minion upgrades."
+			]
+			id: "0EA67AE5B4A5B2FC"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "4ADEF8D405DD7C9C"
+				table_id: 7121739201460103405L
+				type: "loot"
+			}]
+			tasks: [{
+				advancement: "vampirism:minion/become_lord"
+				criterion: ""
+				id: "6D89CEF307ED0982"
+				title: "Become A Vampire Lord"
+				type: "advancement"
+			}]
+			title: "Vampire Lordship"
+			x: 0.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["0EA67AE5B4A5B2FC"]
+			description: ["Interact with one of your minions and tell it to collect blood."]
+			id: "06F66478BC5677FF"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "633339819A8743E5"
+				table_id: 7121739201460103405L
+				type: "loot"
+			}]
+			tasks: [{
+				advancement: "vampirism:minion/collect_blood"
+				criterion: ""
+				id: "36F3D7BE78BD6326"
+				title: "Send Your Minions To Gather Blood"
+				type: "advancement"
+			}]
+			title: "Task: Blood"
+			x: 0.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["0EA67AE5B4A5B2FC"]
+			description: ["Interact with one of your minions and tell it to defend an area."]
+			id: "1FBF039F4AAF8981"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7E8D3BB97AEE9C55"
+				table_id: 7121739201460103405L
+				type: "loot"
+			}]
+			tasks: [{
+				advancement: "vampirism:minion/defend_area"
+				criterion: ""
+				id: "0F3B25361DB9717A"
+				title: "Send Your Minions To Guard An Area"
+				type: "advancement"
+			}]
+			title: "Task: Defend"
+			x: -1.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["0EA67AE5B4A5B2FC"]
+			description: ["Interact with one of your minions and tell it to defend you."]
+			id: "700EDE89A16BF656"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "1B530D8FFDE1FB47"
+				table_id: 7121739201460103405L
+				type: "loot"
+			}]
+			tasks: [{
+				advancement: "vampirism:minion/protect_lord"
+				criterion: ""
+				id: "4EB95D34D05CE397"
+				title: "Command Your Minions To Guard You"
+				type: "advancement"
+			}]
+			title: "Task: Protect"
+			x: 1.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["580CECAEF5CEA1ED"]
+			description: ["Umbrellas are powerful tools that allow vampires to go out during the day. You can hold this in your main or off-hand. You could also place it in your curio slot if you'd prefer. These are upgradable and enchantable."]
+			id: "443686313698E057"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "450FD99CF43A32E4"
+				table_id: 7121739201460103405L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "07F5C925AF076B8C"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "item(vampiresneedumbrellas:iron_umbrella)"
+					}
+				}
+				title: "Iron Umbrella"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -5.0d
+		}
+		{
+			dependencies: [
+				"06F66478BC5677FF"
+				"1FBF039F4AAF8981"
+				"700EDE89A16BF656"
+			]
+			dependency_requirement: "one_started"
+			description: ["Work your way up the ladder with your local representative and become a vampire prince(ss)."]
+			id: "65883977677D85A7"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "797C23DCF2B9353E"
+				table_id: 7121739201460103405L
+				type: "loot"
+			}]
+			tasks: [{
+				advancement: "vampirism:vampire/max_lord"
+				criterion: ""
+				id: "18AE0ABF16D12BD4"
+				title: "Become A Vampire Prince(ss)"
+				type: "advancement"
+			}]
+			x: 0.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["09966F96BAD9522A"]
+			description: ["Blood Infused Iron Ingots will allow you to make special vampire swords."]
+			id: "23B7AF8307F18212"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "1CA1E0C17966752B"
+				table_id: 7121739201460103405L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "72A13B119608031D"
+				item: "vampirism:blood_infused_iron_ingot"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["23B7AF8307F18212"]
+			description: ["Enhanced Blood Infused Iron Ingots will allow you to make even better vampire swords, and allow you to play with the dark arts of vampire blood magic."]
+			id: "626892BCB444CDE7"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "06DF620B5856327A"
+				table_id: 7121739201460103405L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "30AE852B989AB35E"
+				item: "vampirism:blood_infused_enhanced_iron_ingot"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -4.0d
+		}
+	]
+	title: "Bloodsuckers United"
+}

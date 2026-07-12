@@ -1,0 +1,448 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "minecolonies"
+	group: "15A08A4162B9FFA4"
+	hide_quest_until_deps_complete: true
+	icon: "minecolonies:supplycampdeployer"
+	id: "6E2C9AA5B17DD6AB"
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["1C29C4A50DAF3F4B"]
+			description: ["Time to settle down and claim new land"]
+			id: "102DDF9DA94D6B30"
+			invisible: true
+			rewards: [{
+				count: 3
+				id: "0DA2F966FB00B12B"
+				item: "minecraft:carrot"
+				type: "item"
+			}]
+			tasks: [{
+				advancement: "minecolonies:minecolonies/root"
+				criterion: ""
+				id: "60B99BD072B6E5AC"
+				type: "advancement"
+			}]
+			title: "A Brave New World"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["102DDF9DA94D6B30"]
+			description: ["Time to place your town hall so you can start building your village."]
+			id: "132A1A2B0F1EDC87"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "0CEBF1AB470E1D9B"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "3EC4B0A274C56E36"
+				item: "minecolonies:blockhuttownhall"
+				type: "item"
+			}]
+			title: "Town Hall Level 1"
+			x: 0.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["132A1A2B0F1EDC87"]
+			description: ["You really want to build everything yourself? Have someone else do it for you, why do you think I hired you in the first place?"]
+			id: "050CE055FB429239"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7EE18476C7C84D6A"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			subtitle: "No Gems Needed"
+			tasks: [{
+				id: "4EF30F21C94F70E4"
+				item: "minecolonies:blockhutbuilder"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["050CE055FB429239"]
+			description: ["Show how rich I have become and build a monument in my name."]
+			id: "17C3B3F4EA5C540C"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "354A7A8F322FAE61"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "789A957F28435E67"
+				item: "minecolonies:blockhutmysticalsite"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["42172ABBBA3627D8"]
+			description: ["People don't think I should be rich, give some of the peasents some swords and couch change to keep the rioters away."]
+			id: "1A83AA8501345C07"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "520C293925C5289E"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "6FCCAE523F1011AE"
+				item: "minecolonies:blockhutguardtower"
+				type: "item"
+			}]
+			title: "Village And Pillage"
+			x: -2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["050CE055FB429239"]
+			description: ["Cam's gotta drink somewhere, build a tavern and get all the villagers and employees hammered (on their dime of course)."]
+			id: "6357F2ED8DA4A7DA"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "676F850DFFCCF313"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "77EF728D994EF1B8"
+				item: "minecolonies:blockhuttavern"
+				type: "item"
+			}]
+			title: "Barkeep"
+			x: -1.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["050CE055FB429239"]
+			description: ["People gotta live somewhere, build them a house and charge $1M for it."]
+			id: "061BB2B34DD7F9DB"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "1FD393F16C31C59B"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "36E9F7C8DCF229C2"
+				item: "minecolonies:blockhutcitizen"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["132A1A2B0F1EDC87"]
+			description: ["Are you a computer nerd? Integrate your computers with your village to manage everything."]
+			id: "4CF7B9714FF5D62F"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "2B7546A8BF415719"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "5C7FDC85CC19A81B"
+				item: "colony4cc:colony_peripheral"
+				type: "item"
+			}]
+			title: "The Internet!"
+			x: -1.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["061BB2B34DD7F9DB"]
+			description: ["Some of you may die, but it's a sacrifice I am willing to make. If you want to bury the dead I suppose I'll allow it. You may not have PTO to attend the funeral however."]
+			id: "2F690F330344F718"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "11AA6639062BF9D5"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "662FEA0E43A4EE82"
+				item: "minecolonies:blockhutgraveyard"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["061BB2B34DD7F9DB"]
+			description: ["So far everyone is pretty lazy not doing much, change that and have them chop down some trees for you."]
+			id: "7BAF3872E3881453"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "1892C4933602C64D"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "4EE0739483F7F09A"
+				item: "minecolonies:blockhutlumberjack"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["061BB2B34DD7F9DB"]
+			description: ["I personally hate educated people, but sometimes you need to teach them what the right end of a sword is. The Library will help you increase the stats of your population."]
+			id: "3A4555BE147BB97A"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "52E8459131AFE9F0"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "05D862A0E9B16D5C"
+				item: "minecolonies:blockhutlibrary"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["3A4555BE147BB97A"]
+			description: ["If you're big on enchanting, banish someone to a tower to produce some enchanted books."]
+			id: "03DDFC601BB45C4D"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "55B197D7FED04BE0"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "7F94D8F44A86B8F9"
+				item: "minecolonies:blockhutenchanter"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["061BB2B34DD7F9DB"]
+			description: ["If you ever wanted to make a fish themed resturant on a boat, this may be an easy solution to get fish based products."]
+			id: "0EB6AAA3F58E2112"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "355C28DABA713AC1"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "78979949B5EDA13D"
+				item: "minecolonies:blockhutfisherman"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["7BAF3872E3881453"]
+			description: ["These are people of the land, the common clay of the new west. You know, morons. Have them farm like the simpletons they are."]
+			id: "7DC22C756B66C04F"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "36A1A998C4215657"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "310D2D672B558AD9"
+				item: "minecolonies:blockhutfarmer"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["050CE055FB429239"]
+			description: ["Who needs an ME system? Manage all your resources via a giant building with storage like a real man."]
+			id: "751ECD795798764F"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "3DEC1A754FE2DEBF"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "68C0F77B26F3E365"
+				item: "minecolonies:blockhutwarehouse"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["751ECD795798764F"]
+			description: ["Who needs pipes when you can send and recieve items via some man walking."]
+			id: "524CAAF68040F030"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "6956BB9ECDC374EF"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			subtitle: "Bring me the platinum chip"
+			tasks: [
+				{
+					id: "7393B9BD92CD63B2"
+					item: "minecolonies:blockhutdeliveryman"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "35045DE32D2E8A13"
+					item: { Count: 2, id: "minecolonies:blockpostbox" }
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["7BAF3872E3881453"]
+			description: ["Put all that wood to good use and have the sawmill craft wood-based items for you."]
+			id: "21CBACF2D5AD67A2"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "364F662F4AA13DDC"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "524AC95602732622"
+				item: "minecolonies:blockhutsawmill"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["7BAF3872E3881453"]
+			description: ["Who doesn't want free labor to dig a hole for you? Get your men to start digging!"]
+			id: "38BAB6B3F96DE589"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7F319D4AA3B4CCDB"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			subtitle: "Then We Craft"
+			tasks: [{
+				id: "48E6A378CA506EE8"
+				item: "minecolonies:simplequarry"
+				type: "item"
+			}]
+			title: "First We Mine"
+			x: 2.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["38BAB6B3F96DE589"]
+			description: ["Take all that stone you have and turn it into gravel."]
+			id: "265730A03CA0F180"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "42D099ADFC77A606"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "7AFFAABFAED459B3"
+				item: "minecolonies:blockhutcrusher"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["38BAB6B3F96DE589"]
+			description: ["Take all that stone you have and make some stone-based items."]
+			id: "5EEB5283279D2034"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7E9C22736785D742"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "075EA5CF2436729F"
+				item: "minecolonies:blockhutstonemason"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["38BAB6B3F96DE589"]
+			description: ["Digging up ores but not using them? Have a courier bring them to a smelter to smelt down all your ores for you."]
+			id: "49A3ABB96CC98A64"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "2EAB272C4C98813C"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "7C5D984FFCAC4880"
+				item: "minecolonies:blockhutsmeltery"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["1A83AA8501345C07"]
+			description: ["Soldiers aren't born with armor, gear them up to defend us from the evil peasents."]
+			id: "27A6D4643654670B"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "186FEE0FB872AE72"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "1C9288FBEEBBF99B"
+				item: "minecolonies:blockhutblacksmith"
+				type: "item"
+			}]
+			title: "Gear Up"
+			x: -3.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["050CE055FB429239"]
+			description: ["The enemies have infinite range, you need some soldiers to fight the peasents."]
+			id: "42172ABBBA3627D8"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "06F5BC9D91783BBD"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "58698677A79CB12B"
+				item: "minecolonies:blockhutbarracks"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -2.0d
+		}
+	]
+	title: "Minecolonies"
+}

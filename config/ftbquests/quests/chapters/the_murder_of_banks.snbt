@@ -1,0 +1,50 @@
+{
+	always_invisible: true
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "the_murder_of_banks"
+	group: "04CF23873B820DD6"
+	hide_quest_until_deps_complete: true
+	icon: "fossil:skull"
+	id: "33C488776F9B66E7"
+	order_index: 1
+	quest_links: [ ]
+	quests: [{
+		dependencies: ["384E14C64169B316"]
+		description: ["You've done everything you could to oppose Banks, on one fateful night a group of magic communist vampire sympathizers broke into Banks' mega mansion and murdered him."]
+		hide_until_deps_complete: true
+		id: "35CE5F816201EC18"
+		rewards: [{
+			id: "42C4057D5D2B6908"
+			item: {
+				Count: 1
+				id: "minecraft:player_head"
+				tag: {
+					SkullOwner: {
+						Id: [I;
+							-1281014692
+							341593303
+							-1410670579
+							-1417952925
+						]
+						Name: "bankerboy"
+						Properties: {
+							textures: [{
+								Value: "ewogICJ0aW1lc3RhbXAiIDogMTc4MTgyNzE1NzUzNCwKICAicHJvZmlsZUlkIiA6ICJiM2E1NDQ1YzE0NWM0Y2Q3YWJlYWUwMGRhYjdiYzE2MyIsCiAgInByb2ZpbGVOYW1lIiA6ICJiYW5rZXJib3kiLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDc1YmI0MDlhMzdiYTM2OWFjNGZkYmU1NDdiYjg3YTkwMTg0NDZmYzkyNjQ2MDljZTAyYzVhNTgzOTRkYWJmZiIKICAgIH0KICB9Cn0="
+							}]
+						}
+					}
+				}
+			}
+			type: "item"
+		}]
+		tasks: [{
+			id: "2FE9AD9F8DAD3779"
+			title: "The Murder Of Banks"
+			type: "checkmark"
+		}]
+		x: 0.0d
+		y: 0.0d
+	}]
+	title: "The Murder Of Banks"
+}

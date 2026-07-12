@@ -1,0 +1,11 @@
+{
+  "__comment": "Instructions: https://blakesmods.com/docs/cucumber/tags-config",
+  "forge:ingots/invar": "null",
+  "forge:ingots/mithril": "null",
+  "forge:dusts/niter": "moremekanismprocessing:dust_niter",
+  "forge:dusts/saltpeter": "bloodmagic:saltpeter",
+  "forge:ingots/chrome": "null",
+  "forge:silicon": "tinyredstone:silicon",
+  "forge:ingots/titanium": "moremekanismprocessing:titanium_ingot",
+  "forge:rubber": "null"
+}

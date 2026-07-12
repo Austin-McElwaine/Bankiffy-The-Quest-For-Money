@@ -1,0 +1,1024 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "age_of_blood"
+	group: "384E14C64169B316"
+	hide_quest_until_deps_complete: true
+	icon: "botania:magenta_shiny_flower"
+	id: "370B975B64AC522C"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["What are these odd flowers?"]
+			id: "4F0B7ECDD089180F"
+			invisible: true
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "05FEE3E53C29AE63"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			subtitle: "It's a magic mod"
+			tasks: [{
+				advancement: "botania:main/flower_pickup"
+				criterion: ""
+				id: "18322A48E15C5170"
+				type: "advancement"
+			}]
+			title: "Magical Flowers"
+			x: 4.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["4F0B7ECDD089180F"]
+			description: ["Apparently they hold some magic to them, I'd just burn them."]
+			id: "0AD1465DA3B7A23A"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "2036FB8DC347B253"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			subtitle: "RTFM"
+			tasks: [{
+				id: "3D99EE1E1A361527"
+				item: "botania:lexicon"
+				type: "item"
+			}]
+			title: "Book Of Trees"
+			x: 4.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["0AD1465DA3B7A23A"]
+			description: ["Flowers are boring, why are you spending time even doing this. I guess grab some white petals if you really want to continue doing flower magic."]
+			id: "4FE5C7A208DD6B12"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "0E05F45C3A9727B8"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				count: 5L
+				id: "085E9FA3C3B1D06F"
+				item: { Count: 5, id: "botania:white_petal" }
+				type: "item"
+			}]
+			title: "White Petals"
+			x: 4.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["4FE5C7A208DD6B12"]
+			description: ["You'd think flowers grew from the grass, but no. Instead you basically make a soup that spits out a flower. This is your \"couldren\" for making said flowers."]
+			id: "029B8015C8D5D8EA"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "44DEFC6100F98D71"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "564E8FA2625CE0DD"
+				item: "botania:apothecary_default"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["029B8015C8D5D8EA"]
+			description: ["The pure daisy is so pure (I assume from the power of Daisy from the hit game mario) that it can turn blocks into other blocks. No one would care, but this happens to be needed for livingrock and livingwood."]
+			id: "673C8F970A5109C8"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "141F010F463E826A"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "0F3BDCF227197D46"
+				item: "botania:pure_daisy"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["673C8F970A5109C8"]
+			description: ["Surround the pure daisy with any type of wood and wait forever to obtain livingwood (make sure to make some extras!)"]
+			id: "4DA99A5FD5D98B1E"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "40AEE77BEAC1F837"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "2FD25069E2B7B692"
+				item: "botania:livingwood_log"
+				type: "item"
+			}]
+			title: "Livingwood"
+			x: 3.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["673C8F970A5109C8"]
+			description: ["Surround the pure daisy with stone and wait forever to obtain livingrock (make sure to make some extras!)"]
+			id: "47B4F5F5A5697302"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "07903F736BC52ABD"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "4AD7B5A2A18565C5"
+				item: "botania:livingrock"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["23A45354BB6278AB"]
+			description: ["The mana has got to go somewhere, fill up this pool with the mana spreader and get swimming."]
+			id: "621489CAAF27E0F0"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "3345F91F94887869"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "5BB37B0DC1DA4F2F"
+				item: "botania:mana_pool"
+				type: "item"
+			}]
+			title: "Pool's Open"
+			x: 3.0d
+			y: -8.0d
+		}
+		{
+			dependencies: [
+				"47B4F5F5A5697302"
+				"4DA99A5FD5D98B1E"
+			]
+			description: ["The Endoflame is going to be your first flower, it's pretty basic and acts like a furnace or a generic generator. Throw something flammable at it and watch the mana flow."]
+			icon: "botania:endoflame"
+			id: "2BE82FDB72F89E0D"
+			rewards: [{
+				id: "4A11C3D1F4123226"
+				item: "botania:endoflame"
+				type: "item"
+			}]
+			tasks: [
+				{
+					count: 2L
+					id: "37F4C15C529C6025"
+					item: { Count: 2, id: "botania:brown_petal" }
+					type: "item"
+				}
+				{
+					id: "2E18EF69CA4139CF"
+					item: "botania:red_petal"
+					type: "item"
+				}
+				{
+					id: "087EA78F2145BE98"
+					item: "botania:light_gray_petal"
+					type: "item"
+				}
+			]
+			title: "Baby's First Mana Flower"
+			x: 4.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["2BE82FDB72F89E0D"]
+			description: ["Remember when I said watch the mana flow? It's going to be hard without a mana spreader."]
+			id: "23A45354BB6278AB"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "0433A67E0EDAC708"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "45C9C9238E4C29A5"
+				item: "botania:mana_spreader"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -8.0d
+		}
+		{
+			dependencies: [
+				"2BE82FDB72F89E0D"
+				"23A45354BB6278AB"
+			]
+			description: ["What do I say? Every mod needs a \"wrench\", with magic mods having wands. This will be used to link flowers to mana spreaders and spreaders to mana pools."]
+			id: "1B7709CADC7964A1"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "546CB42B94E95C2C"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "3331E9E96EF023CC"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "item(botania:twig_wand)"
+					}
+				}
+				title: "Wand Of The Forest"
+				type: "item"
+			}]
+			title: "Magic Mods Have A Wand"
+			x: 3.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["621489CAAF27E0F0"]
+			description: ["If you want to store less mana for some reason, this is for you. It's a mana pool but smaller."]
+			id: "79FA2EFD9480F013"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "618F4737038FFC6B"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "0E83DA01C99F35A0"
+				item: "botania:diluted_pool"
+				type: "item"
+			}]
+			title: "Shallow Pool"
+			x: 3.0d
+			y: -9.0d
+		}
+		{
+			dependencies: ["23A45354BB6278AB"]
+			description: ["If you ever wanted to control the output of mana with redstone, this cheapo addition to the mana spreader is for you. Flick a lever and watch the mana flow."]
+			id: "14047231684ACBB1"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "65D45855C2CE4763"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "2C4C09E006D89C32"
+				item: "botania:redstone_spreader"
+				type: "item"
+			}]
+			title: "Sethbling Here"
+			x: 5.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["4FE5C7A208DD6B12"]
+			description: ["Flowers are so troublesome to carry, I would just throw them in lava, but if for some reason you want to keep them this pouch will carry them all."]
+			id: "3B883382E300B5E3"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "09C7F9D112C1714D"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "4D04F1F5365CFCF6"
+				item: "botania:flower_bag"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["621489CAAF27E0F0"]
+			description: ["If you find one of these in the world just throw it in your mana pool and get some free mana, neat!"]
+			id: "5485B910D9CC526E"
+			rewards: [{
+				id: "64B2D74A138385B0"
+				item: "botania:black_lotus"
+				type: "item"
+			}]
+			tasks: [{
+				id: "47878D10C7F86193"
+				item: "botania:black_lotus"
+				type: "item"
+			}]
+			title: "The Black Lotus"
+			x: 4.0d
+			y: -9.0d
+		}
+		{
+			dependencies: ["621489CAAF27E0F0"]
+			description: ["Botania has alloys? Maybe it is a tech mod... Not. Throw an iron ingot into your mana pool and watch it get all blue."]
+			id: "24A06DCEE26CCAE7"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "0E2246A4F3A9A605"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "047D3BF09F3F6FF1"
+				item: "botania:manasteel_ingot"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -9.0d
+		}
+		{
+			dependencies: [
+				"49632A04A2BB3057"
+				"68BFE14E398A4D93"
+			]
+			dependency_requirement: "one_completed"
+			description: ["I know all you zoomers are Ipad kids. Vazkii knew this and added a tablet for you all, it may not have wifi, but it can store some mana in it. Throw this at the mana pool &mwith a case on so it doesn't crack&r and watch it fill up."]
+			id: "12C13B4ED2223FBD"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5FCAE4F25C72D5E1"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "50DBDDD11DC6D549"
+				item: "botania:mana_tablet"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["621489CAAF27E0F0"]
+			description: ["Take your enderpearl for a swim, unlike the enderman the pearl seems to be waterproof, or I guess manaproof. You'll get a mana pearl out of it."]
+			id: "68BFE14E398A4D93"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "2F8639D85190071C"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "1A2B594925FE76FD"
+				item: "botania:mana_pearl"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["621489CAAF27E0F0"]
+			description: ["Wanna make your diamond magic &mand blue&r, then throw it into the pool and watch magic happen!"]
+			id: "49632A04A2BB3057"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "72F3C8DB9B0E038A"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "6319CEF9F1D1A8C7"
+				item: "botania:mana_diamond"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["68BFE14E398A4D93"]
+			description: ["Ever wanted to change something into another item that's somewhat related? Place this under your mana pool and infuse all sorts of things into somewhat related items."]
+			id: "7DBE62ECB95595AB"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5D7A33C693E26776"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "640A5605A10CDEB6"
+				item: "botania:alchemy_catalyst"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -9.0d
+		}
+		{
+			dependencies: ["7DBE62ECB95595AB"]
+			description: ["Use some mana to dupe a very limited amount of items. This pack is too easy."]
+			id: "383E7CC06E6EFA6A"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "15302CD6208EEDF7"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "1B072811B2435688"
+				item: "botania:conjuration_catalyst"
+				type: "item"
+			}]
+			title: "Dupe Glitch Plz Patch"
+			x: 0.0d
+			y: -10.0d
+		}
+		{
+			dependencies: [
+				"68BFE14E398A4D93"
+				"49632A04A2BB3057"
+			]
+			dependency_requirement: "one_completed"
+			description: ["Runes are your next major pain point for botania, each item will need its own type of rune based on sins or seasons. Might as well bulk craft em'."]
+			id: "563DC481117FBDFD"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7E6A25C481D89A93"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "2D9607433225253B"
+				item: "botania:runic_altar"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["12C13B4ED2223FBD"]
+			description: ["If you love botania so much why don't you marry it? Put this ring on the pool then in one of your curio slots to store mana on your person."]
+			id: "0994EA25ED5B3B9A"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7DAF7EF62820BB4C"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "05A14D95E244F0C2"
+				item: "botania:mana_ring"
+				type: "item"
+			}]
+			title: "Put A Ring On It"
+			x: 1.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["160136B2161E0F8D"]
+			description: ["If you're a fan of potions botania allows you to make even better ones, may be useful for some of the boss rush quests."]
+			id: "203DAE34047A1226"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "376E2D3DAF6C2B44"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "7DBD3F57C6D7B4A1"
+				item: "botania:brewery"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -9.0d
+		}
+		{
+			dependencies: ["23A45354BB6278AB"]
+			description: ["Mana spreaders are so lame, why not use sparks instead like a real chad. Some blocks can use this to get mana."]
+			id: "1DC634BC2AA968C7"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "0F269E5594C0E4C3"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "5C65FCF21E540AEB"
+				item: "botania:spark"
+				type: "item"
+			}]
+			title: "Spark Of Genius"
+			x: 5.0d
+			y: -9.0d
+		}
+		{
+			dependencies: ["563DC481117FBDFD"]
+			description: ["Among the selection of runes you can craft involves the elements. Like all the other runes these can be used for curios, flowers, and other tools."]
+			id: "38BC58374161E715"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "03B2608B627D7840"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [
+				{
+					id: "684C1F96F0F065AA"
+					item: "botania:rune_water"
+					type: "item"
+				}
+				{
+					id: "73249302439DC530"
+					item: "botania:rune_earth"
+					type: "item"
+				}
+				{
+					id: "44B21AF59C3A977E"
+					item: "botania:rune_air"
+					type: "item"
+				}
+				{
+					id: "0280F011418B9129"
+					item: "botania:rune_fire"
+					type: "item"
+				}
+			]
+			title: "Runes Of Elements"
+			x: -0.5d
+			y: -9.0d
+		}
+		{
+			dependencies: ["563DC481117FBDFD"]
+			description: ["Among the selection of runes you can craft involves the seasons. Like all the other runes these can be used for curios, flowers, and other tools."]
+			id: "5F928171E2728645"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "71E82FBA260AECF4"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [
+				{
+					id: "3821AD18A9F5ED66"
+					item: "botania:rune_spring"
+					type: "item"
+				}
+				{
+					id: "09117E8C23AE5F01"
+					item: "botania:rune_summer"
+					type: "item"
+				}
+				{
+					id: "362DBBA758B968E6"
+					item: "botania:rune_autumn"
+					type: "item"
+				}
+				{
+					id: "5401A495DB1C4E8E"
+					item: "botania:rune_winter"
+					type: "item"
+				}
+			]
+			title: "Runes Of Seasons"
+			x: -0.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["563DC481117FBDFD"]
+			description: ["Among the selection of runes you can craft involves the 7 deadly sins. Like all the other runes these can be used for curios, flowers, and other tools."]
+			id: "3824D16AD4EDA682"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "55EB513F0B305F05"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [
+				{
+					id: "52AFC960E01AA50D"
+					item: "botania:rune_lust"
+					type: "item"
+				}
+				{
+					id: "666309782949DD4F"
+					item: "botania:rune_gluttony"
+					type: "item"
+				}
+				{
+					id: "0C0104D255DD8DDD"
+					item: "botania:rune_greed"
+					type: "item"
+				}
+				{
+					id: "559517E6EBAC85B7"
+					item: "botania:rune_sloth"
+					type: "item"
+				}
+				{
+					id: "2955C43C3A0688BD"
+					item: "botania:rune_wrath"
+					type: "item"
+				}
+				{
+					id: "0FE18A9000FD8AEF"
+					item: "botania:rune_envy"
+					type: "item"
+				}
+				{
+					id: "6D1E0C48952E76E9"
+					item: "botania:rune_pride"
+					type: "item"
+				}
+			]
+			title: "Runes Of Sin"
+			x: -0.5d
+			y: -8.0d
+		}
+		{
+			dependencies: [
+				"38BC58374161E715"
+				"5F928171E2728645"
+				"3824D16AD4EDA682"
+			]
+			dependency_requirement: "one_completed"
+			description: ["The final (well, probably not) rune you'll deal with is the mana rune, which is a requirement to move on to terrasteel."]
+			id: "160136B2161E0F8D"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "30B1A0EAF858C3B1"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "63797E4D4EBFDAD5"
+				item: "botania:rune_mana"
+				type: "item"
+			}]
+			title: "One Last Rune"
+			x: -2.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["160136B2161E0F8D"]
+			description: ["Finally, it's time to abandon manasteel and welcome the terrasteel future. Terrasteel needs tons of mana, so I hope you planted tons of more flowers."]
+			id: "50D9A63881827533"
+			rewards: [{
+				id: "198158B63CFBB00D"
+				item: "botania:terrasteel_ingot"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2198B2A5DBFA32AC"
+				item: "botania:terra_plate"
+				type: "item"
+			}]
+			title: "Terrasteel Production"
+			x: -3.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["50D9A63881827533"]
+			description: ["The Terra Shatterer is an upgradable pickaxe determined by the amount of mana you feed it. Best automate some mana production and leave this on a pool for a week or two. Don't worry, these don't despawn."]
+			id: "75E25D5344C95E15"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "104C2626BCF178A5"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "0869B14BE7A376FE"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "item(botania:terra_pick)"
+					}
+				}
+				title: "Terra Shatterer"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -9.0d
+		}
+		{
+			dependencies: ["75E25D5344C95E15"]
+			description: ["After all this time, you finally did it."]
+			id: "0EBCF31A3B289C96"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "76F1B353AE9F36A7"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "3DFEC463A1377DA9"
+				item: {
+					Count: 1
+					id: "botania:terra_pick"
+					tag: {
+						Damage: 0
+						mana: 2147483646
+					}
+				}
+				type: "item"
+			}]
+			title: "Master Shatterer"
+			x: -3.0d
+			y: -10.0d
+		}
+		{
+			dependencies: ["50D9A63881827533"]
+			description: ["Apparently, elves know a thing or two about flowers, how about you build a portal to find out the secrets about flowers."]
+			id: "66F1149DA13D4CD3"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "0C804D3893124F76"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [
+				{
+					count: 8L
+					id: "1E27ABE533948F65"
+					item: { Count: 8, id: "botania:livingwood" }
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "6CF9E597E9E6730F"
+					item: { Count: 3, id: "botania:glimmering_livingwood" }
+					type: "item"
+				}
+				{
+					id: "3B4C12ABA3B5B599"
+					item: "botania:alfheim_portal"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "4894F98D92E56B3D"
+					item: { Count: 2, id: "botania:mana_pool" }
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "3B4D8D6B09F90709"
+					item: { Count: 2, id: "botania:natura_pylon" }
+					type: "item"
+				}
+			]
+			title: "Speaking Elvish"
+			x: -4.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["66F1149DA13D4CD3"]
+			description: ["Huh, apparently you're too stinky to be allowed inside the actual elf dimension, makes sense. How about you just throw your original book in and see if they'll update your guide. You can read elvish right?"]
+			id: "23859433EDD73152"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "0C2F042B0ADF56E4"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "21AB1635DC9F3466"
+				item: {
+					Count: 1
+					id: "botania:lexicon"
+					tag: {
+						"botania:elven_unlock": 1b
+					}
+				}
+				type: "item"
+			}]
+			title: "Secret Knowledge"
+			x: -4.0d
+			y: -9.0d
+		}
+		{
+			dependencies: ["66F1149DA13D4CD3"]
+			description: ["The elves are wanting mana pearls, and in return they will give you pixie dust. Atleast I think that's what they're saying, it's that or something about hobbits to isengard."]
+			id: "4028D488837C79B3"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "4075FD123B10C8C7"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "316ABB87078B8D7E"
+				item: "botania:pixie_dust"
+				type: "item"
+			}]
+			title: "Pixy Stix"
+			x: -4.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["66F1149DA13D4CD3"]
+			description: ["The elves are wanting manasteel, and in return they will give you elementium ingots. Atleast I think that's what they're saying, it's that or something about syrup being a food group."]
+			id: "63AE129C27EDFCD6"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "35D8244C2BA5EF1F"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "6D9B4FCD960EB45B"
+				item: "botania:elementium_ingot"
+				type: "item"
+			}]
+			title: "Elementium"
+			x: -3.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["24A06DCEE26CCAE7"]
+			description: ["Manasteel has the properties of normal iron with the enchanting benefit of gold, however they can be repaired by just chucking them in a mana pool."]
+			id: "06A039C05AE80A43"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "744B5B79BEF4A8DB"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "576D39E13805876A"
+				item: {
+					Count: 1
+					id: "botania:manasteel_pick"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Mana Tools"
+			x: 2.0d
+			y: -10.0d
+		}
+		{
+			dependencies: ["3B883382E300B5E3"]
+			description: ["It's quite awful hunting for silly little flowers, why not use some fertilizer to grow them instead?"]
+			id: "79F9B15A5BB2EF31"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "540CB39D9EFB54D9"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "0F25B67CF644686D"
+				item: "botania:fertilizer"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -4.5d
+		}
+		{
+			dependencies: [
+				"4028D488837C79B3"
+				"63AE129C27EDFCD6"
+			]
+			description: ["Warning for all those who enter, prepare for this fight as this is your source for gaia spirits, unlocking the best items you can get."]
+			id: "63FB5C173A0AF78E"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "3F50981EB655A3FB"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				count: 4L
+				id: "76C764E5558EE23C"
+				item: "botania:gaia_pylon"
+				type: "item"
+			}]
+			title: "The Baby Gaia Guardian"
+			x: -4.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["66F1149DA13D4CD3"]
+			description: ["Elves have wood in their world too, but apparently it dreams or something, idk."]
+			id: "5204CC3B93896E8C"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "749711E462570045"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "3A506AC5795912CA"
+				item: "botania:dreamwood_log"
+				type: "item"
+			}]
+			title: "Dreamwood"
+			x: -5.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["5204CC3B93896E8C"]
+			description: ["Default mana spreader or your current sparks aren't cutting it? Upgrade your mana spreader to the new elven one to spread more betterer."]
+			id: "6531C76E32EE9662"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "561CD0590E5C7834"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "1F372BF28A345620"
+				item: "botania:elven_spreader"
+				type: "item"
+			}]
+			title: "Better Spreading"
+			x: -6.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["63FB5C173A0AF78E"]
+			description: ["You did it huh, take some of that gaia spirit you got from the fight and turn it into ingots."]
+			id: "5CDE37C965D51AC7"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "566FC9C69E183F8D"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "77FC8DEF4E463F03"
+				item: "botania:gaia_ingot"
+				type: "item"
+			}]
+			title: "Gaia Spirit Ingots"
+			x: -4.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["5CDE37C965D51AC7"]
+			description: ["Acts like an infinite pocket, right click a block to \"mark\" it and shift right click to activate. Once active the talisman will eat any of that block and store it. The blocks ate can be placed via right click from the active talisman."]
+			id: "4193453968B17328"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "01277F3B0FE414A8"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "4A0BCFEB738E6064"
+				item: "botania:black_hole_talisman"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["5CDE37C965D51AC7"]
+			description: ["Still not spreading enough mana? This is your final upgrade."]
+			id: "34EFA4F60BBDF844"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7AE8D5B75A416468"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "6D1419B5FD157AFB"
+				item: "botania:gaia_spreader"
+				type: "item"
+			}]
+			x: -5.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["5CDE37C965D51AC7"]
+			description: ["Thought the original Gaia Guardian was too easy? Why not fight the stronger version. Summon it via the gaia ingot instead of terrasteel, if you win you get to gamble for good items!"]
+			id: "270564A68AD0A453"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "0E960AA91BCEA9A7"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				icon: "botania:dice"
+				id: "62CF286B7D01D326"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "item(botania:dice)"
+					}
+				}
+				title: "Dice of Fate"
+				type: "item"
+			}]
+			title: "Gaia Fight V2"
+			x: -4.0d
+			y: -4.0d
+		}
+	]
+	title: "Botania And You"
+}

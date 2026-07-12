@@ -1,0 +1,229 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "world_of_computing"
+	group: "15A08A4162B9FFA4"
+	hide_quest_until_deps_complete: true
+	icon: "computercraft:computer_normal"
+	id: "354F184B5E4B2DAB"
+	order_index: 4
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"2F58CA96D4FC51DD"
+				"6034443679DE9C04"
+				"3FE736E4E3A2FDDB"
+			]
+			dependency_requirement: "one_completed"
+			description: ["Are you a nerd who loves Lua? &mI see everyone has left now&r Well computer craft is for you! Program turtles to do your will so you can replace everyone with AI! My dream!"]
+			id: "017FB0A07E3E51C5"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "3FA28374E51BE310"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "6034443679DE9C04"
+				item: "computercraft:computer_normal"
+				type: "item"
+			}]
+			title: "First Computer"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["017FB0A07E3E51C5"]
+			description: ["Basic computer not cutting it? Slap a new drive in and watch as this baby speeds up, it still can't run crisis though."]
+			id: "6CD3A1993FB6C1F1"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "33C847AB244B66E2"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "3FE736E4E3A2FDDB"
+				item: "computercraft:computer_advanced"
+				type: "item"
+			}]
+			title: "Advanced Computing"
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["017FB0A07E3E51C5"]
+			description: ["Turtles can accept all sorts of items to do various tasks and functions, best look at JEI to see what's available."]
+			id: "7505DBCCE4E6CC5D"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "1455D8702A4EA9F1"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "1B98A5591D629212"
+				item: "computercraft:turtle_normal"
+				type: "item"
+			}]
+			title: "Unpaid Labor"
+			x: 2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["017FB0A07E3E51C5"]
+			description: ["A computer is pretty useless if you can't see what's on screen, I guess unless you're sshing in."]
+			id: "1FC4715F46DC3000"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "411F71260F889AEF"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "1BF06845614339A8"
+				item: "computercraft:monitor_normal"
+				type: "item"
+			}]
+			title: "Visuals Up"
+			x: 1.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["017FB0A07E3E51C5"]
+			description: ["Surely you want to hear all the wild things on the internet? How am I supposed to watch my Fortnite Funnies?"]
+			id: "014CF7A623136858"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "1276F2B754A1FFA4"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			subtitle: "*Beep*"
+			tasks: [{
+				id: "3E102FF780F601A9"
+				item: "computercraft:speaker"
+				type: "item"
+			}]
+			title: "Play That Funky Music"
+			x: -1.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["017FB0A07E3E51C5"]
+			description: ["Who like losing data? No one that's who. Save all your data via the disk drive and slotting in a floppy disk."]
+			id: "1A65BF17217E35CA"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5371158A1DB0BB45"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "321D929B682FB6A9"
+				item: "computercraft:disk_drive"
+				type: "item"
+			}]
+			title: "Click To Save"
+			x: 1.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["017FB0A07E3E51C5"]
+			description: ["Sometimes you want it in paper form, I get it."]
+			id: "1E9DA83FC1E43829"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "3074C433E5D2C590"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "7176C8D0AA64B11C"
+				item: "computercraft:printer"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["017FB0A07E3E51C5"]
+			description: ["The redstone relay is a peripheral that allows reading and outputting redstone signals. While this is not very useful on its own (as computers have the same functionality built-in), this can be used with wired modems to interact with multiple redstone signals from the same computer."]
+			id: "3036AEFFD335AA18"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "67A58C67EACF2A47"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "79BB8B5D58FCECD1"
+				item: "computercraft:redstone_relay"
+				type: "item"
+			}]
+			title: "Redstone Control"
+			x: 1.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["017FB0A07E3E51C5"]
+			description: ["These send messages to other any other wired modems connected to the same network (using Networking Cable). They also can be used to attach additional peripherals to a computer."]
+			id: "5775753D4207652D"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7834B9F3EEF2466F"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "6D8E425B2235C460"
+				item: "computercraft:wired_modem"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["017FB0A07E3E51C5"]
+			description: [
+				"Wireless modems can send messages to any other wireless modem. They can be placed next to a computer, or equipped as a pocket computer or turtle upgrade."
+				""
+				"Wireless modems have a limited range, only sending messages to modems within 64 blocks. This range increases linearly once the modem is above y=96, to a maximum of 384 at world height."
+			]
+			id: "79F7765371D3099D"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "30E8350D793B9558"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "6A63741FCA399CFF"
+				item: "computercraft:wireless_modem_normal"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["79F7765371D3099D"]
+			description: ["These are upgraded versions of normal wireless modems. They do not have a distance limit, and can send messages between dimensions."]
+			id: "0418B9826B9C2CD5"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "744E509FA880660E"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "52798ACF3D2FF1C3"
+				item: "computercraft:wireless_modem_advanced"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 2.0d
+		}
+	]
+	title: "World Of Computing"
+}
