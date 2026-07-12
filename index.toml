@@ -6606,7 +6606,7 @@ hash = "786d29abc5d3fe326d5a5a370a3aad90b4a7da110e70ce976e6e8376d18ed484"
 
 [[files]]
 file = "config/chancecubes/custom_rewards/CustomSounds-Resourcepack.zip"
-hash = "1f9d0900a015350d5385c34c43d4b1b5e85c5e895b1ea6db9ce5a91ef8431b6a"
+hash = "1a9b1a9b8281cd26856f3ea6baa041c912cf19fec2dc31a4d7646b77465f31a2"
 
 [[files]]
 file = "config/chancecubes/custom_rewards/sounds/sounds.json"
@@ -7222,7 +7222,7 @@ hash = "9ae6a431eced76284456a4e287ff4ed2095266f07787c9feb66003dff2a5ced5"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/pressure_on_the_job.snbt"
-hash = "65f1189c010102562682315904da1c64e6f36c2f085f98704d0395a59e8ac028"
+hash = "3f068f414e2e1f1c375e708b7a9c74fb7947789536b063629c6f5cd9c3f76d4f"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/promotion.snbt"
@@ -7670,7 +7670,7 @@ hash = "cbc1f19ad49273dde46d3f7c888005e780a2ccde34933a543454b773d34cec34"
 
 [[files]]
 file = "config/oculus.properties"
-hash = "d7c7d5c755811bdc0b9c1894d1f7044047ec5e66d6000c9bc75a654a8b9197f2"
+hash = "4e5bb8afb29531101f5b70908aabc88af9845904224e16637f7661d0a84b9b43"
 
 [[files]]
 file = "config/overflowingbars-client.toml"
@@ -7678,7 +7678,7 @@ hash = "1cb5807421d57c43c64c74b18bc22a30452f4e84b59020ed39742c0b957ea57b"
 
 [[files]]
 file = "config/packetfixer.properties"
-hash = "ee09c6dc8e16ca906fcbf54c4b3cae690c6be6b21448305463d1a9dc16945a62"
+hash = "5e25c5a71cca4f0dd1406694fe98c44be6ded4dc9d405e12a6ffff3c51f36a63"
 
 [[files]]
 file = "config/pamhc2crops.toml"
@@ -8270,15 +8270,11 @@ hash = "c1f8fa199a59c1b129d6c1c6fddea11fad4dc2b2b233e3b48ef793d79d9ce5e1"
 
 [[files]]
 file = "kubejs/server_scripts/recipe_changes.js"
-hash = "3f43f3f64d519b75aa73a1fea2d60a0e7fe9cdb32f67e826002a5a7ab3becdd0"
+hash = "89cc26955aa3c56675fd7c618057d97f91666873e3c249cf34e4f4a5b21f4aec"
 
 [[files]]
 file = "kubejs/server_scripts/tagadd.js"
 hash = "a579e608c25c2b3ad1e81a6fa04e4e3b98a3afce7d008d004026cd7c8e2858bc"
-
-[[files]]
-file = "kubejs/startup_scripts/disable_tools_stats.js"
-hash = "d69c92468825f951ec219e85609e6b40f3715632ff1a416ca72ff1c64b0ade14"
 
 [[files]]
 file = "mods/advanced-chimneys.pw.toml"
@@ -10012,6 +10008,11 @@ metafile = true
 [[files]]
 file = "mods/structurize.pw.toml"
 hash = "f3e28999ec3aa4973621ebd2ba2bf7f1af0a50f950ffe545444c7ebad54c5921"
+metafile = true
+
+[[files]]
+file = "mods/stylecolonies.pw.toml"
+hash = "a1113fd201fbab58948edf83119ee615c40570a2c36fe929acc1fbe8a9ca844d"
 metafile = true
 
 [[files]]

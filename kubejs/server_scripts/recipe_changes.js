@@ -377,6 +377,35 @@ ServerEvents.recipes(event => {
         F: 'minecraft:furnace'
     });
 
+    event.remove({output: 'industrialforegoing:ore_laser_base'});
+
+    event.shaped(Item.of('industrialforegoing:ore_laser_base', 1), [
+        'FRF',
+        'BMB',
+        'IFI'
+    ], {
+        R: 'createoreexcavation:drilling_machine',
+        I: '#forge:gears/diamond',
+        B: 'minecraft:iron_ore',
+        M: 'industrialforegoing:machine_frame_advanced',
+        F: 'immersiveengineering:sample_drill'
+    });
+
+    event.remove({output: 'mekanism:digital_miner'});
+
+    event.shaped(Item.of('mekanism:digital_miner', 1), [
+        'FRF',
+        'BMB',
+        'ISI'
+    ], {
+        I: 'mekanism:teleportation_core',
+        R: 'industrialforegoing:ore_laser_base',
+        B: 'mekanism:logistical_sorter',
+        M: 'mekanism:robit',
+        F: 'mekanism:alloy_atomic',
+        S: 'mekanism:steel_casing'
+    });
+
     event.remove({ id: 'solarflux:mirror' });
 
     event.shaped(Item.of('solarflux:mirror', 3), [

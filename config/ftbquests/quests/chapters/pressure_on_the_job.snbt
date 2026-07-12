@@ -1611,7 +1611,14 @@
 				{
 					count: 6L
 					id: "2EA9611DBED035E2"
-					item: { Count: 6, id: "immersiveengineering:storage_steel" }
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:storage_blocks/steel"
+						}
+					}
+					title: "Steel Blocks"
 					type: "item"
 				}
 				{
@@ -1715,7 +1722,14 @@
 				{
 					count: 9L
 					id: "0AE95EF6A11D7167"
-					item: { Count: 9, id: "immersiveengineering:storage_steel" }
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:storage_blocks/steel"
+						}
+					}
+					title: "Steel Blocks"
 					type: "item"
 				}
 			]
@@ -1830,7 +1844,14 @@
 				{
 					count: 9L
 					id: "516F0832874AC0F9"
-					item: { Count: 9, id: "immersiveengineering:storage_steel" }
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:storage_blocks/steel"
+						}
+					}
+					title: "Steel Blocks"
 					type: "item"
 				}
 			]
