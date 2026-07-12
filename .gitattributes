@@ -1,6 +1,5 @@
-# enforce LF for NuclearCraft configs and common text files
-config/NuclearCraft/** text eol=lf
+config/** text eol=lf
 *.json text eol=lf
-*.toml text eol=lf
+*.conf text eol=lf
+*.js text eol=lf
 *.txt text eol=lf
-*.md  text eol=lf
