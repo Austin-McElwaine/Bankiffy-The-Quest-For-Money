@@ -6606,7 +6606,7 @@ hash = "786d29abc5d3fe326d5a5a370a3aad90b4a7da110e70ce976e6e8376d18ed484"
 
 [[files]]
 file = "config/chancecubes/custom_rewards/CustomSounds-Resourcepack.zip"
-hash = "80044ef2d0e048c922fde705a8f4a4614089324b8f9867d1dce5528c37701a92"
+hash = "1f9d0900a015350d5385c34c43d4b1b5e85c5e895b1ea6db9ce5a91ef8431b6a"
 
 [[files]]
 file = "config/chancecubes/custom_rewards/sounds/sounds.json"
@@ -7121,8 +7121,16 @@ file = "config/forgeendertech/Biomes/minecraft$stony_peaks.cfg"
 hash = "aa722a7388a8bc6cb80fc0fb86352512305959c54104dab950d32cb347631808"
 
 [[files]]
+file = "config/forgeendertech/Biomes/minecraft$windswept_savanna.cfg"
+hash = "b065e5aa2b0c22012aaae7c84ea3a812ee3f060afc5e17211a6d828ca10a6178"
+
+[[files]]
 file = "config/forgeendertech/Biomes/terralith$arid_highlands.cfg"
 hash = "7eebc7b855fc46d7c8e97e7841a5ac1515d3e829c5916ee3959a7060139bc295"
+
+[[files]]
+file = "config/forgeendertech/Biomes/terralith$forested_highlands.cfg"
+hash = "ca205a2005d94f99034f3a7fb56aa8adb99d739677fdbdfa829c34d1690ff28a"
 
 [[files]]
 file = "config/forgeendertech/Biomes/terralith$highlands.cfg"
@@ -7454,7 +7462,7 @@ hash = "22b4560c3dc05da35a70bb6611da0ce04cff295ab8c663afd58e725c396a24b3"
 
 [[files]]
 file = "config/jade/jade.json"
-hash = "4624fc2e033829004e59a6269ccc409529d653d7cfa902e8cb3dc570daba14a2"
+hash = "66254bb8b5b2e686618ef2b7d09008a311558305c946ddde6f22a87374453fa0"
 
 [[files]]
 file = "config/jade/plugins.json"
@@ -7662,7 +7670,7 @@ hash = "cbc1f19ad49273dde46d3f7c888005e780a2ccde34933a543454b773d34cec34"
 
 [[files]]
 file = "config/oculus.properties"
-hash = "41a9573508532133c96df09dcbd76d676d308b3dd537e9d461f24192cf842be3"
+hash = "d7c7d5c755811bdc0b9c1894d1f7044047ec5e66d6000c9bc75a654a8b9197f2"
 
 [[files]]
 file = "config/overflowingbars-client.toml"
@@ -7670,7 +7678,7 @@ hash = "1cb5807421d57c43c64c74b18bc22a30452f4e84b59020ed39742c0b957ea57b"
 
 [[files]]
 file = "config/packetfixer.properties"
-hash = "759f49eb029e5cdf0570795c727690e5b5a867c23f867759f6f64a0595d852c1"
+hash = "ee09c6dc8e16ca906fcbf54c4b3cae690c6be6b21448305463d1a9dc16945a62"
 
 [[files]]
 file = "config/pamhc2crops.toml"
@@ -8146,7 +8154,7 @@ hash = "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
 
 [[files]]
 file = "config/voicechat/voicechat-client.properties"
-hash = "c22ab2b52aa5d2298573fffcd67f1918653e95a180c4c2dd15cc4fd133c15d35"
+hash = "74153a2ed9ff8e5901f7a2838667ba5409c9992a553204bb41174fc03061a8f0"
 
 [[files]]
 file = "config/voicechat/voicechat-server.properties"
