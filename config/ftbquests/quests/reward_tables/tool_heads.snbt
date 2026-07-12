@@ -1,0 +1,35 @@
+{
+	id: "726EFDD1E399798C"
+	loot_size: 1
+	order_index: 0
+	rewards: [
+		{
+			item: {
+				Count: 1
+				id: "tconstruct:hammer_head"
+				tag: {
+					Material: "tconstruct:iron"
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1
+				id: "tconstruct:broad_axe_head"
+				tag: {
+					Material: "tconstruct:iron"
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1
+				id: "tconstruct:broad_blade"
+				tag: {
+					Material: "tconstruct:iron"
+				}
+			}
+		}
+	]
+	title: "Tool Heads"
+}

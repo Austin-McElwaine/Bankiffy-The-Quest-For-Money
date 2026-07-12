@@ -1,0 +1,7 @@
+
+["Accessibility Settings"]
+	#Enable or disable camera shaking effects (Turn off if you experience motion sickness).
+	enableCameraShake = true
+	#Enable or disable dynamic FOV changes caused by mod items and effects.
+	enableFovEffects = true
+

@@ -1,0 +1,132 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "banking_on_banksco"
+	group: "15A08A4162B9FFA4"
+	hide_quest_until_deps_complete: true
+	icon: "banksystem:money"
+	id: "0A700989F02ED28F"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["0C08D54D7B56A194"]
+			description: ["If you right click the Terminal Block with the software you'll be able to access the global market. With the global market you will be able to make &mme&r tons of money by buying low and selling high"]
+			id: "15EF1DE748FDFEC1"
+			rewards: [{
+				id: "2312DF1D7691E165"
+				item: "banksystem:money100"
+				type: "item"
+			}]
+			subtitle: "Money Money Money"
+			tasks: [
+				{
+					id: "208D43806776CA33"
+					item: "stockmarket:trading_software"
+					type: "item"
+				}
+				{
+					id: "3EED730B3B8C6187"
+					item: "banksystem:terminal_block"
+					type: "item"
+				}
+			]
+			title: "The Only Stock Market"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["15EF1DE748FDFEC1"]
+			description: ["Constructed the same way as the terminal, the bank will allow you to send and recieve the items you trade"]
+			id: "01E018679CB64FE7"
+			rewards: [{
+				id: "540670725326197C"
+				item: "banksystem:money100"
+				type: "item"
+			}]
+			subtitle: "Not FDIC Insured"
+			tasks: [
+				{
+					id: "5F87C8D2462C830F"
+					item: "banksystem:terminal_block"
+					type: "item"
+				}
+				{
+					id: "7A820AA3948D6D6E"
+					item: "banksystem:banking_software"
+					type: "item"
+				}
+			]
+			title: "Banks"
+			x: 0.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["01E018679CB64FE7"]
+			description: ["With a redstone signal, some pipes, and lots of resources, you can automate uploading items to your bank account"]
+			id: "08CA5E2EC1CBBB23"
+			rewards: [{
+				id: "0D45527E7C74D978"
+				item: "banksystem:money500"
+				type: "item"
+			}]
+			tasks: [{
+				id: "31EAD90DD6A046AC"
+				item: "banksystem:bank_upload_block"
+				type: "item"
+			}]
+			title: "Auto Banking: Upload"
+			x: -0.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["01E018679CB64FE7"]
+			description: ["With a redstone signal, you can have this block linked to your bank to always have an X amount of said item within it. It is also compatible with pipes"]
+			id: "13C872B640DC12A6"
+			rewards: [{
+				id: "7D065695A5508E54"
+				item: "banksystem:money500"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7D60DDA88D60A951"
+				item: "banksystem:bank_download_block"
+				type: "item"
+			}]
+			title: "Auto Banking: Download"
+			x: 0.5d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"13C872B640DC12A6"
+				"08CA5E2EC1CBBB23"
+			]
+			description: ["Here's a grand reward for making &mme&r tons of money"]
+			id: "71576C370CF6B246"
+			rewards: [{
+				id: "487AB89B967A5C37"
+				item: {
+					Count: 1
+					id: "minecraft:paper"
+					tag: {
+						display: {
+							Name: "{\"text\":\"1 BanksCo Share\",\"italic\":false}"
+						}
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				count: 1000L
+				id: "014E2B7526879F8A"
+				item: "banksystem:money1000"
+				type: "item"
+			}]
+			title: "Money Maker"
+			x: 0.0d
+			y: -3.0d
+		}
+	]
+	title: "Banking On BanksCo"
+}

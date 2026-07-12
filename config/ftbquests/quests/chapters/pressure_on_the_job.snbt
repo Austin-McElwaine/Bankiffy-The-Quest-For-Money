@@ -1,0 +1,1978 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "pressure_on_the_job"
+	group: "7CFCEAC35D52A876"
+	hide_quest_until_deps_complete: true
+	icon: "pneumaticcraft:pressure_gauge"
+	id: "40D1299E3D38EA64"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"4450739A471BCB0E"
+				"00CA8C3F59B2D040"
+				"1911C1B1FF8D2D84"
+				"0F7B12E40C5A5791"
+				"6FF6B3D715137EA3"
+				"22AE33F0C9E76A63"
+			]
+			dependency_requirement: "one_completed"
+			description: ["If you purposely blow up some iron with tnt you will create a new type of ingot, you'll lose some in the blase, but you gotta spend money to make money"]
+			id: "6C5B11324FE1D9F1"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "0D72A8B28A246DD4"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "22AE33F0C9E76A63"
+				item: "pneumaticcraft:ingot_iron_compressed"
+				type: "item"
+			}]
+			title: "My Iron!"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6C5B11324FE1D9F1"]
+			description: ["Pressured tubing can be used to move around the air you need for the amount of coping you do 24/7"]
+			id: "321E61F26468AA30"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "007B0F887136045A"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				count: 8L
+				id: "1D62764D042E1EBD"
+				item: { Count: 8, id: "pneumaticcraft:pressure_tube" }
+				type: "item"
+			}]
+			title: "Pressured Tubing"
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["321E61F26468AA30"]
+			description: ["Under too much pressure? These pipes can handle twice the amount the basic ones do."]
+			id: "7B1F03257170CD4F"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "4B35053A5586CC2D"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				count: 8L
+				id: "1A484CA6984AE589"
+				item: { Count: 8, id: "pneumaticcraft:reinforced_pressure_tube" }
+				type: "item"
+			}]
+			title: "Better Pressure Management"
+			x: -1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["7B1F03257170CD4F"]
+			description: ["You can't get better than this when it comes to pressure management"]
+			id: "2E521F521C0300E2"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "6A2875018AC6052D"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				count: 8L
+				id: "3A9A1AD65B2FC59F"
+				item: { Count: 8, id: "pneumaticcraft:advanced_pressure_tube" }
+				type: "item"
+			}]
+			title: "The Best Under Pressure"
+			x: -3.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["6C5B11324FE1D9F1"]
+			description: [
+				"I wasn't lying before when I said every mod has a wrench. This wrench can allow you to pick up all the pneumatic machines without losing stored items"
+				""
+				"As compensation I will provide the other tool pneumaticcraft uses for free"
+			]
+			id: "62836B924AB9098B"
+			rewards: [{
+				id: "47EF3F022203C145"
+				item: "pneumaticcraft:logistics_configurator"
+				type: "item"
+			}]
+			tasks: [{
+				id: "08BC511D37FC3292"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "item(pneumaticcraft:pneumatic_wrench)"
+					}
+				}
+				title: "Pneumatic Wrench"
+				type: "item"
+			}]
+			title: "Every Mod Has A Wrench 2"
+			x: -1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["321E61F26468AA30"]
+			description: [
+				"Now that you have the tubing necessary you can finally start generating your first amount of compressed air."
+				""
+				"Just fuel it up and you're all set."
+			]
+			id: "4021CA4CF1F976D6"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "651DA4F5FF4F848C"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "4CBB0E6F04F3E28D"
+				item: "pneumaticcraft:air_compressor"
+				type: "item"
+			}]
+			title: "Compressed Air Generation"
+			x: 1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["6C5B11324FE1D9F1"]
+			description: ["Finally, we have the means to start using oil, it is our time to become kings of the &mMiddle East&r The World"]
+			id: "35B11A1CC0F8D0C2"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "27BDD277FDCC3CBF"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "68EDAAFDB71A3259"
+				item: "pneumaticcraft:oil_bucket"
+				type: "item"
+			}]
+			title: "Black Gold"
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["4021CA4CF1F976D6"]
+			description: ["What you want me to say, it's the previous one but better"]
+			id: "2E087ECD6046B9E8"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "34322C7088F89D1D"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "06196BD4728225D6"
+				item: "pneumaticcraft:advanced_air_compressor"
+				type: "item"
+			}]
+			title: "Advanced Air Compression"
+			x: 1.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["6C5B11324FE1D9F1"]
+			description: ["The Pressure Chamber is pneumaticcraft's multiblock to craft its items, it can be configured in a 3x3x3 or 5x5x5 configuration. Through this compressed iron will be easier to craft and you'll have the ability to start working on pcbs"]
+			id: "11EB802142DD3D26"
+			rewards: [
+				{
+					count: 3
+					id: "0B48FAA22B0E149F"
+					item: "pamhc2foodextended:stuffedpepperitem"
+					type: "item"
+				}
+				{
+					id: "568FBADC5730485F"
+					item: "ags_modernmarkings:wall_marking_voltage_steam"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 23L
+					id: "37657B03FDABD447"
+					item: { Count: 23, id: "pneumaticcraft:pressure_chamber_wall" }
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "0664C65E8A7C1658"
+					item: { Count: 2, id: "pneumaticcraft:pressure_chamber_interface" }
+					type: "item"
+				}
+				{
+					id: "155A12D43DFE4120"
+					item: "pneumaticcraft:pressure_chamber_valve"
+					type: "item"
+				}
+			]
+			title: "The Pressure Chamber"
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["35B11A1CC0F8D0C2"]
+			description: [
+				"A Refinery can take 2-4 outputs to turn crude oil into LPG/Gasoline/Kerosene/Diesel"
+				""
+				"To use you must insulate and heat the controller and outputs, to heat you can use hot blocks, liquids, or even a vortex tube"
+			]
+			id: "13A6E46A8306586D"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "224A384726D99F5B"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			subtitle: "Extracting The Nectar"
+			tasks: [
+				{
+					id: "156FC773D0B14AAE"
+					item: "pneumaticcraft:refinery"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "0CFBF4D62D2707BB"
+					item: { Count: 2, id: "pneumaticcraft:refinery_output" }
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["35B11A1CC0F8D0C2"]
+			description: ["If you no longer want to rely on solid fuels and want more compressed air the liquid compressor is for you! It can use not only use pneumaticcraft liquids, but other modded liquids as well."]
+			id: "15EA4D560013787B"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "4F130F8BE8ACC6E2"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "5E3E4FC9603D578A"
+				item: "pneumaticcraft:liquid_compressor"
+				type: "item"
+			}]
+			title: "Cooking With Gas"
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["15EA4D560013787B"]
+			description: ["What you want me to say, it's the previous one but better"]
+			id: "031A6ADC519BF99E"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "1EE32BCBEF44A0ED"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "77BCB9FA09FEA9FC"
+				item: "pneumaticcraft:advanced_liquid_compressor"
+				type: "item"
+			}]
+			title: "Advanced Cooking With Gas"
+			x: 1.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["13A6E46A8306586D"]
+			description: ["Now you have the power to heat (or cool) whatever you wish with your pressure generated"]
+			id: "67BD0F1089E8E705"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "011CE67510248CCE"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "7762F842C33CCD8B"
+				item: "pneumaticcraft:vortex_tube"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["13A6E46A8306586D"]
+			description: ["The TPP is used to refine an item/liquid into a more useful material. Most importantly plastic"]
+			id: "645CB74A9C53C845"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "3ED6B00BE1A9028D"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "225F4CB2FAE3025F"
+				item: "pneumaticcraft:thermopneumatic_processing_plant"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["645CB74A9C53C845"]
+			description: ["One of the great items you can make with the TPP is plastic,"]
+			id: "4E984B0B6E769667"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "276AA328F6B9400D"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "7313345F4CAD14F9"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "item_tag(forge:plastic)"
+					}
+				}
+				title: "Plastic"
+				type: "item"
+			}]
+			title: "Plastic Sheet"
+			x: -1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["11EB802142DD3D26"]
+			description: ["Etching Acid will be one of the items you'll need for a full functioning pcb, which can be used on later more powerful items"]
+			id: "50D0D771E0802D80"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "353CE133105DB98B"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "4712EA1F96415888"
+				item: "pneumaticcraft:etching_acid_bucket"
+				type: "item"
+			}]
+			title: "On Acid"
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["11EB802142DD3D26"]
+			description: ["PCBs are your bread and butter to anything techincal, and you can't just buy it. There's a chip shortage afterall"]
+			id: "11C75B62F7E42053"
+			rewards: [{
+				count: 3
+				id: "160274772B21E602"
+				item: "croptopia:cheese"
+				type: "item"
+			}]
+			tasks: [{
+				id: "47069ACF926636CD"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "item(pneumaticcraft:empty_pcb)"
+					}
+				}
+				title: "Empty PCB"
+				type: "item"
+			}]
+			title: "Chips And Cheese"
+			x: 3.0d
+			y: 1.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["11EB802142DD3D26"]
+			description: ["Psst, I got in contact with a competitor and managed to find this blueprint. He'll give it to us for 1k, I don't have the cash on me to pay him, you mind spotting me? Promise I'll make up for it."]
+			icon: "pneumaticcraft:pcb_blueprint"
+			id: "49FD7A9DEA338D19"
+			rewards: [{
+				id: "484506A54B88D232"
+				item: "pneumaticcraft:pcb_blueprint"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2ACC435A9545A4BB"
+				item: "banksystem:money1000"
+				type: "item"
+			}]
+			title: "Company Secrets"
+			x: 3.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["11C75B62F7E42053"]
+			description: ["Now that you have the PCBs, you'll need to actually make them useful. Place them in the UV box to expose them and turn them into an actual useful PCB."]
+			id: "2740180D30466AD4"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "53B8ED33D5363F6F"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "58511524DF55138A"
+				item: "pneumaticcraft:uv_light_box"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["2740180D30466AD4"]
+			description: ["Etch and Sketch your PCB with Etching acid and finally get a finished PCB"]
+			id: "64AAB5DC122CB6E9"
+			rewards: [{
+				id: "1F6F41E64A8B8803"
+				item: "pneumaticcraft:printed_circuit_board"
+				type: "item"
+			}]
+			tasks: [{
+				id: "4A8813146F1C2892"
+				item: "pneumaticcraft:etching_tank"
+				type: "item"
+			}]
+			title: "Etch A Sketch"
+			x: 4.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["64AAB5DC122CB6E9"]
+			description: ["For people with a brain, you can program drones to play the game for you."]
+			id: "4B92B2E1F3CCD944"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "48E1F100D7022B9E"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "5C16AD2EF4B259C0"
+				item: "pneumaticcraft:programmer"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["64AAB5DC122CB6E9"]
+			description: ["Become the man of &msteel&r compressed iron and become the man you always wanted to be."]
+			id: "18730625C9BBAD87"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "1858DC005D101723"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				advancement: "pneumaticcraft:pneumatic_armor"
+				criterion: ""
+				id: "230FF520EE5B6A33"
+				title: "Wear A Full Set Of Pneumatic Armor"
+				type: "advancement"
+			}]
+			title: "Pneumatic Armor"
+			x: 4.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["64AAB5DC122CB6E9"]
+			description: ["When you're finally using rf (or converting your create kenetic power to rf) you can just turn rf into pressure."]
+			id: "63065FD3815EDCFE"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "427DBA4FEF016BEE"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "076C645AF52596D0"
+				item: "pneumaticcraft:flux_compressor"
+				type: "item"
+			}]
+			title: "Backwards Compatible"
+			x: 6.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["64AAB5DC122CB6E9"]
+			description: ["Terrific, you have PCBs now. Time to start making some advanced machines"]
+			id: "12363F561735F7CD"
+			rewards: [{
+				id: "264662AC38544132"
+				item: "immersiveengineering:manual"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2C49077343B31E1F"
+				title: "RTFM"
+				type: "checkmark"
+			}]
+			x: 4.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["64AAB5DC122CB6E9"]
+			description: ["Find PCBs too tedious? Get depressed everytime you need one? How about making an assembly in order to build PCBs easier? You can order the programs needed from Amadron."]
+			id: "141418A38DEADCD6"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "4AB05124254D50D9"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [
+				{
+					id: "048A715E33608C39"
+					item: "pneumaticcraft:assembly_controller"
+					type: "item"
+				}
+				{
+					id: "2CA58300FA1B840A"
+					item: "pneumaticcraft:assembly_laser"
+					type: "item"
+				}
+				{
+					id: "7152405EC6406282"
+					item: "pneumaticcraft:assembly_drill"
+					type: "item"
+				}
+				{
+					id: "2E0B9AE1AD10F827"
+					item: "pneumaticcraft:assembly_io_unit_export"
+					type: "item"
+				}
+				{
+					id: "6E8E72992378409F"
+					item: "pneumaticcraft:assembly_io_unit_import"
+					type: "item"
+				}
+				{
+					id: "6104424BD309E011"
+					item: "pneumaticcraft:assembly_platform"
+					type: "item"
+				}
+			]
+			title: "Easier PCBs"
+			x: 3.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["4E984B0B6E769667"]
+			description: ["Ever wanted to buy item from the world wide web? Well now you can thanks to Amadron "]
+			id: "76DAF1FB42DB19D6"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7EFD89F003417ACE"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "1DA17DC29F5EF57C"
+				item: "pneumaticcraft:amadron_tablet"
+				type: "item"
+			}]
+			title: "Amadron"
+			x: -3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["12363F561735F7CD"]
+			description: ["Not a wrench, but still the tools needed for Immersive Engineering."]
+			id: "665B66D3F2580C35"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "07C9D21C4AF3535A"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [
+				{
+					id: "07F576D739C06EA1"
+					item: {
+						Count: 1
+						id: "immersiveengineering:hammer"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "56B44630727F0A91"
+					item: {
+						Count: 1
+						id: "immersiveengineering:wirecutter"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Every Mod Has A Wrench 3"
+			x: 6.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["34206B57D24F6E4E"]
+			description: ["LV wires will allow you to connect RF powered items together. Welcome to the LV Age"]
+			icon: "ags_modernmarkings:wall_marking_voltage_lv"
+			id: "2FDBFE41F615505A"
+			rewards: [{
+				id: "19C5CF90CBBF477F"
+				item: "ags_modernmarkings:wall_marking_voltage_lv"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "35847376BEEFC86E"
+					item: "immersiveengineering:connector_lv_relay"
+					type: "item"
+				}
+				{
+					id: "2A7684CD39C2C8DC"
+					item: "immersiveengineering:connector_lv"
+					type: "item"
+				}
+				{
+					id: "642154CEBD4BC6C9"
+					item: "immersiveengineering:wirecoil_copper"
+					type: "item"
+				}
+			]
+			title: "LV Power"
+			x: 4.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["12363F561735F7CD"]
+			description: ["So, you want steel huh? First things first is to get some coal coke and creo. You may want more than one of these, as it takes quite awhile."]
+			id: "34206B57D24F6E4E"
+			rewards: [{
+				count: 3
+				id: "1A0EDE3214F56E10"
+				item: "pamhc2foodextended:colasodaitem"
+				type: "item"
+			}]
+			tasks: [{
+				count: 27L
+				id: "04BC589F0F750EAA"
+				item: { Count: 27, id: "immersiveengineering:cokebrick" }
+				type: "item"
+			}]
+			title: "Coke Production"
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2FDBFE41F615505A"]
+			description: ["The Kinetic Dynamo is used as an interface for power producing items, windmills and water wheels would be your prefered power producers, wouldn't want to pollute your land would you?"]
+			id: "53C9E0E7508E5ECA"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "47619D7BF923ACF4"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "44274A4110E161AC"
+				item: "immersiveengineering:dynamo"
+				type: "item"
+			}]
+			title: "Power Production"
+			x: 4.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["53C9E0E7508E5ECA"]
+			description: ["Place this high up and on a Kinetic Dynamo to produce RF, you can upgrade these later with windmill sails"]
+			id: "352EC80470BC45FC"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "683C45650FA3F09B"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "5B60BBE4B152C666"
+				item: "immersiveengineering:windmill"
+				type: "item"
+			}]
+			title: "Air Bender 2"
+			x: 6.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["53C9E0E7508E5ECA"]
+			description: ["Place this on a Kinetic Dynamo and flowing water to produce some RF"]
+			id: "5580EED1D578DFDB"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "60CCCC2337A82EFC"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "49BC2846BB7272B2"
+				item: "immersiveengineering:watermill"
+				type: "item"
+			}]
+			title: "Water Bender 2"
+			x: 3.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["2FDBFE41F615505A"]
+			description: ["If you want to style the wires a bit, you can always place them on a post, or hand build your own super post."]
+			id: "17E0855D7AFE9F65"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "42A6FFA2C7E7F2B6"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "2F8C5ACBEC2437DB"
+				item: "immersiveengineering:treated_post"
+				type: "item"
+			}]
+			x: 5.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["34206B57D24F6E4E"]
+			description: ["Imagine wood, now a imagine a better wood, this is it."]
+			id: "5531A0E08A529885"
+			rewards: [{
+				count: 3
+				id: "77DD66A2B410D68E"
+				item: "pamhc2foodcore:icecreamitem"
+				type: "item"
+			}]
+			tasks: [{
+				count: 8L
+				id: "2D675F3A57F5EEFD"
+				item: "immersiveengineering:treated_wood_horizontal"
+				type: "item"
+			}]
+			title: "Treat Yo Wood"
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"665B66D3F2580C35"
+				"5531A0E08A529885"
+			]
+			description: ["Inventory full when crafting? why not simply place chest in crafting table? Boom problem solved."]
+			id: "1E8223CB383316D0"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "0E526D57CC1C1DBD"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "695791393690D16F"
+				item: "immersiveengineering:craftingtable"
+				type: "item"
+			}]
+			title: "A Crafting Table With Storage"
+			x: 7.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["5531A0E08A529885"]
+			description: ["If you haven't found a way to make steel yet, this is your go-to way. It just takes a minute to cook up. Smelt up iron with coal coke to make some sweet steel"]
+			id: "2F58CA96D4FC51DD"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "37321D787E79263B"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				count: 27L
+				id: "25A4A12D8B4A2B4C"
+				item: { Count: 27, id: "immersiveengineering:blastbrick" }
+				type: "item"
+			}]
+			title: "Steel Production"
+			x: 7.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2FDBFE41F615505A"]
+			description: ["Legal tells me we should have breakers for electricity so you don't shock yourself. I would normally not care, but apparently I could get sued if you're harmed."]
+			id: "1E795AF03A418278"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "701BFA192F4E861F"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "40ADC8E2B589F25F"
+				item: "immersiveengineering:breaker_switch"
+				type: "item"
+			}]
+			title: "Safety First!"
+			x: 5.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["53C9E0E7508E5ECA"]
+			description: ["As a brief description you can turn diesel into rf for your machines. Best to read the manuel to learn the finer details. I do suggest playing with the types of fuels as it supports more than what the book would suggest."]
+			icon: "immersiveengineering:diesel_generator"
+			id: "183C689E2C069738"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "2F932BBF065C4168"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [
+				{
+					count: 9L
+					id: "1A5595F0A38117F1"
+					item: { Count: 9, id: "immersiveengineering:radiator" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "78E37A2A187CCD38"
+					item: { Count: 4, id: "immersiveengineering:generator" }
+					type: "item"
+				}
+				{
+					count: 13L
+					id: "3798BF2DCBDFE360"
+					item: { Count: 13, id: "immersiveengineering:heavy_engineering" }
+					type: "item"
+				}
+				{
+					id: "08E28E0276DAF6E4"
+					item: "immersiveengineering:rs_engineering"
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "2F34F8D0414E685D"
+					item: { Count: 6, id: "immersiveengineering:steel_scaffolding_standard" }
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "7BF77BAF1923F7BA"
+					item: { Count: 5, id: "immersiveengineering:fluid_pipe" }
+					type: "item"
+				}
+			]
+			title: "Diesel Generator"
+			x: 4.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["53C9E0E7508E5ECA"]
+			description: ["Thermoelectric takes the coldest and hottest items you place next to it and outputs the difference as rf. This can produce you nice passive energy"]
+			id: "17604915C6B0C276"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7FDBEE14493169F1"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "1BCA7D471A37A8E3"
+				item: "immersiveengineering:thermoelectric_generator"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["53C9E0E7508E5ECA"]
+			description: ["Lightning Rod when struck by lightning produce a butt-load of power. You can increase the chances by placing steel fences on the multiblock."]
+			icon: "immersiveengineering:lightning_rod"
+			id: "32A07B031BFB3066"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7380D3735B9BAD2F"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [
+				{
+					count: 3L
+					id: "00321DE993326DEC"
+					item: { Count: 3, id: "immersiveengineering:coil_hv" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "7E7309F69D455C8E"
+					item: { Count: 4, id: "immersiveengineering:light_engineering" }
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "2F6765E739146FE1"
+					item: { Count: 8, id: "immersiveengineering:coil_lv" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "37B62BC3D03BD9EB"
+					item: { Count: 4, id: "immersiveengineering:steel_scaffolding_standard" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "6FA69BEFBD13D43D"
+					item: { Count: 4, id: "immersiveengineering:treated_fence" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "1CBB2BF22FD42191"
+					item: { Count: 4, id: "immersiveengineering:capacitor_hv" }
+					type: "item"
+				}
+			]
+			title: "Lightning Rod"
+			x: 3.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["670CA8FED6754390"]
+			description: ["MV Power just allows you to transport more power through the lines, don't touch it!"]
+			icon: "ags_modernmarkings:wall_marking_voltage_mv"
+			id: "27AA387F8D547EAB"
+			rewards: [{
+				id: "722234EC7CC01D53"
+				item: "ags_modernmarkings:wall_marking_voltage_mv"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "11D636C1AE191E42"
+					item: "immersiveengineering:connector_mv_relay"
+					type: "item"
+				}
+				{
+					id: "20CACB4A9841C68B"
+					item: "immersiveengineering:connector_mv"
+					type: "item"
+				}
+				{
+					id: "319957D0A087F863"
+					item: "immersiveengineering:wirecoil_electrum"
+					type: "item"
+				}
+			]
+			title: "MV Power"
+			x: 8.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["27AA387F8D547EAB"]
+			description: ["Given we have WAILA at the top of the screen, the power reading are pretty useless, However the feature of shift-rightclicking to see the loss of power on transfer is still useful."]
+			id: "12CBB7EB2B45B71C"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5F088E5557BDD1D7"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			subtitle: ":.|:;"
+			tasks: [{
+				id: "3B93753A82813FAB"
+				item: "immersiveengineering:voltmeter"
+				type: "item"
+			}]
+			title: "Loss"
+			x: 8.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["27AA387F8D547EAB"]
+			description: ["Love breakers? Love automation and redstone? Boom, here you go."]
+			id: "3A927BA5A2C51799"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7BAB1EDE2A26117A"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "5B44CA8A91146AF9"
+				item: "immersiveengineering:redstone_breaker"
+				type: "item"
+			}]
+			x: 9.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["27AA387F8D547EAB"]
+			description: ["The biggest and best power (for Immersive Engineering)"]
+			icon: "ags_modernmarkings:wall_marking_voltage_hv"
+			id: "0E2BD2FC4FEAB987"
+			rewards: [{
+				id: "6B97ED95F68F3EE3"
+				item: "ags_modernmarkings:wall_marking_voltage_hv"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "30675FF65ED6A339"
+					item: "immersiveengineering:connector_hv_relay"
+					type: "item"
+				}
+				{
+					id: "52629DDD9EBAC3F0"
+					item: "immersiveengineering:connector_hv"
+					type: "item"
+				}
+				{
+					id: "42A2CA306239A9EE"
+					item: "immersiveengineering:wirecoil_steel"
+					type: "item"
+				}
+			]
+			title: "HV Power"
+			x: 11.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["2FDBFE41F615505A"]
+			description: ["You may (or may not) have made the earlier claystone battery, but I think it's about time you make something better. Now that you're moving onto greater ways to make me money, you'll need more power to go along with it."]
+			id: "670CA8FED6754390"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "0CD4DBC2D398E4AC"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "14F90A17EF42D373"
+				item: "immersiveengineering:capacitor_lv"
+				type: "item"
+			}]
+			title: "LV Power Storage"
+			x: 6.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["665B66D3F2580C35"]
+			description: ["If you enjoyed the create conveyors, Immersive Engineering also features conveyors and even some addos for them."]
+			id: "7AD605C8D69ECBAC"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "2A939D85702F79F7"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				count: 8L
+				id: "5960124BC9BA37C8"
+				item: { Count: 8, id: "immersiveengineering:conveyor_basic" }
+				type: "item"
+			}]
+			title: "Immersive Automation"
+			x: 7.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["7AD605C8D69ECBAC"]
+			description: ["Chutes can quickly transport items thrown at them and can have their direction configured with the Engineer Hammer."]
+			id: "17A1F904691DFF2E"
+			rewards: [{
+				count: 8
+				id: "5419362784C035E3"
+				item: "framedblocks:framed_ladder"
+				type: "item"
+			}]
+			tasks: [{
+				count: 8L
+				id: "29DD93E23F03CE6B"
+				item: "immersiveengineering:chute_iron"
+				type: "item"
+			}]
+			title: "Chutes And Ladders"
+			x: 9.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["1E8223CB383316D0"]
+			description: ["Immersive Engineering has a number of advanced items and tools you can craft. Get tinkering!"]
+			id: "108D3477E0906ED8"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "442F5449732C750B"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "4DEB2D0A23FD3D88"
+				item: "immersiveengineering:workbench"
+				type: "item"
+			}]
+			title: "A Better Bench"
+			x: 9.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["1E8223CB383316D0"]
+			description: ["Imma be real with ya, this looks like some redstone wizardry. I'm out"]
+			id: "5572775CE59D59F3"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "71BE31CC3A773E63"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "6C4F4386F1793A80"
+				item: "immersiveengineering:circuit_table"
+				type: "item"
+			}]
+			title: "Advanced Circuitry"
+			x: 9.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["2F58CA96D4FC51DD"]
+			description: ["You finally got your first block of steel! Imagine all the things you can do with it!"]
+			id: "1134405BBEE11913"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "3E7FD64AB302548F"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			subtitle: "9 Years Later..."
+			tasks: [{
+				id: "2E2AD8C4716B0FEE"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(forge:storage_blocks/steel)"
+					}
+				}
+				title: "Steel Block"
+				type: "item"
+			}]
+			title: "Steel Block"
+			x: 9.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2F58CA96D4FC51DD"]
+			description: ["Steel production not quick enough? Build a Improved Blast Furnace and take advantage of up to 2 preheaters to speed up your production. These can be automated too!"]
+			id: "5E46888995B61371"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "2F1EA2BB00A15071"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [
+				{
+					count: 27L
+					id: "7536ADD98B1CDEEA"
+					item: { Count: 27, id: "immersiveengineering:blastbrick_reinforced" }
+					type: "item"
+				}
+				{
+					id: "1192BD52D69808A6"
+					item: "minecraft:hopper"
+					type: "item"
+				}
+			]
+			title: "Better Steel Production"
+			x: 7.5d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"27AA387F8D547EAB"
+				"5E46888995B61371"
+			]
+			description: ["This right here is the final step to a fast blast furnace, slap two of these on and power them to watch the steel production go flying"]
+			id: "121D42E9C3CE2EA4"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "180D8B64F8544EA0"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				count: 2L
+				id: "2BDE73DAFF5ACA88"
+				item: { Count: 2, id: "immersiveengineering:blastfurnace_preheater" }
+				type: "item"
+			}]
+			title: "Furnace Preheater"
+			x: 9.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["27AA387F8D547EAB"]
+			description: ["Find all these different voltages pesky and possibly exploady? Try transforming it to the voltage you want!"]
+			id: "0AE75302FC0AFC1B"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "24BD8CEC3727A4D8"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "37771301A2CCA7DE"
+				item: "immersiveengineering:transformer"
+				type: "item"
+			}]
+			title: "Transformers:"
+			x: 9.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["0E2BD2FC4FEAB987"]
+			description: ["Similar to the previous transformer, just supports HV."]
+			id: "40843486C1C9B716"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "66571E285D9D5A57"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "2848E38682E9D89F"
+				item: "immersiveengineering:transformer_hv"
+				type: "item"
+			}]
+			title: "Age of Extinction"
+			x: 10.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["53C9E0E7508E5ECA"]
+			description: ["You &oshould&r be good on the power production front, and possibly overflowing with it. Here's some nifty machines you can use with our newly made power"]
+			id: "16F2DFAFBA057516"
+			tasks: [{
+				id: "6AD74968DA38A9FA"
+				title: "Power Drains"
+				type: "checkmark"
+			}]
+			x: 8.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["16F2DFAFBA057516"]
+			description: ["Some people hate kitchen sinks, as a replacement you can pump water or any other sort of liquid via a pump"]
+			id: "09BC8B57723FA474"
+			rewards: [{
+				count: 3
+				id: "6E348BD6FE04AFBF"
+				item: "croptopia:pumpkin_soup"
+				type: "item"
+			}]
+			tasks: [{
+				id: "64DD1E56C2237AF6"
+				item: "immersiveengineering:fluid_pump"
+				type: "item"
+			}]
+			title: "Pump It"
+			x: 7.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["16F2DFAFBA057516"]
+			description: ["Hate all the coal you're burning to smelt items? Fear not, you can now heat up your furnace by powering up this heater and placing it by your furnace."]
+			id: "7324FBE17CAED543"
+			rewards: [{
+				count: 32
+				id: "072C4CFC3DB4F064"
+				item: "minecraft:coal"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7887DEFD6C5F4DDD"
+				item: "immersiveengineering:furnace_heater"
+				type: "item"
+			}]
+			title: "Energized Coal"
+			x: 8.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["16F2DFAFBA057516"]
+			description: ["Hate touching grass? Well, of course you do! Grow everything quickly indoors instead with the garden cloche"]
+			id: "495E62530411F6EF"
+			rewards: [{
+				count: 3
+				id: "3CA71529A1352882"
+				item: "pamhc2foodextended:gardensoupitem"
+				type: "item"
+			}]
+			tasks: [{
+				id: "6299ABBBEA34C6CA"
+				item: "immersiveengineering:cloche"
+				type: "item"
+			}]
+			title: "Green Thumb"
+			x: 9.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["16F2DFAFBA057516"]
+			description: ["Power up any hand-held device with the charging station"]
+			id: "4C54193E80F81C48"
+			rewards: [{
+				count: 3
+				id: "5B4ECDC52F072802"
+				item: "croptopia:coffee"
+				type: "item"
+			}]
+			tasks: [{
+				id: "28A3C0F2DBD1BCF9"
+				item: "immersiveengineering:charging_station"
+				type: "item"
+			}]
+			title: "Charge Up"
+			x: 9.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["27AA387F8D547EAB"]
+			description: ["Screw Create, embrace tradition. Shape your metals like a real man with rf and load machines that go bang."]
+			icon: "immersiveengineering:metal_press"
+			id: "5036E1A29F48B547"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "1403577BA441FD3C"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [
+				{
+					id: "2F81799954E70DDB"
+					item: "immersiveengineering:heavy_engineering"
+					type: "item"
+				}
+				{
+					id: "57A3166557BB8384"
+					item: "minecraft:piston"
+					type: "item"
+				}
+				{
+					id: "56B94C3C3C7749A1"
+					item: "immersiveengineering:rs_engineering"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "54959E92CA46EF67"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "275E2AA755CAF948"
+					item: "immersiveengineering:conveyor_basic"
+					type: "item"
+				}
+			]
+			title: "Stop The Press!"
+			x: 7.0d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"0E2BD2FC4FEAB987"
+				"1134405BBEE11913"
+			]
+			description: ["Crush down your ores and get duplicates of your ores. Sure, you may have already been able to multiply your ores, but did you do it immersively?"]
+			icon: "immersiveengineering:crusher"
+			id: "14D667F5E0DD35A2"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "2BE5AEF728510C84"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [
+				{
+					count: 9L
+					id: "301BED64B268D0DE"
+					item: { Count: 9, id: "minecraft:hopper" }
+					type: "item"
+				}
+				{
+					count: 10L
+					id: "199C5A6E484A2967"
+					item: { Count: 10, id: "immersiveengineering:steel_scaffolding_standard" }
+					type: "item"
+				}
+				{
+					id: "5878623EB727E46A"
+					item: "immersiveengineering:rs_engineering"
+					type: "item"
+				}
+				{
+					count: 10L
+					id: "195521B569E9A21E"
+					item: { Count: 10, id: "immersiveengineering:light_engineering" }
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "66DCCB8F69AD6977"
+					item: { Count: 8, id: "immersiveengineering:steel_fence" }
+					type: "item"
+				}
+			]
+			title: "Ore Duping"
+			x: 10.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4D089AC135AF2C18"]
+			description: ["This is a real man's crafter. Tell it what you want and what resources to use and it'll assemble it for you."]
+			icon: "immersiveengineering:assembler"
+			id: "58EDF6863370442F"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5943741827D98765"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [
+				{
+					count: 6L
+					id: "14A6768ECFA81DCB"
+					item: { Count: 6, id: "immersiveengineering:slab_sheetmetal_iron" }
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "7FE38BB632AA3648"
+					item: { Count: 6, id: "immersiveengineering:steel_scaffolding_standard" }
+					type: "item"
+				}
+				{
+					count: 9L
+					id: "09583C08073860A9"
+					item: { Count: 9, id: "immersiveengineering:sheetmetal_iron" }
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "586885B085A57137"
+					item: { Count: 2, id: "immersiveengineering:light_engineering" }
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "605A1EE3C0093FF2"
+					item: { Count: 2, id: "immersiveengineering:rs_engineering" }
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "435AB5226C3328BA"
+					item: { Count: 8, id: "immersiveengineering:steel_fence" }
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "069DCEBB7719BA5A"
+					item: { Count: 2, id: "immersiveengineering:conveyor_basic" }
+					type: "item"
+				}
+			]
+			title: "Complex Autocrafting"
+			x: 11.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["0E2BD2FC4FEAB987"]
+			description: ["Tired of making things by hand (blueprint items)? Why not make an automated workbench instead to take care of some of the work for you?"]
+			icon: "immersiveengineering:auto_workbench"
+			id: "4D089AC135AF2C18"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "41E9AA6AF1ADFBD6"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [
+				{
+					count: 4L
+					id: "27D7AFE261B5ABA0"
+					item: { Count: 4, id: "immersiveengineering:conveyor_basic" }
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "6E9FA118CEE8CA85"
+					item: { Count: 2, id: "immersiveengineering:slab_treated_wood_horizontal" }
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "1E2A472B9A6EBF9B"
+					item: { Count: 5, id: "immersiveengineering:steel_scaffolding_standard" }
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "274BFB5CDCE45D7E"
+					item: { Count: 2, id: "immersiveengineering:heavy_engineering" }
+					type: "item"
+				}
+				{
+					id: "5B26C7EB55FF5763"
+					item: "immersiveengineering:rs_engineering"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "1CB05C2E293B0F9D"
+					item: { Count: 4, id: "immersiveengineering:light_engineering" }
+					type: "item"
+				}
+			]
+			title: "Automated Crafting"
+			x: 11.5d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"0E2BD2FC4FEAB987"
+				"121D42E9C3CE2EA4"
+			]
+			description: ["Wish to make tons of steel or smelt tons of ores? The Arc Furnace is the stuff of your dreams."]
+			icon: "immersiveengineering:arc_furnace"
+			id: "00785C9E495062A1"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "47EA450D0F2A42F3"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [
+				{
+					count: 27L
+					id: "4CA4F150ED75CDBA"
+					item: { Count: 27, id: "immersiveengineering:blastbrick_reinforced" }
+					type: "item"
+				}
+				{
+					count: 10L
+					id: "37BDACC739EDFB55"
+					item: { Count: 10, id: "immersiveengineering:light_engineering" }
+					type: "item"
+				}
+				{
+					id: "1716BB2415475B52"
+					item: "immersiveengineering:rs_engineering"
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "315A0E93BC3888B9"
+					item: { Count: 5, id: "immersiveengineering:heavy_engineering" }
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "2EA9611DBED035E2"
+					item: { Count: 6, id: "immersiveengineering:storage_steel" }
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "542F9405FFF8C343"
+					item: { Count: 8, id: "immersiveengineering:sheetmetal_steel" }
+					type: "item"
+				}
+				{
+					id: "64D525D01FC6317F"
+					item: "minecraft:cauldron"
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "30009104D92588C4"
+					item: { Count: 5, id: "immersiveengineering:steel_scaffolding_standard" }
+					type: "item"
+				}
+				{
+					count: 14L
+					id: "1534B978C9E7A167"
+					item: { Count: 14, id: "immersiveengineering:slab_sheetmetal_steel" }
+					type: "item"
+				}
+			]
+			title: "Steel's Final Boss"
+			x: 10.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["14D667F5E0DD35A2"]
+			description: ["So you want ore easy? Well Immersive Engineering has a solution for you. The Excavator can dig up all the ores you can dream of, as long as you can afford the multi-step multiblock."]
+			icon: "immersiveengineering:excavator"
+			id: "416D20DB8144E11E"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "411F53D97DBA396C"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [
+				{
+					count: 6L
+					id: "2C5472BAB82EBB5A"
+					item: { Count: 6, id: "immersiveengineering:steel_scaffolding_standard" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "39B58CAD3A8DC185"
+					item: { Count: 4, id: "immersiveengineering:heavy_engineering" }
+					type: "item"
+				}
+				{
+					id: "4650AC4632593C6D"
+					item: "immersiveengineering:rs_engineering"
+					type: "item"
+				}
+				{
+					count: 9L
+					id: "1605BBCCAF54A9D4"
+					item: { Count: 9, id: "immersiveengineering:light_engineering" }
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "25EA20975EDEBC80"
+					item: { Count: 3, id: "immersiveengineering:radiator" }
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "215E46EF8CF8FE48"
+					item: { Count: 16, id: "immersiveengineering:sheetmetal_steel" }
+					type: "item"
+				}
+			]
+			title: "Excavator Step 1"
+			x: 12.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["416D20DB8144E11E"]
+			description: ["This part is a bit less complex, but does require a lot of steel. Hope you made an Arc Furnace!"]
+			icon: "immersiveengineering:excavator"
+			id: "379BFD0996670958"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "2FC6908FF8822733"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [
+				{
+					count: 20L
+					id: "269DCB3A31F23528"
+					item: { Count: 20, id: "immersiveengineering:steel_scaffolding_standard" }
+					type: "item"
+				}
+				{
+					count: 9L
+					id: "0AE95EF6A11D7167"
+					item: { Count: 9, id: "immersiveengineering:storage_steel" }
+					type: "item"
+				}
+			]
+			title: "Excavator Step 2"
+			x: 13.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["379BFD0996670958"]
+			description: ["You've done it you madman, time to mine up some juicy ores and build up the factory."]
+			icon: "immersiveengineering:excavator"
+			id: "41FBE8EE4CD5A384"
+			rewards: [
+				{
+					id: "5F9D161B453015F8"
+					item: {
+						Count: 1
+						id: "tconstruct:excavator"
+						tag: {
+							Damage: 0
+							tic_broken: 0b
+							tic_materials: [
+								"tconstruct:steel"
+								"tconstruct:steel"
+								"tconstruct:steel"
+								"tconstruct:steel"
+							]
+							tic_modifiers: [
+								{
+									level: 4
+									name: "tconstruct:ductile"
+								}
+								{
+									level: 2
+									name: "tconstruct:knockback"
+								}
+								{
+									level: 1
+									name: "tconstruct:pathing"
+								}
+							]
+							tic_multipliers: {
+								"tconstruct:attack_damage": 1.2f
+								"tconstruct:durability": 3.75f
+								"tconstruct:mining_speed": 0.3f
+							}
+							tic_persistent: { }
+							tic_stats: {
+								"tconstruct:attack_damage": 6.4259996f
+								"tconstruct:durability": 4272.187f
+								"tconstruct:harvest_tier": "minecraft:diamond"
+								"tconstruct:mining_speed": 1.89f
+							}
+							tic_volatile_data: {
+								abilities: 1
+								upgrades: 2
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "0A4E10CA5555DAD6"
+					item: {
+						Count: 1
+						id: "minecraft:paper"
+						tag: {
+							display: {
+								Name: "{\"text\":\"1 BanksCo Share\",\"italic\":false}"
+							}
+						}
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "11EE463D200E34C5"
+					item: { Count: 4, id: "immersiveengineering:heavy_engineering" }
+					type: "item"
+				}
+				{
+					id: "74183809FF30AFFF"
+					item: "immersiveengineering:rs_engineering"
+					type: "item"
+				}
+				{
+					count: 26L
+					id: "30C4BB6F8608366D"
+					item: { Count: 26, id: "immersiveengineering:steel_scaffolding_standard" }
+					type: "item"
+				}
+				{
+					count: 9L
+					id: "7E3AAF2D0571B68E"
+					item: { Count: 9, id: "immersiveengineering:light_engineering" }
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "705C7B98CB972796"
+					item: { Count: 3, id: "immersiveengineering:radiator" }
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "0222A42BB7239F54"
+					item: { Count: 16, id: "immersiveengineering:sheetmetal_steel" }
+					type: "item"
+				}
+				{
+					count: 9L
+					id: "516F0832874AC0F9"
+					item: { Count: 9, id: "immersiveengineering:storage_steel" }
+					type: "item"
+				}
+			]
+			title: "Excavator: The Finale"
+			x: 14.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["108D3477E0906ED8"]
+			description: ["As a company I don't think we have to follow any International Laws, so go nuts on the Villagers."]
+			id: "3DD20977FBD343DE"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "171A399DC85A9105"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "3F6A659BCE2863CB"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							Items: [ ]
+							Size: 4
+						}
+					}
+					id: "immersiveengineering:chemthrower"
+				}
+				type: "item"
+			}]
+			x: 10.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["108D3477E0906ED8"]
+			description: ["Own a musket for home defense, since that's what the founding fathers intended. Four ruffians break into my house. \"What the devil?\" As I grab my powdered wig and Kentucky rifle. Blow a golf ball-sized hole through the first man, he's dead on the spot. Draw my pistol on the second man, miss him entirely because it's smoothbore and nails the neighbor's dog. I have to resort to the cannon mounted at the top of the stairs loaded with grapeshot, \"Tally ho lads\" the grapeshot shreds two men in the blast, the sound and extra shrapnel set off car alarms. Fix bayonet and charge the last terrified rapscallion. He Bleeds out waiting on the police to arrive since triangular bayonet wounds are impossible to stitch up. Just as the founding fathers intended."]
+			id: "63A4A8029C3ADED0"
+			rewards: [{
+				count: 3
+				id: "7E533A65B503BF6A"
+				item: "pamhc2foodcore:friedchickenitem"
+				type: "item"
+			}]
+			tasks: [{
+				id: "6BBFE41099C9C107"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							Items: [ ]
+							Size: 3
+						}
+					}
+					id: "immersiveengineering:railgun"
+				}
+				type: "item"
+			}]
+			title: "Kentucky Rifle"
+			x: 10.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["031A6ADC519BF99E"]
+			description: ["Pollution is not a solution! Let mother earth provide to our needs!"]
+			id: "4AA3CDA53937934F"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "2F56DDE479D4CF69"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "19296467C2B4F876"
+				item: "pneumaticcraft:solar_compressor"
+				type: "item"
+			}]
+			title: "Cooking With The Sun!"
+			x: 1.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["416D20DB8144E11E"]
+			description: [
+				"While you're in the process of making all the items you need for the Excavator, you could go out looking for some veins."
+				""
+				"Veins in Immersive Engineering have a limit of 38400 blocks of ore"
+			]
+			id: "7E599EC168B4F000"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "2CEE1B0B69452F04"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "2F74FDA757D9BD67"
+				item: {
+					Count: 1
+					id: "immersiveengineering:survey_tools"
+					tag: {
+						Damage: 0
+						veinData: [{
+							data: [{
+								hint: "{\"translate\":\"chat.immersiveengineering.info.survey.hint.1\",\"with\":[{\"translate\":\"desc.immersiveengineering.info.mineral.ancient_seabed\"}]}"
+								x: 58
+								z: -51
+							}]
+							dimension: "minecraft:overworld"
+							x: 59
+							z: -36
+						}]
+					}
+				}
+				type: "item"
+			}]
+			title: "Survey Says!"
+			x: 12.0d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"41FBE8EE4CD5A384"
+				"7E599EC168B4F000"
+			]
+			description: ["For those who want to know what they're getting. Will tell you the precise reads of nearby ore veins when powered."]
+			id: "60245AAAC816C6DD"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "63093B296F25EA92"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "3BF4952901C9A5B0"
+				item: "immersiveengineering:sample_drill"
+				type: "item"
+			}]
+			title: "Precise Reads"
+			x: 14.0d
+			y: 1.0d
+		}
+	]
+	title: "Pressure On The Job"
+}

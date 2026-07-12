@@ -1,0 +1,375 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "boss_rush"
+	group: "15A08A4162B9FFA4"
+	hide_quest_until_deps_complete: true
+	icon: {
+		Count: 1
+		ForgeCaps: {
+			Parent: {
+				energy: {
+					energy: 0
+				}
+				module_host: {
+					modules: [ ]
+					properties: { }
+					provider_id: [I;
+						-2132062471
+						1923629305
+						-1915422409
+						-748683452
+					]
+				}
+			}
+		}
+		id: "draconicevolution:chaotic_sword"
+		tag: { }
+	}
+	id: "0057D39CDF043688"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"013C64C04233523A"
+				"3F9DAFBD6E5828DE"
+				"61A69F22624FA3D4"
+				"2DA9960D09C624B0"
+				"7AFA7DE7DC91A2F1"
+				"33158E2225793712"
+				"4DCAB125520AF807"
+				"360115D2A5C85DFE"
+				"2CCCAF677E1F1E35"
+				"46CFB4A2CCEF5A5C"
+				"66DE1F87D22F596A"
+				"6CED186BF4706D1B"
+				"55FDB60F3D1DBE51"
+				"388242F18286FB56"
+				"59AA60899C71F737"
+				"1AC39E7B8F3513F2"
+			]
+			hide_until_deps_complete: true
+			icon: "minecraft:nether_star"
+			id: "0FD6BBE138869322"
+			rewards: [{
+				id: "581A30A976EA983A"
+				item: {
+					Count: 1
+					id: "minecraft:paper"
+					tag: {
+						display: {
+							Name: "{\"text\":\"1 BanksCo Share\",\"italic\":false}"
+						}
+					}
+				}
+				type: "item"
+			}]
+			shape: "diamond"
+			subtitle: "Alexander wept, for there were no more worlds to conquer"
+			tasks: [{
+				id: "7CFD00363A7E07A0"
+				type: "checkmark"
+			}]
+			title: "Bosses Beat"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["38EAD9D1F5CFAF8D"]
+			id: "7AFA7DE7DC91A2F1"
+			tasks: [
+				{
+					advancement: "cataclysm:find_frosted_prison"
+					criterion: ""
+					id: "3F97B34BA0A0EB5A"
+					type: "advancement"
+				}
+				{
+					advancement: "cataclysm:kill_maledictus"
+					criterion: ""
+					id: "77CB251365FFA008"
+					type: "advancement"
+				}
+			]
+			title: "Jail Of Cold"
+			x: 2.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["38EAD9D1F5CFAF8D"]
+			id: "360115D2A5C85DFE"
+			tasks: [
+				{
+					advancement: "cataclysm:find_ruined_citadel"
+					criterion: ""
+					id: "69C5C9E6DDFE4B9A"
+					title: "Another Stronghold"
+					type: "advancement"
+				}
+				{
+					advancement: "cataclysm:kill_ender_golem"
+					criterion: ""
+					id: "78CE04E7B1CA70F1"
+					type: "advancement"
+				}
+				{
+					advancement: "cataclysm:kill_ender_guardian"
+					criterion: ""
+					id: "1A77BC6824019CE7"
+					type: "advancement"
+				}
+			]
+			x: 2.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["38EAD9D1F5CFAF8D"]
+			id: "2DA9960D09C624B0"
+			tasks: [
+				{
+					advancement: "cataclysm:find_ancient_factory"
+					criterion: ""
+					id: "2A30B810EDA15CA3"
+					type: "advancement"
+				}
+				{
+					advancement: "cataclysm:kill_harbinger"
+					criterion: ""
+					id: "38006B350A6B00DD"
+					type: "advancement"
+				}
+			]
+			title: "Out Of Place"
+			x: -2.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["38EAD9D1F5CFAF8D"]
+			id: "2CCCAF677E1F1E35"
+			tasks: [
+				{
+					advancement: "cataclysm:find_burning_arena"
+					criterion: ""
+					id: "5D77AEB1893E9922"
+					type: "advancement"
+				}
+				{
+					advancement: "cataclysm:kill_revenant"
+					criterion: ""
+					id: "1F6C3A131E832C26"
+					type: "advancement"
+				}
+				{
+					advancement: "cataclysm:kill_ignis"
+					criterion: ""
+					id: "232788130F6B5ECD"
+					type: "advancement"
+				}
+			]
+			title: "Elder Scrolls: Arena"
+			x: -2.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["38EAD9D1F5CFAF8D"]
+			id: "4DCAB125520AF807"
+			tasks: [
+				{
+					advancement: "cataclysm:find_sunken_city"
+					criterion: ""
+					id: "0FDF969A4598B6B0"
+					type: "advancement"
+				}
+				{
+					advancement: "cataclysm:kill_leviathan"
+					criterion: ""
+					id: "0E663F22D209E611"
+					type: "advancement"
+				}
+			]
+			title: "Sunken In The Sea"
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["38EAD9D1F5CFAF8D"]
+			id: "33158E2225793712"
+			tasks: [
+				{
+					advancement: "cataclysm:find_soul_black_smith"
+					criterion: ""
+					id: "4D75EC96E7B5753E"
+					type: "advancement"
+				}
+				{
+					advancement: "cataclysm:kill_monstrosity"
+					criterion: ""
+					id: "55A4627221F0D13D"
+					type: "advancement"
+				}
+			]
+			title: "The Forge"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["38EAD9D1F5CFAF8D"]
+			id: "61A69F22624FA3D4"
+			tasks: [
+				{
+					advancement: "cataclysm:find_cursed_pyramid"
+					criterion: ""
+					id: "0683A6C8E350B1E6"
+					type: "advancement"
+				}
+				{
+					advancement: "cataclysm:kill_remnant"
+					criterion: ""
+					id: "2E085242CE54AEDB"
+					type: "advancement"
+				}
+			]
+			title: "The Pyramid"
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["38EAD9D1F5CFAF8D"]
+			id: "46CFB4A2CCEF5A5C"
+			tasks: [
+				{
+					advancement: "cataclysm:find_acropolis"
+					criterion: ""
+					id: "2C6B3D1B70E1BCD5"
+					type: "advancement"
+				}
+				{
+					advancement: "cataclysm:kill_clawdian"
+					criterion: ""
+					id: "6C5CA1422BFFE88C"
+					type: "advancement"
+				}
+				{
+					advancement: "cataclysm:kill_scylla"
+					criterion: ""
+					id: "75B4F5205723A1A3"
+					type: "advancement"
+				}
+			]
+			title: "The Acropolis"
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["38EAD9D1F5CFAF8D"]
+			id: "013C64C04233523A"
+			subtitle: "Mr. Steal yo girl"
+			tasks: [{
+				advancement: "alexsmobs:alexsmobs/warped_mosco_kill"
+				criterion: ""
+				id: "558F2B05143C8229"
+				type: "advancement"
+			}]
+			title: "Chad"
+			x: -1.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["38EAD9D1F5CFAF8D"]
+			id: "3F9DAFBD6E5828DE"
+			subtitle: "How bad could a worm be?"
+			tasks: [{
+				advancement: "alexsmobs:alexsmobs/void_worm_kill"
+				criterion: ""
+				id: "260C958A6B2B00D5"
+				type: "advancement"
+			}]
+			title: "Worm"
+			x: 1.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["38EAD9D1F5CFAF8D"]
+			id: "66DE1F87D22F596A"
+			tasks: [{
+				advancement: "betterdeserttemples:temple_clear"
+				criterion: ""
+				id: "3F72A2F6628A63C3"
+				type: "advancement"
+			}]
+			title: "The Pharaoh"
+			x: -1.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["38EAD9D1F5CFAF8D"]
+			id: "6CED186BF4706D1B"
+			tasks: [{
+				advancement: "progressivebosses:max_lvl_wither"
+				criterion: ""
+				id: "6F3FDBDD2F3AB5BF"
+				type: "advancement"
+			}]
+			title: "The Ultimate Wither"
+			x: 1.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["38EAD9D1F5CFAF8D"]
+			id: "55FDB60F3D1DBE51"
+			tasks: [{
+				advancement: "progressivebosses:max_lvl_dragon"
+				criterion: ""
+				id: "4CA2C1BCDF99559B"
+				type: "advancement"
+			}]
+			title: "Corrupted Dragon"
+			x: 3.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["38EAD9D1F5CFAF8D"]
+			id: "388242F18286FB56"
+			tasks: [{
+				advancement: "nuclearcraft:wasteland_boss"
+				criterion: ""
+				id: "7D6BDC1BD626B96B"
+				type: "advancement"
+			}]
+			title: "The Ghoul"
+			x: 3.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["38EAD9D1F5CFAF8D"]
+			icon: "botania:dice"
+			id: "59AA60899C71F737"
+			tasks: [{
+				entity: "botania:doppleganger"
+				icon: "botania:life_essence"
+				id: "648278994AB6A500"
+				title: "Kill The Guardian Of Gaia"
+				type: "kill"
+				value: 1L
+			}]
+			title: "The Gaia Guardian"
+			x: -3.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["38EAD9D1F5CFAF8D"]
+			id: "1AC39E7B8F3513F2"
+			tasks: [{
+				advancement: "fossil:fossil/kill_anu"
+				criterion: ""
+				id: "41D71C289B6C447E"
+				type: "advancement"
+			}]
+			title: "Anubis"
+			x: -3.5d
+			y: -1.0d
+		}
+	]
+	title: "Boss Rush"
+}

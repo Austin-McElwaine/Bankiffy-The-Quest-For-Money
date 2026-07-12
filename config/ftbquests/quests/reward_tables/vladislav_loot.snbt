@@ -1,0 +1,49 @@
+{
+	id: "62D580123600E8ED"
+	loot_crate: {
+		color: 16777215
+		drops: {
+			boss: 0
+			monster: 0
+			passive: 0
+		}
+		string_id: "vladislav_loot"
+	}
+	loot_size: 1
+	order_index: 2
+	rewards: [
+		{
+			item: {
+				Count: 1
+				id: "vampiresdelight:blood_wine_bottle"
+				tag: {
+					Damage: 0
+				}
+			}
+			random_bonus: 2
+		}
+		{ item: "vampiresdelight:blood_wine_glass", random_bonus: 2 }
+		{ item: "vampiresdelight:blood_syrup", random_bonus: 2 }
+		{ item: "vampiresdelight:blood_sausage", random_bonus: 4 }
+		{ item: "vampirism:vampire_orchid", random_bonus: 2 }
+		{ item: "vampiresdelight:orchid_seeds", random_bonus: 23 }
+		{ item: "vampiresdelight:orchid_tea", random_bonus: 2 }
+		{ item: "vampiresdelight:orchid_petals", random_bonus: 23 }
+		{ item: "vampiresdelight:orchid_cookie", random_bonus: 31 }
+		{ item: "vampiresdelight:orchid_eclair", random_bonus: 2 }
+		{ item: "vampiresdelight:orchid_ice_cream", random_bonus: 2 }
+		{ item: "vampiresdelight:orchid_cream_soup", random_bonus: 2 }
+		{ item: "vampiresdelight:orchid_curry", random_bonus: 2 }
+		{ item: "vampiresdelight:orchid_cake" }
+		{ item: "vampiresdelight:orchid_cake_slice", random_bonus: 7 }
+		{ item: "vampiresdelight:human_eye", random_bonus: 4 }
+		{ item: "vampirism:human_heart", random_bonus: 9 }
+		{ item: "vampirism:weak_human_heart", random_bonus: 9 }
+		{ item: "vampirism:pure_blood_0", weight: 0.25f }
+		{ item: "vampirism:pure_blood_1", weight: 0.2f }
+		{ item: "vampirism:pure_blood_2", weight: 0.15f }
+		{ item: "vampirism:pure_blood_3", weight: 0.1f }
+		{ item: "vampirism:pure_blood_4", weight: 0.05f }
+	]
+	title: "Vladislav Loot"
+}
