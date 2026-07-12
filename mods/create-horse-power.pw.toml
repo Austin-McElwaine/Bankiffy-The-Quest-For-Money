@@ -3,11 +3,11 @@ filename = "createhorsepower-1.20.1-1.1.0.jar"
 side = "both"
 
 [download]
-hash-format = "sha1"
-hash = "b4a5802ec8e5c1eef4fe69b9ca973eb7fe02ace9"
-mode = "metadata:curseforge"
+url = "https://cdn.modrinth.com/data/9Qm19XSM/versions/bHSeI5kR/createhorsepower-1.20.1-1.1.0.jar"
+hash-format = "sha512"
+hash = "8bb9e3d2b9e327709e26e247210efc10db6ade1a13156175d39729fe8bafae5e75f7c9104b03ce7c358bad40dcee767c1181bd8340f2e5ec314a36fc2822abdb"
 
 [update]
-[update.curseforge]
-file-id = 7259899
-project-id = 1121632
+[update.modrinth]
+mod-id = "9Qm19XSM"
+version = "bHSeI5kR"

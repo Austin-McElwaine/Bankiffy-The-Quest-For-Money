@@ -8689,7 +8689,7 @@ metafile = true
 
 [[files]]
 file = "mods/create-horse-power.pw.toml"
-hash = "33c42a8dab941557dce31a0de42918843176ba63bc06b3bb7a0e870c665a76e7"
+hash = "89265f8de610b18272e75392b1dbbec616ab609001e6e4c608425f1d874a7808"
 metafile = true
 
 [[files]]
@@ -8908,11 +8908,6 @@ hash = "e4c69a3551a4343fc76fb135266aecac0042863693f04d2c58a26c71b6e988d9"
 metafile = true
 
 [[files]]
-file = "mods/ender-io-recreated.pw.toml"
-hash = "6afea0faaa5ef317e9911643cf625c0c4cb4254bfe743ea80135c6e0043d7bb4"
-metafile = true
-
-[[files]]
 file = "mods/ender-storage-1-8.pw.toml"
 hash = "638f7c447dbe7dc2e85e4bf89d70fb41632db940a57de498094f2be57fa6c18d"
 metafile = true
@@ -8949,7 +8944,7 @@ metafile = true
 
 [[files]]
 file = "mods/entityculling.pw.toml"
-hash = "35ef939dd24fc39919a5a50c86e28468e1b3a178cdf61e8197dad72601f25ba5"
+hash = "25d3f272639cef595de126a2c51faff793dc03bcde63ef060e1277c315583ce7"
 metafile = true
 
 [[files]]
@@ -9274,7 +9269,7 @@ metafile = true
 
 [[files]]
 file = "mods/jaffabricate.pw.toml"
-hash = "200945b96ddde319b20437788bf39b779d4828aae96245423b38c49f53848fd3"
+hash = "0b7c1d9c45528ab5e10ddf62d6697a834e4203273dd5d4e82434e1de47b8c41e"
 metafile = true
 
 [[files]]
@@ -10043,8 +10038,8 @@ hash = "b0978cb7ae7b79c5be89b323ca1bd038f693ff6d11c43dfcbd63953964149af2"
 metafile = true
 
 [[files]]
-file = "mods/tinker-delight.pw.toml"
-hash = "7fe3c496758e54f1038be900a0b8fd31621c108a19bdcb8392c7fb2d52ad0d7f"
+file = "mods/tinkers-construct-delight.pw.toml"
+hash = "f13cee660905ecd3d2f25d5ac142226ca0744023529646d942c7f8b7aae80b20"
 metafile = true
 
 [[files]]
