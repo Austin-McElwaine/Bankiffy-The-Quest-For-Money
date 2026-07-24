@@ -20,6 +20,7 @@ LootJS.modifiers(event => {
     .removeLoot('pneumaticcraft:gun_ammo_incendiary')
     .removeLoot('pneumaticcraft:programming_puzzle')
     .removeLoot('pneumaticcraft:ingot_iron_compressed')
+    .removeLoot('pneumaticcraft:compressed_iron_block')
     // EnderIO
     .removeLoot('enderio:wood_gear')
     .removeLoot('enderio:stone_gear')
@@ -31,7 +32,55 @@ LootJS.modifiers(event => {
     .removeLoot('enderio:copper_alloy_ingot')
     .removeLoot('enderio:pulsating_alloy_ingot')
     .removeLoot('enderio:dark_steel_sword')
-    .removeLoot('enderio:redstone_alloy_ingot');
+    .removeLoot('enderio:redstone_alloy_ingot')
+    //ChanceCubes
+    .addLoot('chancecubes:compact_giant_chance_cube');
+
+    event.addLootTableModifier('pneumaticcraft:custom/common_dungeon_loot')
+    .removeLoot('pneumaticcraft:logistics_core')
+    .removeLoot('pneumaticcraft:pressure_tube')
+    .removeLoot('pneumaticcraft:capacitor')
+    .removeLoot('pneumaticcraft:transistor')
+    .removeLoot('pneumaticcraft:spawner_agitator')
+    .removeLoot('pneumaticcraft:compressed_stone')
+    .removeLoot('pneumaticcraft:compressed_iron_leggings')
+    .removeLoot('pneumaticcraft:compressed_iron_chestplate')
+    .removeLoot('pneumaticcraft:compressed_iron_helmet')
+    .removeLoot('pneumaticcraft:compressed_iron_boots')
+    .removeLoot('pneumaticcraft:vortex_cannon')
+    .removeLoot('pneumaticcraft:pneumatic_cylinder')
+    .removeLoot('pneumaticcraft:gun_ammo_ap')
+    .removeLoot('pneumaticcraft:gun_ammo_explosive')
+    .removeLoot('pneumaticcraft:gun_ammo_freezing')
+    .removeLoot('pneumaticcraft:gun_ammo_weighted')
+    .removeLoot('pneumaticcraft:gun_ammo_incendiary')
+    .removeLoot('pneumaticcraft:programming_puzzle')
+    .removeLoot('pneumaticcraft:compressed_iron_block')
+    .removeLoot('pneumaticcraft:ingot_iron_compressed')
+    .addLoot('chancecubes:compact_giant_chance_cube');
+
+    event.addLootTableModifier('pneumaticcraft:chests/mechanic_house')
+    .removeLoot('pneumaticcraft:logistics_core')
+    .removeLoot('pneumaticcraft:pressure_tube')
+    .removeLoot('pneumaticcraft:capacitor')
+    .removeLoot('pneumaticcraft:transistor')
+    .removeLoot('pneumaticcraft:spawner_agitator')
+    .removeLoot('pneumaticcraft:compressed_stone')
+    .removeLoot('pneumaticcraft:compressed_iron_leggings')
+    .removeLoot('pneumaticcraft:compressed_iron_chestplate')
+    .removeLoot('pneumaticcraft:compressed_iron_helmet')
+    .removeLoot('pneumaticcraft:compressed_iron_boots')
+    .removeLoot('pneumaticcraft:vortex_cannon')
+    .removeLoot('pneumaticcraft:pneumatic_cylinder')
+    .removeLoot('pneumaticcraft:gun_ammo_ap')
+    .removeLoot('pneumaticcraft:gun_ammo_explosive')
+    .removeLoot('pneumaticcraft:gun_ammo_freezing')
+    .removeLoot('pneumaticcraft:gun_ammo_weighted')
+    .removeLoot('pneumaticcraft:gun_ammo_incendiary')
+    .removeLoot('pneumaticcraft:programming_puzzle')
+    .removeLoot('pneumaticcraft:compressed_iron_block')
+    .removeLoot('pneumaticcraft:ingot_iron_compressed')
+    .addLoot('chancecubes:compact_giant_chance_cube');
 });
 
 

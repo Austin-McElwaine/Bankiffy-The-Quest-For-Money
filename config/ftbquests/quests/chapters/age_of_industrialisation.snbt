@@ -10,7 +10,7 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["2F58CA96D4FC51DD"]
+			dependencies: ["00785C9E495062A1"]
 			description: ["Welcome to the new age. I have more items to have exported and sold, get to it! Here's an instructional guide that I've taken some of your wage to provide."]
 			icon: {
 				Count: 1
@@ -1210,6 +1210,7 @@
 				}
 				type: "item"
 			}]
+			shape: "diamond"
 			tasks: [{
 				id: "2CE70B851C2E89A9"
 				item: "industrialforegoing:machine_frame_supreme"

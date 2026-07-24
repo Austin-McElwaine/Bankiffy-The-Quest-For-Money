@@ -13,7 +13,7 @@
 	emitWithoutChimney = true
 	#Use vanilla smoke particles for compatibility with some mods.
 	#Limitations: no wind, no coloring, no collisions
-	useVanillaSmokeParticles = false
+	useVanillaSmokeParticles = true
 	#Whether to colorize smoke particles or not
 	colorize = true
 

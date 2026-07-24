@@ -54,6 +54,56 @@ ServerEvents.recipes(event => {
         cookingtime: 200
     })
 
+    event.remove({ type: 'pneumaticcraft:explosion_crafting' })
+
+    event.recipes.create.compacting('pneumaticcraft:dense_iron_clump', ['5x minecraft:iron_ingot']).superheated();
+
+    event.recipes.create.compacting('pneumaticcraft:compressed_iron_clump', ['pneumaticcraft:dense_iron_clump', '5x minecraft:iron_ingot']).superheated();
+
+    event.recipes.create.mixing('pneumaticcraft:softened_compressed_iron_clump', ['pneumaticcraft:compressed_iron_clump', Fluid.lava(250)]).superheated();
+
+    event.recipes.createaddition.rolling({input: { item: 'pneumaticcraft:softened_compressed_iron_clump' },result: { item: 'pneumaticcraft:hot_compressed_iron', count: 8 }})
+
+    event.recipes.create.splashing('pneumaticcraft:ingot_iron_compressed','pneumaticcraft:hot_compressed_iron');
+
+    event.remove({ id: 'createaddition:mixing/biomass_from_leaves' })
+
+    event.recipes.create.mixing('createaddition:biomass', ['3x #forge:leaves', { fluidTag: 'forge:plantoil', amount: 100 }]).heated();
+
+    event.replaceInput({}, 'cyclic:biomass', 'createaddition:biomass');
+
+    event.custom({
+        "type": "immersiveengineering:generator_fuel",
+        "burnTime": 250,
+        "fluidTag": "forge:biofuel"
+    });
+
+    event.custom({
+        "type": "immersiveengineering:generator_fuel",
+        "burnTime": 250,
+        "fluidTag": "forge:ethanol"
+    });
+
+    event.custom({
+        "type": "immersiveengineering:generator_fuel",
+        "burnTime": 500,
+        "fluidTag": "forge:diesel"
+    });
+
+    event.custom({
+        "type": "immersiveengineering:generator_fuel",
+        "burnTime": 500,
+        "fluidTag": "forge:kerosene"
+    });
+
+    event.custom({
+        "type": "immersiveengineering:generator_fuel",
+        "burnTime": 1000,
+        "fluidTag": "forge:lpg"
+    });
+
+    event.remove({ output: 'cyclic:biomass' })
+
     event.custom({
         type: 'immersiveengineering:arc_furnace',
         input: { item: 'minecraft:iron_ingot' },
@@ -320,21 +370,65 @@ ServerEvents.recipes(event => {
         'RPR',
         'IRI'
     ], {
-        P: 'pneumaticcraft:printed_circuit_board',
-        I: 'minecraft:clay_ball',
-        R: '#forge:ingots/brick'
+        P: 'pneumaticcraft:large_tank',
+        I: '#forge:ingots/brick',
+        R: 'pneumaticcraft:compressed_bricks'
     });
 
     event.remove({output: 'immersiveengineering:blastbrick'});
 
     event.shaped(Item.of('immersiveengineering:blastbrick', 3), [
         'IRI',
-        'RPR',
+        'RIR',
         'IRI'
     ], {
-        P: 'pneumaticcraft:printed_circuit_board',
         I: 'minecraft:nether_brick',
-        R: '#forge:ingots/brick'
+        R: 'pneumaticcraft:compressed_bricks'
+    });
+
+    event.remove({output: 'adpother:iron_respirator'});
+
+    event.shaped(Item.of('adpother:iron_respirator', 1), [
+        'BHB',
+        'LIL',
+        'WGW'
+    ], {
+        B: 'minecraft:glass_bottle',
+        H: 'minecraft:leather_helmet',
+        L: '#forge:leather',
+        I: 'minecraft:iron_ingot',
+        W: '#minecraft:wool',
+        G: '#forge:leaves',
+    });
+
+    event.remove({output: 'adpother:gold_respirator'});
+
+    event.shaped(Item.of('adpother:gold_respirator', 1), [
+        'BHB',
+        'LIL',
+        'WGW'
+    ], {
+        B: 'minecraft:glass_bottle',
+        H: 'minecraft:leather_helmet',
+        L: '#forge:leather',
+        I: 'minecraft:gold_ingot',
+        W: '#minecraft:wool',
+        G: '#forge:leaves',
+    });
+
+    event.remove({output: 'adpother:diamond_respirator'});
+
+    event.shaped(Item.of('adpother:diamond_respirator', 1), [
+        'BHB',
+        'LIL',
+        'WGW'
+    ], {
+        B: 'minecraft:glass_bottle',
+        H: 'minecraft:leather_helmet',
+        L: '#forge:leather',
+        I: 'minecraft:diamond',
+        W: '#minecraft:wool',
+        G: '#forge:leaves',
     });
 
     event.remove({output: 'industrialforegoing:fluid_extractor'});
@@ -5365,6 +5459,76 @@ ServerEvents.recipes(event => {
         result: {
             item: 'mysticalagriculture:awakened_draconium_seeds'
         }
+    });
+
+    event.custom({
+        type: "bloodmagic:altar",
+        altarSyphon: 5000,
+        consumptionRate: 5,
+        drainRate: 5,
+        input: {
+            item: "vampirism:blood_bottle"
+        },
+        output: {
+            item: "vampirism:pure_blood_0"
+        },
+        "upgradeLevel": 0
+    });
+
+    event.custom({
+        type: "bloodmagic:altar",
+        altarSyphon: 6000,
+        consumptionRate: 5,
+        drainRate: 5,
+        input: {
+            item: "vampirism:pure_blood_0"
+        },
+        output: {
+            item: "vampirism:pure_blood_1"
+        },
+        "upgradeLevel": 1
+    });
+
+    event.custom({
+        type: "bloodmagic:altar",
+        altarSyphon: 7000,
+        consumptionRate: 5,
+        drainRate: 5,
+        input: {
+            item: "vampirism:pure_blood_1"
+        },
+        output: {
+            item: "vampirism:pure_blood_2"
+        },
+        "upgradeLevel": 2
+    });
+
+    event.custom({
+        type: "bloodmagic:altar",
+        altarSyphon: 8000,
+        consumptionRate: 5,
+        drainRate: 5,
+        input: {
+            item: "vampirism:pure_blood_2"
+        },
+        output: {
+            item: "vampirism:pure_blood_3"
+        },
+        "upgradeLevel": 3
+    });
+
+    event.custom({
+        type: "bloodmagic:altar",
+        altarSyphon: 10000,
+        consumptionRate: 5,
+        drainRate: 5,
+        input: {
+            item: "vampirism:pure_blood_3"
+        },
+        output: {
+            item: "vampirism:pure_blood_4"
+        },
+        "upgradeLevel": 4
     });
 });
 

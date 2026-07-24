@@ -1091,7 +1091,7 @@
 			}]
 			title: "Building Nicer Bases III"
 			x: 2.0d
-			y: 4.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["6D4D8AD88B65EE9D"]
@@ -1249,7 +1249,6 @@
 				item: "ags_modernmarkings:wall_marking_symbol_gears"
 				type: "item"
 			}]
-			shape: "diamond"
 			subtitle: "Have Fun Finding Andesite :)"
 			tasks: [{
 				id: "471DA9C68633207D"
@@ -1261,10 +1260,7 @@
 			y: 4.0d
 		}
 		{
-			dependencies: [
-				"38EAD9D1F5CFAF8D"
-				"2ED4000014437C28"
-			]
+			dependencies: ["2ED4000014437C28"]
 			description: ["These Blocks Can Copy The Texture Of Any Kind Of Block You Right Click Them With, There Are More Than Just These Available"]
 			id: "5049B203FFD4B82B"
 			rewards: [{
@@ -1292,7 +1288,7 @@
 			]
 			title: "Building Nicer Bases IV"
 			x: 2.0d
-			y: 6.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["38EAD9D1F5CFAF8D"]
@@ -1346,8 +1342,8 @@
 				type: "item"
 			}]
 			title: "Splitter"
-			x: 4.5d
-			y: 6.0d
+			x: 5.5d
+			y: 3.5d
 		}
 		{
 			dependencies: ["38EAD9D1F5CFAF8D"]
@@ -1374,7 +1370,7 @@
 			]
 			title: "Your First Create Machine"
 			x: 5.5d
-			y: 6.5d
+			y: 6.0d
 		}
 		{
 			dependencies: ["2DD3AC8B2FCC925C"]
@@ -1393,8 +1389,8 @@
 				type: "item"
 			}]
 			title: "Blast/Haunt/Smoke/Wash"
-			x: 5.0d
-			y: 8.0d
+			x: 4.5d
+			y: 7.0d
 		}
 		{
 			dependencies: ["785261F6985DDE6D"]
@@ -1411,8 +1407,8 @@
 				item: "create_connected:six_way_gearbox"
 				type: "item"
 			}]
-			x: 3.0d
-			y: 6.5d
+			x: 4.5d
+			y: 3.5d
 		}
 		{
 			dependencies: ["2EF9BF8EAB22D76F"]
@@ -1433,7 +1429,7 @@
 			}]
 			title: "Create: Batteries"
 			x: 11.0d
-			y: 4.0d
+			y: 5.0d
 		}
 		{
 			dependencies: ["77A9D231985C1F4C"]
@@ -1501,7 +1497,7 @@
 			]
 			title: "Mixing It Up"
 			x: 7.0d
-			y: 5.5d
+			y: 5.0d
 		}
 		{
 			dependencies: ["0F7B12E40C5A5791"]
@@ -1519,8 +1515,8 @@
 				type: "item"
 			}]
 			title: "We Need To Cook Jesse"
-			x: 8.5d
-			y: 5.5d
+			x: 9.5d
+			y: 6.5d
 		}
 		{
 			dependencies: ["2194ED39799B191C"]
@@ -1545,8 +1541,8 @@
 				type: "item"
 			}]
 			title: "Say My Name"
-			x: 10.0d
-			y: 5.0d
+			x: 10.5d
+			y: 6.0d
 		}
 		{
 			dependencies: ["2E8F1CA7CAF61BFC"]
@@ -1565,8 +1561,8 @@
 				type: "item"
 			}]
 			title: "Crushing It"
-			x: 9.0d
-			y: 10.0d
+			x: 8.5d
+			y: 9.0d
 		}
 		{
 			dependencies: ["38EAD9D1F5CFAF8D"]
@@ -1584,8 +1580,8 @@
 				type: "item"
 			}]
 			title: "Every Mod Has A Wrench"
-			x: 5.0d
-			y: 4.0d
+			x: 5.5d
+			y: 4.5d
 		}
 		{
 			dependencies: ["0F7B12E40C5A5791"]
@@ -1603,8 +1599,8 @@
 				type: "item"
 			}]
 			title: "Give Me A Hand"
-			x: 9.0d
-			y: 7.0d
+			x: 7.5d
+			y: 6.5d
 		}
 		{
 			dependencies: ["23A277ABEAD5078F"]
@@ -1623,8 +1619,8 @@
 				type: "item"
 			}]
 			title: "Auto Crafting"
-			x: 9.0d
-			y: 8.5d
+			x: 8.0d
+			y: 8.0d
 		}
 		{
 			dependencies: ["23A277ABEAD5078F"]
@@ -1649,8 +1645,8 @@
 				type: "item"
 			}]
 			title: "The Trains Will Run On Time"
-			x: 10.0d
-			y: 8.0d
+			x: 8.5d
+			y: 7.0d
 		}
 		{
 			dependencies: ["2767EA6BEAA10DF5"]
@@ -1668,8 +1664,8 @@
 				type: "advancement"
 			}]
 			title: "Drink Paint"
-			x: 10.5d
-			y: 9.5d
+			x: 9.0d
+			y: 8.0d
 		}
 		{
 			dependencies: ["2767EA6BEAA10DF5"]
@@ -1693,8 +1689,8 @@
 				type: "item"
 			}]
 			title: "Ghost Train"
-			x: 11.5d
-			y: 8.5d
+			x: 10.0d
+			y: 8.0d
 		}
 		{
 			dependencies: ["2DD3AC8B2FCC925C"]
@@ -1713,7 +1709,7 @@
 			}]
 			title: "Splrrrt"
 			x: 4.5d
-			y: 7.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["00CA8C3F59B2D040"]
@@ -1731,7 +1727,7 @@
 				type: "item"
 			}]
 			x: 3.5d
-			y: 8.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["3A4C9A3C39B86342"]
@@ -1750,8 +1746,8 @@
 				type: "advancement"
 			}]
 			title: "Orange Slime"
-			x: 2.5d
-			y: 9.0d
+			x: 3.0d
+			y: 7.0d
 		}
 		{
 			dependencies: ["0F7B12E40C5A5791"]
@@ -1770,8 +1766,8 @@
 				type: "item"
 			}]
 			title: "Sweet Treat"
-			x: 7.5d
-			y: 7.0d
+			x: 6.5d
+			y: 6.0d
 		}
 		{
 			dependencies: ["2DD3AC8B2FCC925C"]
@@ -1790,8 +1786,8 @@
 				type: "item"
 			}]
 			title: "Mini Cake"
-			x: 6.5d
-			y: 8.0d
+			x: 6.0d
+			y: 7.5d
 		}
 		{
 			dependencies: [
@@ -1819,8 +1815,8 @@
 				item: "jaffabricate:jaffa_cake"
 				type: "item"
 			}]
-			x: 7.5d
-			y: 9.0d
+			x: 7.0d
+			y: 7.5d
 		}
 		{
 			dependencies: [
@@ -1867,8 +1863,8 @@
 				type: "item"
 			}]
 			title: "Redstone Flux Generation"
-			x: 12.5d
-			y: 4.0d
+			x: 12.0d
+			y: 5.0d
 		}
 		{
 			dependencies: ["5725874D6358E02B"]
@@ -1900,8 +1896,8 @@
 				type: "item"
 			}]
 			title: "Early RF Storage"
-			x: 14.0d
-			y: 4.0d
+			x: 13.0d
+			y: 5.0d
 		}
 		{
 			dependencies: ["2194ED39799B191C"]
@@ -1925,8 +1921,8 @@
 				item: "createbb:white_stuff"
 				type: "item"
 			}]
-			x: 10.0d
-			y: 6.0d
+			x: 10.5d
+			y: 7.0d
 		}
 		{
 			dependencies: ["0C08D54D7B56A194"]
@@ -1963,8 +1959,8 @@
 				type: "item"
 			}]
 			title: "Whipping The Belt"
-			x: 10.5d
-			y: 7.0d
+			x: 9.0d
+			y: 5.0d
 		}
 		{
 			dependencies: ["3C7F0D38B18687D2"]
@@ -1983,8 +1979,8 @@
 				type: "item"
 			}]
 			title: "Fluid Transportation"
-			x: 12.0d
-			y: 7.0d
+			x: 10.0d
+			y: 5.0d
 		}
 		{
 			dependencies: ["6FF6B3D715137EA3"]
@@ -2020,7 +2016,179 @@
 				type: "item"
 			}]
 			x: 9.0d
-			y: 11.5d
+			y: 10.0d
+		}
+		{
+			dependencies: ["2EF9BF8EAB22D76F"]
+			description: ["Blazes love cakes! If you you give a blaze burner a cake it'll get them even more fired up, allowing it to generate more heat and unlock more recipes."]
+			id: "6994D856C59FBE87"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "3310E44DBFC7F87B"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "57C758A69225D1BB"
+				item: "create:blaze_cake"
+				type: "item"
+			}]
+			title: "Cake!"
+			x: 10.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["2EF9BF8EAB22D76F"]
+			description: ["Setup a water tank with some heat underneath to create steam. Once that's all setup attach a steam engine to it to create a kinetic output."]
+			id: "4DCBF74C41614841"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "33E3EA67DD445CAC"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "024EF2AC05AB0272"
+				item: "create:steam_engine"
+				type: "item"
+			}]
+			title: "Steam Power"
+			x: 11.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["2DD3AC8B2FCC925C"]
+			description: ["Compressed Iron is the first item you'll need for the next chapter. It requires you to put a little effort into create infrastructure. For Instance the first step requires you to super-heat and compress some iron together, so get to it employee."]
+			id: "48D690D6456C2026"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "4D13D8603E273D59"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "563E821DE9AAA16F"
+				item: "pneumaticcraft:dense_iron_clump"
+				type: "item"
+			}]
+			title: "Compressed Iron Step 1"
+			x: 5.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["48D690D6456C2026"]
+			description: ["Not much changes in the second step, simply just follow the first with the original dense iron with even more iron."]
+			id: "29C6FCAE43A5D764"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "3EEFBA643CBCCCEB"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "1857BB9700725576"
+				item: "pneumaticcraft:compressed_iron_clump"
+				type: "item"
+			}]
+			title: "Compressed Iron Step 2"
+			x: 5.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["29C6FCAE43A5D764"]
+			description: ["Now it's time to soften the mixture, time to heat up a basin full of the compressed iron clumps and mix it with lava."]
+			id: "0668126D5F53F407"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "6DF75E2B1D4AC45F"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "4FF4456B426002D2"
+				item: "pneumaticcraft:softened_compressed_iron_clump"
+				type: "item"
+			}]
+			title: "Compressed Iron Step 3"
+			x: 5.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["2DD3AC8B2FCC925C"]
+			description: ["Use those sheets you got from the press (or tinkers) to make yourself a roller. Rolling can allow you to make rods, wires, and even compressed iron."]
+			id: "49F16C585055582F"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "116FB0FAFD93006A"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "7399631A484529CD"
+				item: "createaddition:rolling_mill"
+				type: "item"
+			}]
+			title: "Roll Out!"
+			x: 4.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["6D4D8AD88B65EE9D"]
+			description: ["Having trouble making placement look random? A trowel can take any block in your hotbar and randomize the placement of them, helping you make a little bit of randomness in your builds."]
+			id: "2BE8F4587A6F0550"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "75E6518469C65001"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "1F416190BC5E7BC4"
+				item: "quark:trowel"
+				type: "item"
+			}]
+			title: "Randomization"
+			x: 1.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["49F16C585055582F"]
+			description: ["Roll that softened compressed iron back into ingots, careful they're hot!"]
+			id: "61E3F920329D0F89"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "74C5E3274B0B54DD"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "3F7FE3EAD3E2E833"
+				item: "pneumaticcraft:hot_compressed_iron"
+				type: "item"
+			}]
+			title: "Compressed Iron Step 4"
+			x: 3.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["4450739A471BCB0E"]
+			description: ["You're finally able to make some compressed iron, simply cool down the hot compressed iron you made from the rolling machine."]
+			id: "78AB10073E36F488"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5E677571DB849264"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "5F0B148650BAFF75"
+				item: "pneumaticcraft:ingot_iron_compressed"
+				type: "item"
+			}]
+			title: "Cool It"
+			x: 4.0d
+			y: 8.0d
 		}
 	]
 	title: "Employment Orientation"

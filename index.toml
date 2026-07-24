@@ -578,11 +578,11 @@ hash = "1106f174658cdf06203205d51ddd9f2daaedc0266e904ec327f5d4aa6ec5e35e"
 
 [[files]]
 file = "config/adchimneys-client.toml"
-hash = "49f87a4f3132ba06857b8d6293b60db84f715a2f704f90f86e4730eaa8bfae1f"
+hash = "6c5eef15ff1a1d5466e6606c041618288da5989f25596d60031ad5579af62cce"
 
 [[files]]
 file = "config/adchimneys-common.toml"
-hash = "d29ee601d89b70de679a6caf8e6f623fa9f03b509396c7d07e6432de7b21aca0"
+hash = "ca9d75496b976d2e3bc9367c1a3c3cf47984493361241f9f964445d063ee69a0"
 
 [[files]]
 file = "config/adchimneys/Emitters/bakery$brick_stove.cfg"
@@ -1674,7 +1674,7 @@ hash = "48791b839c1265799bdcd1512e718e601375a03313167f807bbea58f617e6d08"
 
 [[files]]
 file = "config/adpother-common.toml"
-hash = "d255babc81f6729ce3442522c76cab2a05f960b496f292fdc0371af69745f514"
+hash = "8c1b8d82fdcf215515cb3d78056f3c613b0720558e03bc67a10f9485abc209ea"
 
 [[files]]
 file = "config/adpother/Biomes/ae2$spatial_storage.cfg"
@@ -5174,7 +5174,7 @@ hash = "1fb01fb706e8b4e12726a4306b802cc87f1091b30c7b9c025bbe2bfb9118dc39"
 
 [[files]]
 file = "config/adpother/Pollutants/carbon.cfg"
-hash = "0017f81bf63095e4c85f16209b2c92d2664d561bfa4532d2fadbe9af06eecc50"
+hash = "9efb8b5d3edc18ca8620c26f286f899588c160847f7dfc5f5939b430a81690a5"
 
 [[files]]
 file = "config/adpother/Pollutants/dust.cfg"
@@ -6606,7 +6606,7 @@ hash = "786d29abc5d3fe326d5a5a370a3aad90b4a7da110e70ce976e6e8376d18ed484"
 
 [[files]]
 file = "config/chancecubes/custom_rewards/CustomSounds-Resourcepack.zip"
-hash = "1a9b1a9b8281cd26856f3ea6baa041c912cf19fec2dc31a4d7646b77465f31a2"
+hash = "33e2c83847c0303896ea033561d99674f6ffdc8b19dce6810ea8673ac086c033"
 
 [[files]]
 file = "config/chancecubes/custom_rewards/sounds/sounds.json"
@@ -7078,19 +7078,39 @@ hash = "a8448518860cd8b542dadf75521bfab981451775212ee1b51ddc646d998f9311"
 
 [[files]]
 file = "config/forgeendertech-common.toml"
-hash = "e3c7fbcf2865785d6dd5ec72b3db1abae3e7ba6376bd3aecc0472586ed21b6ad"
+hash = "892922b7e8b62cddac8e66b1607ba8dc36ad20ecb7c066a699923751e9051343"
 
 [[files]]
 file = "config/forgeendertech/Biomes/biomesoplenty$crag.cfg"
 hash = "209ebbf590509c8f0bfdd90643c86a03c47a8fc498955401af621d9974038e54"
 
 [[files]]
+file = "config/forgeendertech/Biomes/biomesoplenty$fungal_jungle.cfg"
+hash = "ee5061f5e7a7100785277e13416018cc3526eec4cf92afd7eebab7704af29feb"
+
+[[files]]
 file = "config/forgeendertech/Biomes/biomesoplenty$mystic_grove.cfg"
 hash = "2a6a7835ad9e9d16b9418a6f4a02ac49aee5e4c0a31ca321a537578eb87e4346"
 
 [[files]]
+file = "config/forgeendertech/Biomes/biomesoplenty$old_growth_dead_forest.cfg"
+hash = "6d116e88bda3a051ce30e9d68e795c71c71f4e4265e3a3dbb6073d51a9247437"
+
+[[files]]
 file = "config/forgeendertech/Biomes/biomesoplenty$snowblossom_grove.cfg"
 hash = "79cbee213b20289fdd35fa7370554d30842de5bfc55ec47f5ee0471cc0ee0bf6"
+
+[[files]]
+file = "config/forgeendertech/Biomes/biomesoplenty$volcano.cfg"
+hash = "a21d075e5969239c8b8df4804ca03384dc6e3ad04e64368eca6fae724180fcd8"
+
+[[files]]
+file = "config/forgeendertech/Biomes/biomesoplenty$woodland.cfg"
+hash = "29486f322255c63af0e2a36795375ecc348d7147617e6a4afa123d9685f9b9a9"
+
+[[files]]
+file = "config/forgeendertech/Biomes/bloodmagic$none.cfg"
+hash = "03a91b130a7ef4e5be027e7ee4c4a39b3af8c9f0db7b5038adc3348a5d0844d8"
 
 [[files]]
 file = "config/forgeendertech/Biomes/bloodyhell$blasphemous_biome.cfg"
@@ -7101,12 +7121,20 @@ file = "config/forgeendertech/Biomes/minecraft$cherry_grove.cfg"
 hash = "692ef7a9030a23b01b22bb7297a81c2f3d05fef789d37c2bec190eb5fbb7cb72"
 
 [[files]]
+file = "config/forgeendertech/Biomes/minecraft$deep_frozen_ocean.cfg"
+hash = "43971e0db63021653dd5f568e389884183c0a6ac6ef41ac22e5c96fdc7509a3e"
+
+[[files]]
 file = "config/forgeendertech/Biomes/minecraft$deep_lukewarm_ocean.cfg"
 hash = "ea7705264f12fe5583caea347fa02a5906a96eba7ceeaa0aa4ce7ff58ecc33cd"
 
 [[files]]
 file = "config/forgeendertech/Biomes/minecraft$ice_spikes.cfg"
 hash = "ca22b518fac21deccfe3bfa15e427ad686452405a7cec65baca2fdbaaa8d3f9b"
+
+[[files]]
+file = "config/forgeendertech/Biomes/minecraft$old_growth_birch_forest.cfg"
+hash = "d5bee71b90718cce905fbcf4eb68e81bde2089d662e1ad2c8db9061cfa6a5bd6"
 
 [[files]]
 file = "config/forgeendertech/Biomes/minecraft$savanna.cfg"
@@ -7125,8 +7153,24 @@ file = "config/forgeendertech/Biomes/minecraft$windswept_savanna.cfg"
 hash = "b065e5aa2b0c22012aaae7c84ea3a812ee3f060afc5e17211a6d828ca10a6178"
 
 [[files]]
+file = "config/forgeendertech/Biomes/terralith$alpine_highlands.cfg"
+hash = "2ab40de138948d73bffd3d8635fe78b251a382d1a7f06336d61a55ee169ec0f1"
+
+[[files]]
 file = "config/forgeendertech/Biomes/terralith$arid_highlands.cfg"
 hash = "7eebc7b855fc46d7c8e97e7841a5ac1515d3e829c5916ee3959a7060139bc295"
+
+[[files]]
+file = "config/forgeendertech/Biomes/terralith$cave$deep_caves.cfg"
+hash = "ce99437f8982eed28b237dd32db9a73a612916d12252da23774843215a4a4fbc"
+
+[[files]]
+file = "config/forgeendertech/Biomes/terralith$cave$granite_caves.cfg"
+hash = "fc5643dd4168347e68c2700ea7480e61bacc293d2f1e162a1c682bebad14eb80"
+
+[[files]]
+file = "config/forgeendertech/Biomes/terralith$cave$tuff_caves.cfg"
+hash = "c6e9c71c316776bbf38a72c3b0959a75fb5eb731195ec1fa3029e459f34cf367"
 
 [[files]]
 file = "config/forgeendertech/Biomes/terralith$forested_highlands.cfg"
@@ -7137,16 +7181,48 @@ file = "config/forgeendertech/Biomes/terralith$highlands.cfg"
 hash = "8167611c26d307d0ce1903ed10916d1295ebaca9da89f54f58621aa0bb5da5bd"
 
 [[files]]
+file = "config/forgeendertech/Biomes/terralith$hot_shrubland.cfg"
+hash = "34f300dc1ec709b72737123751a13a699841b6f096593dd8fa8896385654edd1"
+
+[[files]]
+file = "config/forgeendertech/Biomes/terralith$ice_marsh.cfg"
+hash = "21d2dfe1ce904d0993c1d70a7066c450398a4c1ce1cb40e293760eda35028766"
+
+[[files]]
 file = "config/forgeendertech/Biomes/terralith$rocky_shrubland.cfg"
 hash = "e8dbf07d2405efa6adbed77974f84777af61db20c47d1bc213c363da620c5c40"
+
+[[files]]
+file = "config/forgeendertech/Biomes/terralith$sakura_grove.cfg"
+hash = "ccb292a9cea99aded0d1fc24b8e2ebac3818538e3e315af5f8cf015b01d01dae"
 
 [[files]]
 file = "config/forgeendertech/Biomes/terralith$sandstone_valley.cfg"
 hash = "fbfd7372f487af352d92a31ac1aa71f50b909edd17a02e3adda2f95e109307e1"
 
 [[files]]
+file = "config/forgeendertech/Biomes/terralith$scarlet_mountains.cfg"
+hash = "9491cec320a8a3701c3a83adc3ae5a334b51763cd9324b61ccf9e1763970fdcc"
+
+[[files]]
 file = "config/forgeendertech/Biomes/terralith$shield.cfg"
 hash = "39f1e3b1ad8bb2da061d1ed9cc526428829e7c1b1be017439df36899dfb27fae"
+
+[[files]]
+file = "config/forgeendertech/Biomes/terralith$siberian_grove.cfg"
+hash = "38251e302a20ac9c5e1a433c14df9b4d0f86a6a1c764604a8c234baa2189d60f"
+
+[[files]]
+file = "config/forgeendertech/Biomes/terralith$warm_river.cfg"
+hash = "9d35c425455ce91729cb54db1eecd30dd01e1e01f51029b381d953256c06745f"
+
+[[files]]
+file = "config/forgeendertech/Biomes/terralith$warped_mesa.cfg"
+hash = "893faa89f376b953b1fde28880e6adbf11417a2fcce0c8416453641cd336999d"
+
+[[files]]
+file = "config/forgeendertech/Biomes/terralith$white_cliffs.cfg"
+hash = "dd40cfa1ff2190c7b9b83163d126c9a8c55066c04c41705cad5d6deef06f6cef"
 
 [[files]]
 file = "config/forgeendertech/Biomes/terralith$yosemite_cliffs.cfg"
@@ -7158,7 +7234,7 @@ hash = "cc76bbf23c1c84675b9e9ce3b4ad6a8e27e5995f8651d880f985a712a9f93e37"
 
 [[files]]
 file = "config/forgeendertech/cached.dat"
-hash = "4725dd77f11a13a661a6a25dc5d15537f1c92f3267c21d2cb9ca3f4db2e85726"
+hash = "d92799a503c0f481e5c7da3baf31d28c1190f151428d7058cdb1527a6de5e5aa"
 
 [[files]]
 file = "config/fossil-client.toml"
@@ -7190,7 +7266,7 @@ hash = "8a477eeb3f0b57301948cc6e92adc73300980367543fb88406232bf50550d5f8"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/age_of_industrialisation.snbt"
-hash = "d7ee708b64797ef74b33f34229a932e1f9ecde872b9ede0af681752e2c95be2b"
+hash = "79248997c759f863b340d2e5f0a60cfbad767392d99d089a543687f877812fe4"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/banking_on_banksco.snbt"
@@ -7206,7 +7282,7 @@ hash = "2eb0a1b43fd9ae51a1bf19d326d826daeded4f4acee7f91b2508b76d4bdbe13f"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/employment_orientation.snbt"
-hash = "c3673eed0c642450cafcb439ebdacb21d57bef4aad6a459cdca47a67e5b9b049"
+hash = "f920551cde808a58d7c9e35c928eec917596ee4b16a5a8b000ec12f5564d9350"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/killing_the_bloodsuckers.snbt"
@@ -7222,7 +7298,7 @@ hash = "9ae6a431eced76284456a4e287ff4ed2095266f07787c9feb66003dff2a5ced5"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/pressure_on_the_job.snbt"
-hash = "3f068f414e2e1f1c375e708b7a9c74fb7947789536b063629c6f5cd9c3f76d4f"
+hash = "2906e22bb166ec1e8d61459715db89ad0a0977eeba05967bed1017cefbebf7d9"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/promotion.snbt"
@@ -7258,7 +7334,7 @@ hash = "4f2523f6072dcc825b74902330b9f0ba0c27a8b8880ea8817ef126adf37d2abb"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/vladislav_loot.snbt"
-hash = "1a4e37080ac8a5fa7bb340ae777dcd8ffe59c2d47be28c093b28bccf0f715bda"
+hash = "927867308e92af692769752c973c3a044aec9d520daa7e77ce060f1b4a7432d0"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/vladislav_loot_bloodmagic.snbt"
@@ -7670,7 +7746,7 @@ hash = "cbc1f19ad49273dde46d3f7c888005e780a2ccde34933a543454b773d34cec34"
 
 [[files]]
 file = "config/oculus.properties"
-hash = "4e5bb8afb29531101f5b70908aabc88af9845904224e16637f7661d0a84b9b43"
+hash = "06ffb1db06b3c814c1f90e4aee8297eca7de2e4260538f9409b589e97925b3f5"
 
 [[files]]
 file = "config/overflowingbars-client.toml"
@@ -7678,7 +7754,7 @@ hash = "1cb5807421d57c43c64c74b18bc22a30452f4e84b59020ed39742c0b957ea57b"
 
 [[files]]
 file = "config/packetfixer.properties"
-hash = "5e25c5a71cca4f0dd1406694fe98c44be6ded4dc9d405e12a6ffff3c51f36a63"
+hash = "43558ecac9a5260871bf47a9b7e4fc72e4f93bfcee51f2161298bd7a8dd5687b"
 
 [[files]]
 file = "config/pamhc2crops.toml"
@@ -8241,12 +8317,20 @@ file = "kubejs/README.txt"
 hash = "989f3737ae4621b8ff6730bce4cbeeee756921e7e510e0c281c8a350501d98af"
 
 [[files]]
-file = "kubejs/assets/kubejs/textures/block/example_block.png"
-hash = "783d78bd1ee61d3b32273670dff9d82c34cd74c5ae899a10f104f473828d5bbc"
+file = "kubejs/assets/kubejs/textures/item/compressed_iron_clump.png"
+hash = "fca1b2c1cf98e33dcb3ad4d3d16316048083f625caa34cdd75ac8eeb792fe995"
 
 [[files]]
-file = "kubejs/assets/kubejs/textures/item/example_item.png"
-hash = "45a5f56eba6066ad05c70988a32b72c50cfeb6e35857739bd582007011ea002b"
+file = "kubejs/assets/kubejs/textures/item/dense_iron_clump.png"
+hash = "b937d5b51b10245ef9cf67cfc7ab4ec43af721f214b9cc9a19c7e73033e0678c"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/hot_compressed_iron.png"
+hash = "87c6ae28531cd20beb362a83c637a72bd26f930367ec0f42a1656b3b98430974"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/softened_compressed_iron_clump.png"
+hash = "0afe981f9b890e69ac6c30ca95d4ffdd933d5b1d3c1dc6f30264dd07447f7f73"
 
 [[files]]
 file = "kubejs/client_scripts/example.js"
@@ -8266,15 +8350,19 @@ hash = "04e45d24efd2f5ef2beaa96756e1f00b3964efe8723cc8fb7631455b22065e06"
 
 [[files]]
 file = "kubejs/server_scripts/loot_changes.js"
-hash = "c1f8fa199a59c1b129d6c1c6fddea11fad4dc2b2b233e3b48ef793d79d9ce5e1"
+hash = "039fb0c0df03eb280645a1913f742aa7727db524d3b1c8286bf48943f450b290"
 
 [[files]]
 file = "kubejs/server_scripts/recipe_changes.js"
-hash = "89cc26955aa3c56675fd7c618057d97f91666873e3c249cf34e4f4a5b21f4aec"
+hash = "54699958d9b8475a0b6adc8cb19feee87eb8be766b18ebd02b45992e5d05d965"
 
 [[files]]
 file = "kubejs/server_scripts/tagadd.js"
-hash = "a579e608c25c2b3ad1e81a6fa04e4e3b98a3afce7d008d004026cd7c8e2858bc"
+hash = "7d032a2fabb987f5be0293df1680c09aa2c9af7139f01d19e4c65b734d2d11e3"
+
+[[files]]
+file = "kubejs/startup_scripts/custom_items.js"
+hash = "6d120b43cb7e0f80f42c33409310e4398eef7bb9d5dff2d28f5ce57139d578f3"
 
 [[files]]
 file = "mods/advanced-chimneys.pw.toml"
@@ -10420,6 +10508,14 @@ hash = "87f067a2b3df38c8fd101b76b6033a9e10f3ff0b37063618fb9c3bc86c8c9a46"
 [[files]]
 file = "resourcepacks/Bankiffy/data/health_and_disease/advancements/grant_book_on_first_join.json"
 hash = "f203fba23625e5c123ac42f2c54558a52ce76a47a2e607eed67f61a96d7f12b5"
+
+[[files]]
+file = "resourcepacks/Bankiffy/data/immersiveengineering/recipes/blastfurnace/fuel_charcoal.json"
+hash = "87f067a2b3df38c8fd101b76b6033a9e10f3ff0b37063618fb9c3bc86c8c9a46"
+
+[[files]]
+file = "resourcepacks/Bankiffy/data/immersiveengineering/recipes/blastfurnace/fuel_charcoal_block.json"
+hash = "87f067a2b3df38c8fd101b76b6033a9e10f3ff0b37063618fb9c3bc86c8c9a46"
 
 [[files]]
 file = "resourcepacks/Bankiffy/data/immersiveengineering/worldgen/configured_feature/lead.json"

@@ -44,6 +44,10 @@
 		{ item: "vampirism:pure_blood_2", weight: 0.15f }
 		{ item: "vampirism:pure_blood_3", weight: 0.1f }
 		{ item: "vampirism:pure_blood_4", weight: 0.05f }
+		{ item: "vampirism:blood_infused_iron_ingot", random_bonus: 4 }
+		{ item: "vampirism:blood_infused_enhanced_iron_ingot", random_bonus: 4, weight: 0.5f }
+		{ item: "vampirism:blood_infused_iron_block", random_bonus: 1, weight: 0.5f }
+		{ item: "vampirism:blood_infused_enhanced_iron_block", random_bonus: 1, weight: 0.25f }
 	]
 	title: "Vladislav Loot"
 }

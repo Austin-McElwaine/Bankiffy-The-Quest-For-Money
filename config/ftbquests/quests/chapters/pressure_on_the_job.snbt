@@ -11,28 +11,18 @@
 	quests: [
 		{
 			dependencies: [
-				"4450739A471BCB0E"
-				"00CA8C3F59B2D040"
-				"1911C1B1FF8D2D84"
-				"0F7B12E40C5A5791"
-				"6FF6B3D715137EA3"
 				"22AE33F0C9E76A63"
+				"78AB10073E36F488"
 			]
 			dependency_requirement: "one_completed"
-			description: ["If you purposely blow up some iron with tnt you will create a new type of ingot, you'll lose some in the blase, but you gotta spend money to make money"]
+			description: ["You've finally managed to create some compressed iron, time to begin playing with pressure."]
 			id: "6C5B11324FE1D9F1"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "0D72A8B28A246DD4"
-				table_id: 6087682009898504209L
-				type: "loot"
-			}]
 			tasks: [{
 				id: "22AE33F0C9E76A63"
 				item: "pneumaticcraft:ingot_iron_compressed"
 				type: "item"
 			}]
-			title: "My Iron!"
+			title: "Compressed Iron"
 			x: 0.0d
 			y: 0.0d
 		}
@@ -499,7 +489,7 @@
 		}
 		{
 			dependencies: ["64AAB5DC122CB6E9"]
-			description: ["When you're finally using rf (or converting your create kenetic power to rf) you can just turn rf into pressure."]
+			description: ["When you're finally using rf, you can just turn rf into pressure."]
 			id: "63065FD3815EDCFE"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -514,7 +504,7 @@
 			}]
 			title: "Backwards Compatible"
 			x: 6.0d
-			y: 3.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["64AAB5DC122CB6E9"]
@@ -1584,6 +1574,7 @@
 				table_id: 6087682009898504209L
 				type: "loot"
 			}]
+			shape: "diamond"
 			tasks: [
 				{
 					count: 27L
@@ -1993,6 +1984,99 @@
 			title: "Precise Reads"
 			x: 14.0d
 			y: 1.0d
+		}
+		{
+			dependencies: ["321E61F26468AA30"]
+			description: ["For those who still want some create mechanisms, you can use compressed air to make some kinetic energy, adding on to your other infrastructure."]
+			id: "775D0AFC9D2A2A81"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "555F435123F2E782"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "7E30DC39E01A7DE5"
+				item: "compressedcreativity:compressed_air_engine"
+				type: "item"
+			}]
+			title: "Compressed Create"
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["67BD0F1089E8E705"]
+			description: ["All that heat (or cooling) can be put to use, transfer some of that over to the heat frame to smelt (or freeze) some items."]
+			id: "5074DD484A1BB04B"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "4DF93D66D941BE4C"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "46B31EE985E58009"
+				item: "pneumaticcraft:heat_frame"
+				type: "item"
+			}]
+			title: "Adjacent Heating"
+			x: -1.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["7B1F03257170CD4F"]
+			description: ["Empty out some random spawners using the spawner extractor to get the cage and the core, perhaps you could manage to take the spawner home with you?"]
+			id: "17E39B17D4DE8C5C"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "53AAA377538490BF"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "19BD77FA46157EAD"
+				item: "pneumaticcraft:spawner_extractor"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["17E39B17D4DE8C5C"]
+			description: ["Take that spawner core of yours and place it within a pressurized spawner, when fed with pressure it will spawn mobs without light level restrictions. The better the core the more efficent this will be."]
+			id: "702F1704A4D8D322"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "0AC51CE23873A45A"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "382F0C5230C037F5"
+				item: "pneumaticcraft:pressurized_spawner"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["64AAB5DC122CB6E9"]
+			description: ["When you're finally using rf, just use your pressure to generate some. After all, you did make all that infrastructure."]
+			id: "62F85246FC197D15"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "26217860B37A6866"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "5A537D414554A170"
+				item: "pneumaticcraft:pneumatic_dynamo"
+				type: "item"
+			}]
+			title: "Forwards Compatible"
+			x: 6.0d
+			y: 2.5d
 		}
 	]
 	title: "Pressure On The Job"
