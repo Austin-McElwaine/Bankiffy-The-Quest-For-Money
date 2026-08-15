@@ -13,5 +13,13 @@ StartupEvents.registry('item', event => {
 
     event.create('pneumaticcraft:hot_compressed_iron')
     .displayName('Hot Compressed Iron')
-    .texture('kubejs:item/hot_compressed_iron');;
+    .texture('kubejs:item/hot_compressed_iron');
+
+    event.create('bankiffy:banksco_share')
+    .displayName('BanksCo Share')
+    .texture('nuclearcraft:item/part/research_paper');
+
+    event.create('bankiffy:nodot_share')
+    .displayName('NODOT Share')
+    .texture('nuclearcraft:item/part/research_paper');;
 });

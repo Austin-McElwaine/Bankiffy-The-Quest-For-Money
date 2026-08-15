@@ -105,16 +105,8 @@
 			description: ["Here's a grand reward for making &mme&r tons of money"]
 			id: "71576C370CF6B246"
 			rewards: [{
-				id: "487AB89B967A5C37"
-				item: {
-					Count: 1
-					id: "minecraft:paper"
-					tag: {
-						display: {
-							Name: "{\"text\":\"1 BanksCo Share\",\"italic\":false}"
-						}
-					}
-				}
+				id: "1FC9F7E4B0014356"
+				item: "bankiffy:banksco_share"
 				type: "item"
 			}]
 			tasks: [{

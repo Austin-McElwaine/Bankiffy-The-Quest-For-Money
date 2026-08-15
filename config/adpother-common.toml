@@ -13,11 +13,11 @@ maxGasEntitiesInChunk = 10
 
 [GasExplosions]
 	#Enables/disables gas explosions caused by ignition sources
-	ignitionSources = true
+	ignitionSources = false
 	#Enables/disables gas explosions caused by emitters (machines) when they produce pollution and it has no way to go
-	enclosedEmitters = true
+	enclosedEmitters = false
 	#Whether gas explosions set surrounding blocks on fire
-	setOnFire = true
+	setOnFire = false
 	#The way gas explosions affect surroundings
 	#Allowed Values: NONE, BLOCK, MOB, TNT
 	explosionInteraction = "TNT"
@@ -25,7 +25,7 @@ maxGasEntitiesInChunk = 10
 	#Range: 0 ~ 2048
 	maxChainLength = 512
 	#Whether the enclosed emitter that caused an explosion should always be destroyed, regardless of the explosion power
-	alwaysDestroyEmitter = true
+	alwaysDestroyEmitter = false
 
 [EmissionSources]
 	#Rate of emissions from this source

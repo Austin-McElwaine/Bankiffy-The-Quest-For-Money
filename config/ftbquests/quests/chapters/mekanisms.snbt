@@ -524,11 +524,18 @@
 			dependencies: ["112D238683E4FD08"]
 			description: ["A new top villager invented something called an HEV suit, not sure what it does, but just put it on and do your expirements. What's the worst that could happen Gordon?"]
 			id: "190CFDC27DCD32DD"
-			rewards: [{
-				id: "22776C717C78CEEC"
-				item: "quark:crab_spawn_egg"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "22776C717C78CEEC"
+					item: "quark:crab_spawn_egg"
+					type: "item"
+				}
+				{
+					id: "5C242AE78D43E805"
+					item: "bankiffy:banksco_share"
+					type: "item"
+				}
+			]
 			subtitle: "Look Gordon, A Rope!"
 			tasks: [{
 				advancement: "nuclearcraft:hev_helmet"

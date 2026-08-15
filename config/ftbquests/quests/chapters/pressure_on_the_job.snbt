@@ -1783,16 +1783,8 @@
 					type: "item"
 				}
 				{
-					id: "0A4E10CA5555DAD6"
-					item: {
-						Count: 1
-						id: "minecraft:paper"
-						tag: {
-							display: {
-								Name: "{\"text\":\"1 BanksCo Share\",\"italic\":false}"
-							}
-						}
-					}
+					id: "736E4B2FEBC94ECF"
+					item: "bankiffy:banksco_share"
 					type: "item"
 				}
 			]

@@ -1198,16 +1198,8 @@
 			description: ["Supreme Machine Frames unlock you only the most powerful machines available."]
 			id: "78CC9D63DA2FDE66"
 			rewards: [{
-				id: "2B583207C4EF9F33"
-				item: {
-					Count: 1
-					id: "minecraft:paper"
-					tag: {
-						display: {
-							Name: "{\"text\":\"1 BanksCo Share\",\"italic\":false}"
-						}
-					}
-				}
+				id: "042E57626AC8897E"
+				item: "bankiffy:banksco_share"
 				type: "item"
 			}]
 			shape: "diamond"

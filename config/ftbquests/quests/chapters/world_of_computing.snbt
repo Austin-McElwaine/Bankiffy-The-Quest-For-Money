@@ -6,7 +6,7 @@
 	hide_quest_until_deps_complete: true
 	icon: "computercraft:computer_normal"
 	id: "354F184B5E4B2DAB"
-	order_index: 4
+	order_index: 5
 	quest_links: [ ]
 	quests: [
 		{

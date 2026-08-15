@@ -12,7 +12,7 @@
 		}
 	}
 	id: "5CC95D710D7A279D"
-	order_index: 2
+	order_index: 3
 	quest_links: [ ]
 	quests: [
 		{
@@ -737,10 +737,9 @@
 			description: ["Work your way up the ladder and become the hunter of all hunters (before me of course)."]
 			id: "55E5C75340F1E053"
 			rewards: [{
-				exclude_from_claim_all: true
-				id: "404259DDF2CF06CF"
-				table_id: 6087682009898504209L
-				type: "loot"
+				id: "77BF73142DFC51EF"
+				item: "bankiffy:banksco_share"
+				type: "item"
 			}]
 			tasks: [{
 				advancement: "vampirism:hunter/max_lord"

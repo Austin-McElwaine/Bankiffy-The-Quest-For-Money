@@ -27,7 +27,7 @@
 		tag: { }
 	}
 	id: "0057D39CDF043688"
-	order_index: 1
+	order_index: 2
 	quest_links: [ ]
 	quests: [
 		{
@@ -53,16 +53,8 @@
 			icon: "minecraft:nether_star"
 			id: "0FD6BBE138869322"
 			rewards: [{
-				id: "581A30A976EA983A"
-				item: {
-					Count: 1
-					id: "minecraft:paper"
-					tag: {
-						display: {
-							Name: "{\"text\":\"1 BanksCo Share\",\"italic\":false}"
-						}
-					}
-				}
+				id: "169457C3AC993FDE"
+				item: "bankiffy:banksco_share"
 				type: "item"
 			}]
 			shape: "diamond"

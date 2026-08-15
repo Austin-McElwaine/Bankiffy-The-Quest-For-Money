@@ -1,0 +1,400 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "banksco_park"
+	group: "15A08A4162B9FFA4"
+	hide_quest_until_deps_complete: true
+	icon: "fossil:fossil_bio"
+	id: "483A2E3B542A4B2D"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["Deep underground you can sometimes find some bones stuck in the stone, carefully try mining it and you may find something worth preserving, or selling."]
+			id: "763CC066FAA1860C"
+			invisible: true
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "300F7A102DFF486A"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				advancement: "fossil:fossil/break_fossil"
+				criterion: ""
+				id: "53B5F71AA9E851AD"
+				title: "Find A Fossil"
+				type: "advancement"
+			}]
+			title: "Fossil Hunting"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["763CC066FAA1860C"]
+			id: "7EBEBBDAAE66C581"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "6476B74C5456E893"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "5F0CEAD3BCE363F9"
+				item: "fossil:worktable"
+				type: "item"
+			}]
+			title: "What's Old Is New"
+			x: 0.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["7EBEBBDAAE66C581"]
+			description: ["Some BanksCo employees have found some broken ancient objects. We've found in the past that Ancient Scraps can be used to make these broken objects brand new."]
+			id: "07B1C8250F7B9832"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "6E801F99741B1986"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				advancement: "fossil:fossil/ancient_sword"
+				criterion: ""
+				id: "6DE5A64CA46033F5"
+				title: "Repair A Broken Object"
+				type: "advancement"
+			}]
+			title: "Fully Functional"
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["763CC066FAA1860C"]
+			description: ["Relic Scraps, Bio Fossils, and Plant Fossils are all items we need more research on"]
+			id: "024A7574754DFCD7"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "4A472A5154017363"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "72B12B6E550E0DA3"
+				item: "fossil:analyzer"
+				type: "item"
+			}]
+			title: "Discovering The Past"
+			x: 0.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["024A7574754DFCD7"]
+			description: ["Looks like in the past &mdolls&r figurines were really popular."]
+			id: "1E953B6ABBA8BA8E"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "42BE1CBDC42F9AF2"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				advancement: "fossil:fossil/figurines"
+				criterion: ""
+				id: "3186B6A49BBC6699"
+				title: "Figurines"
+				type: "advancement"
+			}]
+			title: "They're Not Dolls!"
+			x: -1.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["231E88AC235E9070"]
+			description: ["The team has discovered some ancient magic (yuck) within that statue on the boat. They've detected that 4 redstone north, south, east, and west of the statue, with figures on the corners will activate the statue and open a portal to a new relm."]
+			id: "3F3F4C2152BA3ABF"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "1ED2B49FBF5E4220"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				dimension: "fossil:anu_lair"
+				id: "72FFAAA265BF2F77"
+				type: "dimension"
+			}]
+			title: "To An Ancient World"
+			x: -2.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["1E953B6ABBA8BA8E"]
+			description: ["We've heard some reports regarding a boat in the nether, perhaps you should go investigate and pillage it for some loot."]
+			id: "231E88AC235E9070"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "1B02FD16B27AF745"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "7233EDEA55EF6A77"
+				structure: "fossil:hell_boat"
+				title: "Find The Hell Boat"
+				type: "structure"
+			}]
+			title: "Boat In Hell"
+			x: -2.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["3F3F4C2152BA3ABF"]
+			description: [
+				"Ancient Magic has also been detected in Scarab Gems back at HQ, perhaps you could find your own from mining some fossil blocks. We believe this can be used to open up the Sarcophagus you found."
+				""
+				"Scarabs can also be used to tame predators."
+			]
+			id: "2800CF3B09E8BC11"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "3EB590015451F6D7"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "49E16FDB616E421E"
+				item: "fossil:scarab_gem"
+				type: "item"
+			}]
+			title: "Opening The Sarcophagus"
+			x: -3.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["2800CF3B09E8BC11"]
+			description: ["Looks like Anu brought you to some sort of treasure room after killing it and using the key it had opened the chest containing the ancient clock. We're not sure what it does just yet..."]
+			id: "2251BC985D59D125"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "24C2C83AD6A7A8E6"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "4FE7865391BCD797"
+				item: "fossil:ancient_clock"
+				type: "item"
+			}]
+			title: "Death Of Anu"
+			x: -3.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["024A7574754DFCD7"]
+			description: ["Apparently analyzing meat is a good source for dna, huh."]
+			id: "12555F52D0AF2CA6"
+			invisible: true
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7557210298A3ECCD"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "5E7DF06DCABE39CB"
+				item: "fossil:frozen_meat"
+				type: "item"
+			}]
+			title: "Freeze Dried Meat"
+			x: -1.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["024A7574754DFCD7"]
+			description: ["Looks like those fossils had some dino dna in them, wonder what we can use with that?"]
+			id: "6A9EE8A80AA45224"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "3FFC1FB2B746A866"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			subtitle: "Dino Go Rawr"
+			tasks: [{
+				advancement: "fossil:fossil/dna"
+				criterion: ""
+				id: "718C2B2FA6F3057E"
+				title: "Find Dino DNA"
+				type: "advancement"
+			}]
+			title: "Dino DNA"
+			x: 0.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["024A7574754DFCD7"]
+			description: ["While this isn't oil and can't be used to pollute the world, you can analyze the drops instead to get some tar fossils. Just find a tar site somewhere in the world."]
+			id: "0241F7C98C0C1C65"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "10A456FAD1B6199B"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [
+				{
+					id: "06F099918542EF91"
+					item: "fossil:tar_bucket"
+					type: "item"
+				}
+				{
+					id: "3E459420ED980B1A"
+					item: "fossil:tar_drop"
+					type: "item"
+				}
+			]
+			title: "Not Oil"
+			x: 1.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["6A9EE8A80AA45224"]
+			description: ["The brains over at HQ invented this substance that can apparently turn dna into living things. Placing this in a culture vat with some dna will let you make some dino eggs (maybe)."]
+			id: "2DC251A11C0D7025"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "31928F90E1524BA2"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "61DD4242B2FAD1E4"
+				item: "fossil:bio_goo"
+				type: "item"
+			}]
+			title: "Ooey Gooey"
+			x: 1.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["2DC251A11C0D7025"]
+			description: ["Place DNA or Ancient Seeds in the vat with some of the goo and you'll get yourself some prehistoric life."]
+			id: "0D5FE148A2AD7723"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "032C8D43F3054992"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "20429A11E4D11E1E"
+				item: "fossil:culture_vat"
+				type: "item"
+			}]
+			title: "Man Of Culture"
+			x: 1.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["0D5FE148A2AD7723"]
+			description: ["An output you could get is a mammal embryo, jab a pig, cow, sheep, goat, wolf, cat, or horse to impregnate them, once some time passes they'll give birth to your new prehistoric animal."]
+			id: "16A6F99F269B0CFD"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "06CAE8D854CA2EFD"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				advancement: "fossil:fossil/embryos"
+				criterion: ""
+				id: "09072C7F11332EC9"
+				title: "Cultivate A Mammal Embryo"
+				type: "advancement"
+			}]
+			title: "Impregnation"
+			x: 2.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["16A6F99F269B0CFD"]
+			description: ["You've done it, one of every mammal, now it's time to breed and sell them to mass market."]
+			id: "3468C58506416D8D"
+			rewards: [{
+				id: "7BCF26EB0A953E51"
+				item: "bankiffy:banksco_share"
+				type: "item"
+			}]
+			tasks: [{
+				advancement: "fossil:fossil/all_embryos"
+				criterion: ""
+				id: "35305F4188E54B41"
+				title: "Implant One Of Every Embryo"
+				type: "advancement"
+			}]
+			title: "Master Impregnator"
+			x: 3.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["0D5FE148A2AD7723"]
+			description: ["You got an Egg! Just place it on the ground and watch it hatch! You could use the dinopedia to make sure nothing is going wrong with it, but that's your call."]
+			id: "0C7CCCD82D6A682A"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "0B41EBA0D83A2C74"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				advancement: "fossil:fossil/dino_eggs"
+				criterion: ""
+				id: "791668348D02E91D"
+				title: "Cultivate A Dino Egg"
+				type: "advancement"
+			}]
+			title: "Dino Eggs"
+			x: 0.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["0D5FE148A2AD7723"]
+			description: ["If you want more info regarding your eggs or impregnations, just right click them with the dinopedia to view their stats."]
+			id: "0C964E9D297477D5"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7F24827E3BD52ED2"
+				table_id: 6087682009898504209L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "2BC5FD3BBBF3C4CD"
+				item: "fossil:dinopedia"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["0C7CCCD82D6A682A"]
+			description: ["Man, every single egg? What a fantastic park you made to sell tickets for."]
+			id: "40A6CC69A7B695D4"
+			rewards: [{
+				id: "1A90B63103632649"
+				item: "bankiffy:banksco_share"
+				type: "item"
+			}]
+			tasks: [{
+				advancement: "fossil:fossil/all_eggs"
+				criterion: ""
+				id: "143C73AD41F33FAC"
+				title: "Master Eggman"
+				type: "advancement"
+			}]
+			x: -0.5d
+			y: -4.0d
+		}
+	]
+	title: "BanksCo Park"
+}

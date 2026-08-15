@@ -5530,6 +5530,31 @@ ServerEvents.recipes(event => {
         },
         "upgradeLevel": 4
     });
+
+    event.remove({output: 'fossil:analyzer'});
+
+    event.shaped(Item.of('fossil:analyzer', 1), [
+        'SFS',
+        'SBS',
+        '   '
+    ], {
+        F: 'fossil:relic_scrap',
+        S: '#forge:ingots/steel',
+        B: '#fossil:fossils'
+    });
+
+    event.remove({output: 'fossil:culture_vat'});
+
+    event.shaped(Item.of('fossil:culture_vat', 1), [
+        'GLG',
+        'GBG',
+        'SSS'
+    ], {
+        G: 'immersiveengineering:insulating_glass',
+        S: '#forge:ingots/steel',
+        B: 'minecraft:water_bucket',
+        L: '#forge:slimeballs',
+    });
 });
 
 

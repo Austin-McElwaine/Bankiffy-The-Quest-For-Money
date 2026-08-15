@@ -1523,16 +1523,8 @@
 			description: ["Blue adds value"]
 			id: "3B1561DBBF9AEEE4"
 			rewards: [{
-				id: "1BDE4E8AE04EEC3F"
-				item: {
-					Count: 1
-					id: "minecraft:paper"
-					tag: {
-						display: {
-							Name: "{\"text\":\"1 BanksCo Share\",\"italic\":false}"
-						}
-					}
-				}
+				id: "40B4E951A00FCA97"
+				item: "bankiffy:banksco_share"
 				type: "item"
 			}]
 			tasks: [{
@@ -1797,16 +1789,8 @@
 			description: ["Combine The Flavor Of Chocolate With The Flavor Of An Orange Mini Cake To Make One Sweet Treat!"]
 			id: "64BE19240383B66C"
 			rewards: [{
-				id: "03BDACC290D449AA"
-				item: {
-					Count: 1
-					id: "minecraft:paper"
-					tag: {
-						display: {
-							Name: "{\"text\":\"1 BanksCo Share\",\"italic\":false}"
-						}
-					}
-				}
+				id: "65BAD76D92DF3204"
+				item: "bankiffy:banksco_share"
 				type: "item"
 			}]
 			subtitle: "2 In 1"
@@ -1904,16 +1888,8 @@
 			description: ["It's about time we refine our product into something marketable"]
 			id: "061AF175694651BE"
 			rewards: [{
-				id: "10104138EF41AEF6"
-				item: {
-					Count: 1
-					id: "minecraft:paper"
-					tag: {
-						display: {
-							Name: "{\"text\":\"1 BanksCo Share\",\"italic\":false}"
-						}
-					}
-				}
+				id: "3EC38E670F776984"
+				item: "bankiffy:banksco_share"
 				type: "item"
 			}]
 			tasks: [{
